@@ -21,7 +21,6 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;font-family:'Inter',sans-serif; scroll-behavior: smooth;}
 
-/* BLOQUEAR SELECCION DE TEXTO Y FOTOS */
 body {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -30,11 +29,10 @@ body {
   -webkit-touch-callout: none;
 }
 img {
-  pointer-events: none; /* Evita que se pueda arrastrar o clickear la imagen directo */
+  pointer-events: none;
   -webkit-user-drag: none;
 }
 
-/* COLORES - AZUL NOCHE Y NEONES */
 :root[data-tema="oscuro"] {
   --bg: #0a1128;
   --card-bg: #111b3d;
@@ -76,8 +74,12 @@ body{background-color:var(--bg);color:var(--texto);min-height:100vh;display:flex
 
 header{background:var(--header-bg);backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px);padding:16px 24px;position:sticky;top:0;z-index:100;border-bottom:1px solid var(--card-border);transition:all .3s}
 .header-content{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
-.logo{flex-shrink:0;display:flex;align-items:center;text-decoration:none;}
+
+/* ESTILOS DEL LOGO EN EL HEADER */
+.logo{flex-shrink:0;display:flex;align-items:center;text-decoration:none;gap:8px;}
 .logo img{height:44px;width:auto;border-radius:10px;box-shadow:0 2px 10px rgba(59,130,246,0.3);}
+.logo-texto{font-family:'Outfit',sans-serif;font-size:28px;font-weight:800;letter-spacing:-1px;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;}
+
 .buscador{flex:1;min-width:200px}
 .buscador input{width:100%;padding:14px 24px;border:1px solid var(--card-border);border-radius:14px;font-size:15px;background:var(--input-bg);color:var(--texto);outline:none;transition:all .3s;}
 .buscador input:focus{border-color:var(--neon-1);box-shadow:0 0 0 3px rgba(59,130,246,0.2)}
@@ -123,7 +125,6 @@ main{max-width:1400px;margin:0 auto;padding:0 24px 50px;flex:1;width:100%}
 .contador{color:var(--texto-suave);font-size:13px;margin-bottom:20px;font-weight:600;text-transform:uppercase;letter-spacing:1px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px}
 
-/* TARJETAS */
 .producto{background:var(--card-bg);border-radius:20px;border:1px solid var(--card-border);padding:12px;display:flex;flex-direction:column;position:relative;transition:all .3s;box-shadow:var(--sombra-card);overflow:hidden;}
 .producto:hover{transform:translateY(-4px);border-color:var(--neon-1);}
 .producto .img-wrap{width:100%;background:var(--foto-bg);position:relative;padding-top:100%;overflow:hidden;border-radius:14px;margin-bottom:14px; cursor:pointer;}
@@ -133,7 +134,6 @@ main{max-width:1400px;margin:0 auto;padding:0 24px 50px;flex:1;width:100%}
 .producto .nombre{font-family:'Outfit',sans-serif;font-weight:600;font-size:16px;color:var(--texto);margin-bottom:6px;line-height:1.3;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical; min-height:42px;}
 .producto .precio{font-size:24px;font-weight:900;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:14px;}
 
-/* BOTONES MITAD Y MITAD */
 .producto .acciones{display:flex;gap:8px;margin-top:auto;width:100%;}
 .producto .btn-ws{flex:1 1 50%;text-align:center;padding:12px 0;background:var(--btn-ws);color:#fff;text-decoration:none;font-size:13px;font-weight:700;border-radius:10px;transition:all .2s;display:flex;align-items:center;justify-content:center;border:none; font-family:'Inter',sans-serif; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);}
 .producto .btn-ws:hover{opacity:0.9; transform:translateY(-1px);}
@@ -143,9 +143,11 @@ main{max-width:1400px;margin:0 auto;padding:0 24px 50px;flex:1;width:100%}
 
 .sin-resultados{text-align:center;padding:80px 20px;color:var(--texto-suave);font-size:18px; font-family:'Outfit',sans-serif;}
 
-/* FOOTER */
+/* FOOTER CON LOGO */
 footer{background:var(--footer-bg);color:var(--texto-suave);padding:40px 24px;margin-top:auto;text-align:center;font-size:14px;line-height:1.8; border-top:1px solid var(--card-border);}
-footer .footer-logo {height: 40px; margin-bottom: 15px; border-radius: 8px;}
+.footer-logo-container {display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 12px;}
+.footer-logo-container img {height: 35px; width: auto; border-radius: 8px;}
+.footer-logo-container .footer-texto {font-family:'Outfit',sans-serif;font-size:22px;font-weight:800;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
 footer .footer-copy{margin-top:16px;font-size:13px;}
 
 .lightbox{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(10,17,40,0.95);z-index:1000;align-items:center;justify-content:center;padding:20px;cursor:zoom-out;backdrop-filter:blur(10px); opacity:0; transition:opacity .3s}
@@ -195,6 +197,7 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 @media(max-width:600px){
   header{padding:14px 16px}
   .logo img{height: 38px;}
+  .logo-texto{font-size: 22px;}
   .buscador{order:3;flex-basis:100%;margin-top:10px}
   .buscador input{padding:12px 16px;font-size:14px}
   .btn-icon{width:42px;height:42px;font-size:20px}
@@ -216,7 +219,8 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
   .producto .btn-ws, .producto .btn-agregar{padding:10px 0;font-size:11px;border-radius:8px; flex: 1 1 50%;}
   .modal-content{border-radius:16px;padding:20px}
   .carrito-panel{max-width:100%}
-  footer .footer-logo {height: 35px;}
+  .footer-logo-container img {height: 30px;}
+  .footer-logo-container .footer-texto {font-size: 20px;}
 }
 @media(max-width:380px){
   .grid{grid-template-columns:1fr;gap:20px}
@@ -230,8 +234,9 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 
 <header>
   <div class="header-content">
-    <a href="/" class="logo">
-      <img src="icono-192.png" alt="Gimport Logo">
+    <a href="./" class="logo">
+      <img src="icono-192.png" alt="Gimport">
+      <span class="logo-texto">Import</span>
     </a>
     <div class="buscador">
       <input type="text" id="buscar" placeholder="Buscar tu próximo producto..." autocomplete="off">
@@ -266,7 +271,10 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 </main>
 
 <footer>
-  <img src="icono-192.png" alt="Gimport Logo" class="footer-logo">
+  <div class="footer-logo-container">
+    <img src="icono-192.png" alt="Gimport Logo">
+    <span class="footer-texto">Import</span>
+  </div>
   <p>Consultá por WhatsApp para confirmar stock y coordinar la compra.</p>
   <p class="footer-copy">© 2026 Gabitosila · Todos los derechos reservados</p>
 </footer>
