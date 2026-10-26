@@ -21,6 +21,27 @@
     "imagen": "https://avl112.com.ar/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-04-at-16.16.24.jpeg"
   },
   {
+    "producto": "Espejo Adhesivo Cuadrado de 20x20cm Irrompible",
+    "tipo": "espejo",
+    "descripcion": "",
+    "precio_venta": 3600.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/square_flexible_mirror_advertise_202609041513-1a9eaa7d7887b2f36217885456011470-1024-1024.webp"
+  },
+  {
+    "producto": "Depiladora de Cejas Recargable USB con Luz y Sin Dolor",
+    "tipo": "depiladora",
+    "descripcion": "",
+    "precio_venta": 6000.0,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-17-sept-2026-13_04_05-dbaa85d8b2e5ec72cf17896610734661-1024-1024.webp"
+  },
+  {
+    "producto": "Bombillo Lampara Led Plegable 4 Aspas Alta Iluminación",
+    "tipo": "lampara",
+    "descripcion": "",
+    "precio_venta": 5300.0,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/bombillo3-1d0653c56d5add0ec016612647260262-1024-1024.webp"
+  },
+  {
     "producto": "Auriculares A9S Pro wireless",
     "tipo": "auricular",
     "descripcion": "",
@@ -42,6 +63,20 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/img_4502-27e2bfffe018ec702717803464231506-1024-1024.webp"
   },
   {
+    "producto": "Depiladora Facial 2 en 1 Recargable para Cejas y Cuerpo",
+    "tipo": "depiladora",
+    "descripcion": "",
+    "precio_venta": 6400.0,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/d_nq_np_2x_642735-mla81228823218_122024-f-1487515184745c897417467165673485-480-0-88b11ef6d4138ba16b17582075509589-1024-1024.webp"
+  },
+  {
+    "producto": "Depiladora Facial y de Cejas 2 en 1 Recargable USB",
+    "tipo": "depiladora",
+    "descripcion": "",
+    "precio_venta": 6900.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/white_vanity_table_with_depiladora_20261019155659-2a726ab8cc8cb1ddd017924362336727-1024-1024.webp"
+  },
+  {
     "producto": "Auricular - E6S - Comprar en Global Once",
     "tipo": "auricular",
     "descripcion": "",
@@ -56,6 +91,34 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/ver-fotos-recientes-1-7f50d7d6d8bee2046217909540456146-1024-1024.webp"
   },
   {
+    "producto": "Lampara para mosquitos 15w",
+    "tipo": "lampara",
+    "descripcion": "",
+    "precio_venta": 7600.0,
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2026/03/lamp.png"
+  },
+  {
+    "producto": "Parlante Bluetooth Portátil 3&quot; con Radio FM, Luces, USB y Micro SD",
+    "tipo": "parlante",
+    "descripcion": "",
+    "precio_venta": 7900.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/speaker_on_desk_20260924125907-77d7ea9bded6d0223f17902655688102-1024-1024.webp"
+  },
+  {
+    "producto": "Mini parlante karaoke portátil con microfono",
+    "tipo": "parlante",
+    "descripcion": "",
+    "precio_venta": 9900.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/img_4725-04c4e4f6fee03fcb3517815633258197-1024-1024.webp"
+  },
+  {
+    "producto": "Planchita de Pelo Profesional NITSUK 45W 4 Temperaturas",
+    "tipo": "planchita",
+    "descripcion": "",
+    "precio_venta": 10700.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/flat_iron_on_marble_vanity_20260930135216-73cdb782af612513c417907871666666-1024-1024.webp"
+  },
+  {
     "producto": "Auricular Kitty",
     "tipo": "auricular",
     "descripcion": "auricular kitty",
@@ -68,5 +131,61 @@
     "descripcion": "auricular mario",
     "precio_venta": 10800.0,
     "imagen": "https://avl112.com.ar/wp-content/uploads/2024/12/WhatsApp-Image-2026-09-09-at-18.41.11.jpeg"
+  },
+  {
+    "producto": "Depiladora 2 en 1 facial corporal recargable",
+    "tipo": "depiladora",
+    "descripcion": "",
+    "precio_venta": 12200.0,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/depiladora-facial-lavanda-en-uso-7da881f5110412a99d17919861342862-1024-1024.webp"
+  },
+  {
+    "producto": "Planchita de pelo HL2580",
+    "tipo": "planchita",
+    "descripcion": "",
+    "precio_venta": 12900.0,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-18-sept-2026-12_06_52-ba831e30d0b266999117897443540385-1024-1024.webp"
+  },
+  {
+    "producto": "Afeitadora 3 en 1 ONICA OA-CP205 Recargable con Patillera",
+    "tipo": "afeitadora",
+    "descripcion": "",
+    "precio_venta": 15700.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/shaver_device_on_bathroom_counter_20261017135910-4d781e347b00c42a4817922564409832-1024-1024.webp"
+  },
+  {
+    "producto": "Hielera con parlante - Comprar en Global Once",
+    "tipo": "parlante",
+    "descripcion": "",
+    "precio_venta": 17700.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-06-01-a-las-18-20-19-8d4e83f2e8719a57d517803488612749-1024-1024.webp"
+  },
+  {
+    "producto": "Afeitadora 3 en 1 Inalámbrica Recargable con Recortador de Nariz",
+    "tipo": "afeitadora",
+    "descripcion": "",
+    "precio_venta": 17900.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/img_3185-420be284994827ee0317901902372966-1024-1024.webp"
+  },
+  {
+    "producto": "Batidora de mano - Scarlett - Comprar en Global Once",
+    "tipo": "batidora",
+    "descripcion": "",
+    "precio_venta": 17900.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/whatsapp-image-2026-05-03-at-22-50-34-65191424bc1c67ea0b17803330491759-1024-1024.webp"
+  },
+  {
+    "producto": "Afeitadora y Rasuradora electrica recargable - Double",
+    "tipo": "afeitadora",
+    "descripcion": "",
+    "precio_venta": 17900.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-08-21-a-las-11-54-03-a0a1b8759c5761648017873459268346-1024-1024.webp"
+  },
+  {
+    "producto": "Sandwichera electrica Oryx",
+    "tipo": "sandwichera",
+    "descripcion": "Disfrutá de sándwiches tostados y sellados a la perfección en minutos con la Sandwichera Eléctrica Oryx OR-1900. Con una potencia de 800W, placas con tecnología antiadherente para una limpieza fácil sin que se pegue el queso, luces indicadoras de encendido y listo, y traba de seguridad en el mango. Ideal para el desayuno y la merienda.",
+    "precio_venta": 26200.0,
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2026/03/Gemini_Generated_Image_j3g5bdj3g5bdj3g5.jpeg"
   }
 ]
