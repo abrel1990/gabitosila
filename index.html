@@ -2,50 +2,160 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catálogo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Gimport - Catálogo</title>
+<script>
+  // Aplicar tema antes de renderizar para evitar flash
+  (function() {
+    var tema = localStorage.getItem('tema');
+    if (!tema) {
+      tema = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'oscuro' : 'claro';
+    }
+    document.documentElement.setAttribute('data-tema', tema);
+  })();
+</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:#f5f5f7;color:#1d1d1f}
-header{background:#1d1d1f;color:#fff;padding:20px;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.1)}
-.header-content{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
-header h1{font-size:24px;font-weight:700}
+html{-webkit-text-size-adjust:100%}
+
+/* VARIABLES DE TEMA */
+:root[data-tema="claro"] {
+  --bg: #f5f5f7;
+  --card-bg: #ffffff;
+  --texto: #1d1d1f;
+  --texto-suave: #86868b;
+  --header-bg: #1d1d1f;
+  --header-texto: #ffffff;
+  --input-bg: #2c2c2e;
+  --input-texto: #ffffff;
+  --filtro-bg: #ffffff;
+  --filtro-borde: #d2d2d7;
+  --filtro-texto: #1d1d1f;
+  --img-bg: #f9f9f9;
+  --sombra: rgba(0,0,0,.06);
+  --sombra-hover: rgba(0,0,0,.12);
+  --footer-bg: #1d1d1f;
+  --footer-texto: #86868b;
+}
+:root[data-tema="oscuro"] {
+  --bg: #000000;
+  --card-bg: #1c1c1e;
+  --texto: #f5f5f7;
+  --texto-suave: #98989d;
+  --header-bg: #1c1c1e;
+  --header-texto: #f5f5f7;
+  --input-bg: #2c2c2e;
+  --input-texto: #ffffff;
+  --filtro-bg: #2c2c2e;
+  --filtro-borde: #3a3a3c;
+  --filtro-texto: #f5f5f7;
+  --img-bg: #2c2c2e;
+  --sombra: rgba(0,0,0,.4);
+  --sombra-hover: rgba(0,0,0,.6);
+  --footer-bg: #1c1c1e;
+  --footer-texto: #98989d;
+}
+
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--texto);min-height:100vh;display:flex;flex-direction:column;transition:background .3s,color .3s}
+
+/* HEADER */
+header{background:var(--header-bg);color:var(--header-texto);padding:16px 20px;position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,.15);transition:background .3s}
+.header-content{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{font-size:22px;font-weight:800;letter-spacing:-0.5px;color:var(--header-texto);text-decoration:none;flex-shrink:0}
+.logo span{color:#0071e3}
 .buscador{flex:1;min-width:200px}
-.buscador input{width:100%;padding:12px 16px;border:none;border-radius:8px;font-size:15px;background:#fff;color:#1d1d1f}
-.filtros{max-width:1400px;margin:0 auto;padding:15px 20px;display:flex;gap:10px;flex-wrap:wrap;overflow-x:auto}
-.filtros button{padding:8px 18px;border:1px solid #d2d2d7;background:#fff;border-radius:20px;cursor:pointer;font-size:14px;white-space:nowrap;transition:all .15s;font-weight:500}
+.buscador input{width:100%;padding:12px 18px;border:none;border-radius:24px;font-size:16px;background:var(--input-bg);color:var(--input-texto);outline:none;transition:background .3s}
+.buscador input::placeholder{color:#86868b}
+.buscador input:focus{background:#3a3a3c}
+
+/* BOTON TEMA */
+.btn-tema{background:var(--input-bg);border:none;border-radius:50%;width:42px;height:42px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:20px;transition:all .2s;flex-shrink:0;color:var(--header-texto)}
+.btn-tema:hover{background:#3a3a3c;transform:scale(1.05)}
+.btn-tema:active{transform:scale(0.95)}
+
+/* FILTROS */
+.filtros{max-width:1400px;margin:0 auto;padding:14px 20px 8px;display:flex;gap:8px;flex-wrap:wrap;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.filtros button{padding:9px 18px;border:1px solid var(--filtro-borde);background:var(--filtro-bg);border-radius:22px;cursor:pointer;font-size:14px;white-space:nowrap;transition:all .15s;font-weight:600;color:var(--filtro-texto)}
 .filtros button:hover{background:#e5e5e7}
+:root[data-tema="oscuro"] .filtros button:hover{background:#3a3a3c}
 .filtros button.activo{background:#0071e3;color:#fff;border-color:#0071e3}
-main{max-width:1400px;margin:0 auto;padding:20px}
-.contador{color:#86868b;font-size:14px;margin-bottom:15px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
-.producto{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
-.producto:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.12)}
-.producto img{width:100%;height:200px;object-fit:contain;background:#f9f9f9;padding:12px}
-.producto .info{padding:14px;flex:1;display:flex;flex-direction:column}
-.producto .nombre{font-weight:600;font-size:14px;color:#1d1d1f;margin-bottom:8px;line-height:1.3;min-height:38px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
-.producto .tipo{font-size:11px;color:#86868b;text-transform:uppercase;margin-bottom:8px;letter-spacing:0.5px}
-.producto .precio{font-size:26px;font-weight:700;color:#0071e3;margin-bottom:12px}
-.producto .btn-ws{display:block;text-align:center;padding:12px;background:#25d366;color:#fff;text-decoration:none;font-size:14px;font-weight:700;border-radius:10px;margin-top:auto;transition:background .15s}
+
+/* MAIN */
+main{max-width:1400px;margin:0 auto;padding:16px 20px 20px;flex:1;width:100%}
+.contador{color:var(--texto-suave);font-size:14px;margin-bottom:16px;font-weight:500}
+
+/* GRILLA */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+
+/* TARJETA */
+.producto{background:var(--card-bg);border-radius:16px;overflow:hidden;box-shadow:0 2px 10px var(--sombra);transition:transform .2s,box-shadow .2s,background .3s;display:flex;flex-direction:column}
+.producto:hover{transform:translateY(-4px);box-shadow:0 10px 28px var(--sombra-hover)}
+.producto .img-wrap{width:100%;background:var(--img-bg);position:relative;padding-top:100%;overflow:hidden}
+.producto .img-wrap img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;padding:12px}
+.producto .info{padding:14px 14px 16px;flex:1;display:flex;flex-direction:column}
+.producto .nombre{font-weight:700;font-size:15px;color:var(--texto);margin-bottom:6px;line-height:1.35;min-height:40px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.producto .tipo{font-size:11px;color:var(--texto-suave);text-transform:uppercase;letter-spacing:0.6px;margin-bottom:10px;font-weight:600}
+.producto .precio{font-size:26px;font-weight:800;color:#0071e3;margin-bottom:14px;letter-spacing:-0.5px}
+.producto .btn-ws{display:block;text-align:center;padding:13px;background:#25d366;color:#fff;text-decoration:none;font-size:15px;font-weight:700;border-radius:12px;margin-top:auto;transition:background .15s;box-shadow:0 3px 10px rgba(37,211,102,.25)}
 .producto .btn-ws:hover{background:#1da851}
-.sin-resultados{text-align:center;padding:80px 20px;color:#86868b;font-size:16px}
-footer{background:#1d1d1f;color:#86868b;text-align:center;padding:30px 20px;margin-top:40px;font-size:13px}
+.producto .btn-ws:active{transform:scale(0.97)}
+
+/* SIN RESULTADOS */
+.sin-resultados{text-align:center;padding:80px 20px;color:var(--texto-suave);font-size:16px}
+
+/* FOOTER */
+footer{background:var(--footer-bg);color:var(--footer-texto);padding:28px 20px;margin-top:40px;text-align:center;font-size:13px;line-height:1.8;transition:background .3s}
+footer .footer-brand{color:var(--texto);font-weight:800;font-size:16px;margin-bottom:6px}
+:root[data-tema="oscuro"] footer .footer-brand{color:#f5f5f7}
+footer .footer-brand span{color:#0071e3}
+footer .footer-copy{margin-top:10px;font-size:12px}
+
+/* MOBILE */
+@media(max-width:900px){
+  .grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+}
 @media(max-width:600px){
-  header h1{font-size:20px}
-  .grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
-  .producto img{height:150px}
-  .producto .precio{font-size:20px}
-  .producto .nombre{font-size:13px}
+  header{padding:12px 14px}
+  .header-content{gap:10px}
+  .logo{font-size:20px}
+  .buscador{min-width:100%;order:3;flex-basis:100%}
+  .buscador input{padding:11px 16px;font-size:15px}
+  .btn-tema{width:38px;height:38px;font-size:18px}
+  .filtros{padding:12px 14px 6px;gap:6px}
+  .filtros button{padding:8px 15px;font-size:13px}
+  main{padding:12px 12px 16px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .producto{border-radius:14px}
+  .producto .img-wrap{padding-top:110%}
+  .producto .img-wrap img{padding:8px}
+  .producto .info{padding:10px 10px 12px}
+  .producto .nombre{font-size:13px;min-height:36px;margin-bottom:4px}
+  .producto .tipo{font-size:10px;margin-bottom:6px}
+  .producto .precio{font-size:22px;margin-bottom:10px}
+  .producto .btn-ws{padding:11px;font-size:13px;border-radius:10px}
+  .contador{font-size:13px;margin-bottom:10px}
+  footer{padding:24px 16px;font-size:12px}
+}
+@media(max-width:380px){
+  .grid{grid-template-columns:1fr;gap:14px}
+  .producto .img-wrap{padding-top:95%}
+  .producto .nombre{font-size:15px;min-height:auto}
+  .producto .precio{font-size:26px}
+  .producto .btn-ws{font-size:15px;padding:14px}
 }
 </style>
 </head>
 <body>
 <header>
   <div class="header-content">
-    <h1>Catálogo</h1>
+    <a href="/" class="logo">G<span>import</span></a>
     <div class="buscador">
-      <input type="text" id="buscar" placeholder="Buscar producto..." autocomplete="off">
+      <input type="text" id="buscar" placeholder="Buscar productos..." autocomplete="off">
     </div>
+    <button class="btn-tema" id="btn-tema" title="Cambiar tema" aria-label="Cambiar tema">🌙</button>
   </div>
 </header>
 <div class="filtros" id="filtros"></div>
@@ -57,13 +167,32 @@ footer{background:#1d1d1f;color:#86868b;text-align:center;padding:30px 20px;marg
   </div>
 </main>
 <footer>
+  <div class="footer-brand">G<span>import</span></div>
   <p>Consultá por WhatsApp para confirmar stock y coordinar la compra.</p>
+  <p class="footer-copy">© 2026 Gabitosila · Todos los derechos reservados</p>
 </footer>
 <script>
 const WHATSAPP_NUMERO = "5491100000000"; // <-- CAMBIAR POR TU NUMERO
 let catalogo = [];
 let filtroTipo = "";
 let busqueda = "";
+
+// TEMA CLARO/OSCURO
+const btnTema = document.getElementById('btn-tema');
+function actualizarIconoTema() {
+  const tema = document.documentElement.getAttribute('data-tema');
+  btnTema.textContent = tema === 'oscuro' ? '☀️' : '🌙';
+  btnTema.title = tema === 'oscuro' ? 'Modo claro' : 'Modo oscuro';
+}
+actualizarIconoTema();
+
+btnTema.addEventListener('click', () => {
+  const actual = document.documentElement.getAttribute('data-tema');
+  const nuevo = actual === 'oscuro' ? 'claro' : 'oscuro';
+  document.documentElement.setAttribute('data-tema', nuevo);
+  localStorage.setItem('tema', nuevo);
+  actualizarIconoTema();
+});
 
 function formatearPrecio(p) {
   return "$" + p.toLocaleString("es-AR", {maximumFractionDigits: 0});
@@ -98,7 +227,7 @@ function render() {
     return true;
   });
 
-  contador.textContent = `${filtrados.length} productos`;
+  contador.textContent = `${filtrados.length} producto${filtrados.length === 1 ? '' : 's'}`;
 
   if (filtrados.length === 0) {
     grid.innerHTML = "";
@@ -110,15 +239,16 @@ function render() {
   grid.innerHTML = filtrados.map(p => {
     const mensaje = encodeURIComponent(`Hola, me interesa: ${p.producto} (${formatearPrecio(p.precio_venta)})`);
     const wsUrl = `https://wa.me/${WHATSAPP_NUMERO}?text=${mensaje}`;
-    const desc = p.descripcion ? p.descripcion.substring(0, 100) + (p.descripcion.length > 100 ? '...' : '') : '';
     return `
       <div class="producto">
-        <img src="${p.imagen || ''}" alt="${p.producto}" loading="lazy" onerror="this.style.display='none'">
+        <div class="img-wrap">
+          <img src="${p.imagen || ''}" alt="${p.producto}" loading="lazy" onerror="this.style.opacity='0'">
+        </div>
         <div class="info">
           <div class="nombre">${p.producto}</div>
           <div class="tipo">${p.tipo || 'general'}</div>
           <div class="precio">${formatearPrecio(p.precio_venta)}</div>
-          <a href="${wsUrl}" target="_blank" class="btn-ws">Consultar por WhatsApp</a>
+          <a href="${wsUrl}" target="_blank" rel="noopener" class="btn-ws">Consultar por WhatsApp</a>
         </div>
       </div>
     `;
@@ -130,6 +260,7 @@ document.getElementById("buscar").addEventListener("input", e => {
   render();
 });
 
+// Actualizacion automatica del JSON: ?v=Date.now() fuerza a pedir la version nueva
 fetch("catalogo.json?v=" + Date.now())
   .then(r => r.json())
   .then(data => {
