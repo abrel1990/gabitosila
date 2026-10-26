@@ -1,0 +1,72 @@
+[
+  {
+    "producto": "0922  auriculares para compu",
+    "tipo": "auricular",
+    "descripcion": "",
+    "precio_venta": 1500.0,
+    "imagen": "https://danbella.com.ar/wp-content/uploads/2020/09/IMG_692520200912-161219-scaled.jpg"
+  },
+  {
+    "producto": "Auricular",
+    "tipo": "auricular",
+    "descripcion": "Auricular",
+    "precio_venta": 2000.0,
+    "imagen": "https://www.madu.com.ar/wp-content/uploads/2026/07/luken_9995.jpg"
+  },
+  {
+    "producto": "auricular infantil",
+    "tipo": "auricular",
+    "descripcion": "auricular infantil",
+    "precio_venta": 2000.0,
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-04-at-16.16.24.jpeg"
+  },
+  {
+    "producto": "Auriculares A9S Pro wireless",
+    "tipo": "auricular",
+    "descripcion": "",
+    "precio_venta": 6000.0,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/catalogo-de-auriculares-inalambricos-multicolor-cf57d9a3e70df573e317914006283329-1024-1024.webp"
+  },
+  {
+    "producto": "Auricular -Inpod I-12 - Comprar en Global Once",
+    "tipo": "auricular",
+    "descripcion": "",
+    "precio_venta": 6300.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-06-01-a-las-17-31-23-5336ff70b016b9684917803460088369-1024-1024.webp"
+  },
+  {
+    "producto": "Auricular -Tws F9 - Comprar en Global Once",
+    "tipo": "auricular",
+    "descripcion": "",
+    "precio_venta": 6300.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/img_4502-27e2bfffe018ec702717803464231506-1024-1024.webp"
+  },
+  {
+    "producto": "Auricular - E6S - Comprar en Global Once",
+    "tipo": "auricular",
+    "descripcion": "",
+    "precio_venta": 7500.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/photo-2025-04-04-12-14-27-17-245a0cf76a55eedc3917803456893530-1024-1024.webp"
+  },
+  {
+    "producto": "Auricular - Cat ear - Comprar en Global Once",
+    "tipo": "auricular",
+    "descripcion": "",
+    "precio_venta": 7500.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/ver-fotos-recientes-1-7f50d7d6d8bee2046217909540456146-1024-1024.webp"
+  },
+  {
+    "producto": "Auricular Kitty",
+    "tipo": "auricular",
+    "descripcion": "auricular kitty",
+    "precio_venta": 10800.0,
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2024/12/WhatsApp-Image-2026-09-09-at-18.42.01.jpeg"
+  },
+  {
+    "producto": "Auricular Mario",
+    "tipo": "auricular",
+    "descripcion": "auricular mario",
+    "precio_venta": 10800.0,
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2024/12/WhatsApp-Image-2026-09-09-at-18.41.11.jpeg"
+  }
+]
