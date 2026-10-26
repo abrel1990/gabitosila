@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="es" data-tema="oscuro">
 <head>
-<link rel="manifest" href="manifest.json">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Gimport">
-<link rel="apple-touch-icon" href="icono-192.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <title>Gimport</title>
+
+<!-- ETIQUETAS PARA INSTALAR COMO APP (PWA) -->
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icono-192.png">
+<link rel="apple-touch-icon" href="icono-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Gimport">
+<meta name="theme-color" content="#0a1128">
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;800&display=swap');
 
@@ -69,9 +74,10 @@ img {
 
 body{background-color:var(--bg);color:var(--texto);min-height:100vh;display:flex;flex-direction:column;transition:background .3s,color .3s;overflow-x:hidden;}
 
-header{background:var(--header-bg);backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px);padding:20px 24px;position:sticky;top:0;z-index:100;border-bottom:1px solid var(--card-border);transition:all .3s}
+header{background:var(--header-bg);backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px);padding:16px 24px;position:sticky;top:0;z-index:100;border-bottom:1px solid var(--card-border);transition:all .3s}
 .header-content{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
-.logo{font-family:'Outfit',sans-serif;font-size:36px;font-weight:800;letter-spacing:-1px;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none;flex-shrink:0;line-height:1;}
+.logo{flex-shrink:0;display:flex;align-items:center;text-decoration:none;}
+.logo img{height:44px;width:auto;border-radius:10px;box-shadow:0 2px 10px rgba(59,130,246,0.3);}
 .buscador{flex:1;min-width:200px}
 .buscador input{width:100%;padding:14px 24px;border:1px solid var(--card-border);border-radius:14px;font-size:15px;background:var(--input-bg);color:var(--texto);outline:none;transition:all .3s;}
 .buscador input:focus{border-color:var(--neon-1);box-shadow:0 0 0 3px rgba(59,130,246,0.2)}
@@ -117,11 +123,10 @@ main{max-width:1400px;margin:0 auto;padding:0 24px 50px;flex:1;width:100%}
 .contador{color:var(--texto-suave);font-size:13px;margin-bottom:20px;font-weight:600;text-transform:uppercase;letter-spacing:1px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px}
 
-/* TARJETAS MEJORADAS */
+/* TARJETAS */
 .producto{background:var(--card-bg);border-radius:20px;border:1px solid var(--card-border);padding:12px;display:flex;flex-direction:column;position:relative;transition:all .3s;box-shadow:var(--sombra-card);overflow:hidden;}
 .producto:hover{transform:translateY(-4px);border-color:var(--neon-1);}
 .producto .img-wrap{width:100%;background:var(--foto-bg);position:relative;padding-top:100%;overflow:hidden;border-radius:14px;margin-bottom:14px; cursor:pointer;}
-/* Object-fit cover para que llene el cuadro y no deje franjas feas */
 .producto .img-wrap img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;transition:transform .4s;}
 .producto:hover .img-wrap img{transform:scale(1.05)}
 .producto .info{display:flex;flex-direction:column;flex:1;}
@@ -138,8 +143,9 @@ main{max-width:1400px;margin:0 auto;padding:0 24px 50px;flex:1;width:100%}
 
 .sin-resultados{text-align:center;padding:80px 20px;color:var(--texto-suave);font-size:18px; font-family:'Outfit',sans-serif;}
 
+/* FOOTER */
 footer{background:var(--footer-bg);color:var(--texto-suave);padding:40px 24px;margin-top:auto;text-align:center;font-size:14px;line-height:1.8; border-top:1px solid var(--card-border);}
-footer .footer-brand{font-family:'Outfit',sans-serif;font-weight:800;font-size:24px;margin-bottom:8px;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent; display:inline-block;}
+footer .footer-logo {height: 40px; margin-bottom: 15px; border-radius: 8px;}
 footer .footer-copy{margin-top:16px;font-size:13px;}
 
 .lightbox{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(10,17,40,0.95);z-index:1000;align-items:center;justify-content:center;padding:20px;cursor:zoom-out;backdrop-filter:blur(10px); opacity:0; transition:opacity .3s}
@@ -188,7 +194,7 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 }
 @media(max-width:600px){
   header{padding:14px 16px}
-  .logo{font-size:28px}
+  .logo img{height: 38px;}
   .buscador{order:3;flex-basis:100%;margin-top:10px}
   .buscador input{padding:12px 16px;font-size:14px}
   .btn-icon{width:42px;height:42px;font-size:20px}
@@ -206,10 +212,11 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
   .producto .img-wrap{margin-bottom:8px;border-radius:10px}
   .producto .nombre{font-size:13px;min-height:34px;margin-bottom:4px}
   .producto .precio{font-size:18px;margin-bottom:10px}
-  .producto .acciones{flex-direction:row;gap:6px} /* Forzar fila en mobile */
+  .producto .acciones{flex-direction:row;gap:6px} 
   .producto .btn-ws, .producto .btn-agregar{padding:10px 0;font-size:11px;border-radius:8px; flex: 1 1 50%;}
   .modal-content{border-radius:16px;padding:20px}
   .carrito-panel{max-width:100%}
+  footer .footer-logo {height: 35px;}
 }
 @media(max-width:380px){
   .grid{grid-template-columns:1fr;gap:20px}
@@ -223,7 +230,9 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 
 <header>
   <div class="header-content">
-    <a href="/" class="logo">Gimport</a>
+    <a href="/" class="logo">
+      <img src="icono-192.png" alt="Gimport Logo">
+    </a>
     <div class="buscador">
       <input type="text" id="buscar" placeholder="Buscar tu próximo producto..." autocomplete="off">
     </div>
@@ -257,7 +266,7 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 </main>
 
 <footer>
-  <div class="footer-brand">Gimport</div>
+  <img src="icono-192.png" alt="Gimport Logo" class="footer-logo">
   <p>Consultá por WhatsApp para confirmar stock y coordinar la compra.</p>
   <p class="footer-copy">© 2026 Gabitosila · Todos los derechos reservados</p>
 </footer>
@@ -309,7 +318,6 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 </div>
 
 <script>
-// Evitar el menú contextual en las imágenes (para que no se pueda descargar)
 document.addEventListener('contextmenu', function(e) {
   if (e.target.tagName === 'IMG') {
     e.preventDefault();
