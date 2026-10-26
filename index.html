@@ -6,7 +6,6 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <title>Gimport</title>
 
-<!-- ETIQUETAS PARA INSTALAR COMO APP (PWA) -->
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" href="icono-192.png">
 <link rel="apple-touch-icon" href="icono-192.png">
@@ -48,6 +47,7 @@ img {
   --gradient-text: linear-gradient(90deg, #3b82f6, #8b5cf6);
   --btn-ws: linear-gradient(135deg, #25d366, #128c7e);
   --btn-cart: linear-gradient(135deg, #ef4444, #b91c1c);
+  --btn-fav: linear-gradient(135deg, #f59e0b, #d97706);
   --sombra-card: 0 8px 24px rgba(0,0,0,0.3);
   --foto-bg: #ffffff;
 }
@@ -66,6 +66,7 @@ img {
   --gradient-text: linear-gradient(90deg, #2563eb, #7c3aed);
   --btn-ws: linear-gradient(135deg, #25d366, #128c7e);
   --btn-cart: linear-gradient(135deg, #ef4444, #dc2626);
+  --btn-fav: linear-gradient(135deg, #f59e0b, #d97706);
   --sombra-card: 0 8px 24px rgba(15,23,42,0.08);
   --foto-bg: #ffffff;
 }
@@ -75,7 +76,6 @@ body{background-color:var(--bg);color:var(--texto);min-height:100vh;display:flex
 header{background:var(--header-bg);backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px);padding:16px 24px;position:sticky;top:0;z-index:100;border-bottom:1px solid var(--card-border);transition:all .3s}
 .header-content{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 
-/* ESTILOS DEL LOGO EN EL HEADER - PEGADO */
 .logo{flex-shrink:0;display:flex;align-items:center;text-decoration:none;gap:0;}
 .logo img{height:44px;width:auto;border-radius:10px 0 0 10px; margin-right: 0; box-shadow:0 2px 10px rgba(59,130,246,0.3);}
 .logo-texto{font-family:'Outfit',sans-serif;font-size:28px;font-weight:800;letter-spacing:-1px;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1; margin-left: -2px; padding-right: 4px;}
@@ -143,50 +143,31 @@ main{max-width:1400px;margin:0 auto;padding:0 24px 50px;flex:1;width:100%}
 
 .sin-resultados{text-align:center;padding:80px 20px;color:var(--texto-suave);font-size:18px; font-family:'Outfit',sans-serif;}
 
-/* FOOTER CON LOGO PEGADO */
 footer{background:var(--footer-bg);color:var(--texto-suave);padding:40px 24px;margin-top:auto;text-align:center;font-size:14px;line-height:1.8; border-top:1px solid var(--card-border);}
 .footer-logo-container {display: inline-flex; align-items: center; justify-content: center; gap: 0; margin-bottom: 12px;}
 .footer-logo-container img {height: 35px; width: auto; border-radius: 8px 0 0 8px;}
 .footer-logo-container .footer-texto {font-family:'Outfit',sans-serif;font-size:22px;font-weight:800;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent; margin-left: -2px; padding-right: 4px;}
 footer .footer-copy{margin-top:16px;font-size:13px;}
 
-/* LIGHTBOX */
+/* LIGHTBOX MEJORADO CON BOTONES */
 .lightbox{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(10,17,40,0.95);z-index:1000;align-items:center;justify-content:center;padding:20px;cursor:zoom-out;backdrop-filter:blur(10px); opacity:0; transition:opacity .3s}
 .lightbox.abierto{display:flex; opacity:1}
-.lightbox img{max-width:95vw;max-height:80vh;object-fit:contain;border-radius:16px;box-shadow:0 20px 40px rgba(0,0,0,0.5);}
-.lightbox .cerrar{position:absolute;top:24px;right:24px;background:rgba(255,255,255,0.1);color:#fff;border:none;width:48px;height:48px;border-radius:50%;font-size:24px;cursor:pointer;transition:all .3s}
+.lightbox-content{display:flex; flex-direction:column; align-items:center; width: 100%; max-width: 600px; cursor: default;}
+.lightbox img{max-width:95vw;max-height:60vh;object-fit:contain;border-radius:16px;box-shadow:0 20px 40px rgba(0,0,0,0.5);}
+.lightbox .cerrar{position:absolute;top:24px;right:24px;background:rgba(255,255,255,0.1);color:#fff;border:none;width:48px;height:48px;border-radius:50%;font-size:24px;cursor:pointer;transition:all .3s; z-index: 10;}
 .lightbox .cerrar:hover{background:var(--neon-1)}
-.lightbox .info{position:absolute;bottom:30px;left:20px;right:20px;text-align:center;color:#fff}
-.lightbox .info .nombre-lb{font-family:'Outfit',sans-serif;font-size:26px;font-weight:800;margin-bottom:8px;}
-.lightbox .info .precio-lb{font-size:32px;font-weight:900;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-.lightbox .info .desc-lb{font-size:14px;color:#cbd5e0;margin-top:12px;max-width:600px;margin-left:auto;margin-right:auto;line-height:1.5}
 
-/* CARRITO PANEL LATERAL */
-.carrito-panel{display:none;position:fixed;top:0;right:0;width:100%;max-width:400px;height:100vh;background:var(--card-bg);z-index:1001;box-shadow:-10px 0 30px rgba(0,0,0,0.5);flex-direction:column;border-left:1px solid var(--card-border)}
-.carrito-panel.abierto{display:flex; animation: slideIn .3s ease-out;}
-@keyframes slideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
-.carrito-header{padding:24px;border-bottom:1px solid var(--card-border);display:flex;justify-content:space-between;align-items:center}
-.carrito-header h2{font-family:'Outfit',sans-serif;font-size:22px;font-weight:800;}
-.carrito-cerrar{background:transparent;color:var(--texto-suave);border:none;font-size:26px;cursor:pointer;}
-.carrito-items{flex:1;overflow-y:auto;padding:24px}
-.carrito-vacio{text-align:center;color:var(--texto-suave);padding:40px 20px;font-size:16px; font-family:'Outfit',sans-serif;}
-.carrito-item{display:flex;gap:14px;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid var(--card-border);align-items:center}
-.carrito-item img{width:60px;height:60px;object-fit:contain;border-radius:10px;background:#fff;padding:4px;flex-shrink:0;}
-.carrito-item .detalle{flex:1;min-width:0}
-.carrito-item .det-nombre{font-size:14px;font-weight:600;color:var(--texto);margin-bottom:4px;line-height:1.3;}
-.carrito-item .det-precio{font-size:14px;font-weight:800;color:var(--neon-1)}
-.carrito-item .quitar{background:transparent;color:var(--texto-suave);border:none;font-size:22px;cursor:pointer;}
-.carrito-item .quitar:hover{color:#ef4444}
-.carrito-footer{padding:24px;border-top:1px solid var(--card-border)}
-.carrito-total{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
-.carrito-total .label{font-size:15px;font-weight:600;color:var(--texto-suave)}
-.carrito-total .monto{font-size:28px;font-weight:900;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-.carrito-ws{display:block;width:100%;padding:16px;background:var(--btn-ws);color:#fff;text-align:center;border-radius:12px;font-size:16px;font-weight:800;text-decoration:none;transition:opacity .2s; border:none; cursor:pointer;}
-.carrito-ws:hover{opacity:0.9}
-.carrito-ws:disabled{opacity:.5;pointer-events:none;}
+.lightbox .info{width: 100%; text-align:center;color:#fff; margin-top: 20px;}
+.lightbox .info .nombre-lb{font-family:'Outfit',sans-serif;font-size:26px;font-weight:800;margin-bottom:8px; line-height: 1.2;}
+.lightbox .info .precio-lb{font-size:32px;font-weight:900;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent; margin-bottom: 16px;}
+.lightbox .info .desc-lb{font-size:14px;color:#cbd5e0;margin-bottom: 20px; line-height:1.5; max-height: 80px; overflow-y: auto;}
 
-.overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(10,17,40,0.6);z-index:1000;backdrop-filter:blur(4px); opacity:0; transition:opacity .3s}
-.overlay.abierto{display:block; opacity:1}
+.lightbox .lb-acciones {display: flex; gap: 10px; width: 100%; justify-content: center; flex-wrap: wrap;}
+.lightbox .lb-acciones a, .lightbox .lb-acciones button {flex: 1; min-width: 120px; padding: 14px; border-radius: 12px; font-size: 14px; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none; border: none; font-family: 'Inter', sans-serif; color: #fff; transition: transform 0.2s;}
+.lightbox .lb-acciones .btn-ws-lb {background: var(--btn-ws); box-shadow: 0 4px 15px rgba(37,211,102,0.4);}
+.lightbox .lb-acciones .btn-cart-lb {background: var(--btn-cart); box-shadow: 0 4px 15px rgba(239,68,68,0.4);}
+.lightbox .lb-acciones .btn-fav-lb {background: var(--btn-fav); box-shadow: 0 4px 15px rgba(245,158,11,0.4);}
+.lightbox .lb-acciones a:hover, .lightbox .lb-acciones button:hover { transform: translateY(-2px);}
 
 @media(max-width:900px){
   .slider-track{height:320px}
@@ -223,6 +204,9 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
   .carrito-panel{max-width:100%}
   .footer-logo-container img {height: 30px;}
   .footer-logo-container .footer-texto {font-size: 20px;}
+  .lightbox img{max-height:45vh;}
+  .lightbox .lb-acciones {flex-direction: column;}
+  .lightbox .lb-acciones a, .lightbox .lb-acciones button {width: 100%;}
 }
 @media(max-width:380px){
   .grid{grid-template-columns:1fr;gap:20px}
@@ -303,11 +287,18 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 
 <div class="lightbox" id="lightbox">
   <button class="cerrar" id="lb-cerrar">×</button>
-  <img id="lb-img" src="" alt="">
-  <div class="info">
-    <div class="nombre-lb" id="lb-nombre"></div>
-    <div class="precio-lb" id="lb-precio"></div>
-    <div class="desc-lb" id="lb-desc"></div>
+  <div class="lightbox-content" onclick="event.stopPropagation()">
+    <img id="lb-img" src="" alt="">
+    <div class="info">
+      <div class="nombre-lb" id="lb-nombre"></div>
+      <div class="precio-lb" id="lb-precio"></div>
+      <div class="desc-lb" id="lb-desc"></div>
+      <div class="lb-acciones">
+        <a href="#" id="lb-btn-ws" target="_blank" class="btn-ws-lb">💬 Quiero</a>
+        <button id="lb-btn-cart" class="btn-cart-lb">🛒 + Carrito</button>
+        <button id="lb-btn-fav" class="btn-fav-lb">❤️ Favorito</button>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -344,6 +335,20 @@ let filtroTipo = "";
 let ordenActual = "aleatorio";
 let busqueda = "";
 let carrito = JSON.parse(localStorage.getItem('carrito') || '[]');
+let favoritos = JSON.parse(localStorage.getItem('favoritos') || '[]');
+let lightboxIdx = -1;
+
+// EL TRUCO DEL PROVEEDOR: Cortamos el nombre para sacar la sigla (ej: "AVL" o "MAD")
+function obtenerCodigoProveedor(nombre) {
+  const nombreUpper = nombre.toUpperCase();
+  if (nombreUpper.includes("GLOBAL ONCE")) return "GLO";
+  if (nombreUpper.includes("IMPORTADORA ELECTRO")) return "ELE";
+  if (nombreUpper.includes("MZ STORE")) return "MZ";
+  if (nombreUpper.includes("TECNO")) return "TEC";
+  if (nombreUpper.includes("CASA MEDILEN")) return "MED";
+  // Si no tiene el nombre, no mandamos código
+  return null; 
+}
 
 function limpiarTitulo(titulo) {
   if (!titulo) return "Producto";
@@ -375,27 +380,59 @@ function shuffle(array) {
 }
 
 // ==========================================
-// MANEJO DEL BOTÓN "ATRÁS" DEL CELULAR (HISTORY API)
+// LIGHTBOX CON BOTONES
 // ==========================================
 function abrirLightbox(idx) {
+  lightboxIdx = idx;
   const p = catalogo[idx];
+  const tituloLimpio = limpiarTitulo(p.producto);
+  const codProv = obtenerCodigoProveedor(p.producto);
+  const codigoFinal = codProv ? ` [Cod: ${codProv}-${idx}]` : ` [Cod: #${idx}]`;
+
   document.getElementById("lb-img").src = p.imagen;
-  document.getElementById("lb-nombre").textContent = limpiarTitulo(p.producto);
+  document.getElementById("lb-nombre").textContent = tituloLimpio;
   document.getElementById("lb-precio").textContent = formatearPrecio(p.precio_venta);
   document.getElementById("lb-desc").textContent = p.descripcion || "";
+
+  // Configurar botón WhatsApp del lightbox
+  const mensajeWS = `Hola, quiero consultar por este producto:\n\n${tituloLimpio}${codigoFinal}\nPrecio: ${formatearPrecio(p.precio_venta)}`;
+  document.getElementById("lb-btn-ws").href = `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensajeWS)}`;
+
+  // Configurar botón Carrito del lightbox
+  const btnCart = document.getElementById("lb-btn-cart");
+  const enCarrito = carrito.some(i => i.id === idx);
+  btnCart.textContent = enCarrito ? '✓ En Carrito' : '🛒 + Carrito';
+  btnCart.style.background = enCarrito ? '#10b981' : 'var(--btn-cart)';
+  btnCart.onclick = () => {
+    agregarAlCarrito(idx, true);
+    btnCart.textContent = '✓ En Carrito';
+    btnCart.style.background = '#10b981';
+  };
+
+  // Configurar botón Favorito del lightbox
+  const btnFav = document.getElementById("lb-btn-fav");
+  const esFav = favoritos.includes(idx);
+  btnFav.textContent = esFav ? '❤️ Guardado' : '🤍 Favorito';
+  btnFav.style.background = esFav ? '#ef4444' : 'var(--btn-fav)';
+  btnFav.onclick = () => {
+    toggleFavorito(idx);
+    const ahoraFav = favoritos.includes(idx);
+    btnFav.textContent = ahoraFav ? '❤️ Guardado' : '🤍 Favorito';
+    btnFav.style.background = ahoraFav ? '#ef4444' : 'var(--btn-fav)';
+  };
+
   document.getElementById("lightbox").classList.add("abierto");
-  
-  // Empujamos un estado para que el botón "Atrás" del celular lo detecte
   history.pushState({ modal: "lightbox" }, "");
 }
 
 function cerrarLightboxDesdeBoton() {
   document.getElementById("lightbox").classList.remove("abierto");
+  lightboxIdx = -1;
 }
 
 document.getElementById("lb-cerrar").addEventListener("click", () => {
   cerrarLightboxDesdeBoton();
-  history.back(); // Le decimos al historial que retroceda para limpiar el estado
+  history.back(); 
 });
 
 document.getElementById("lightbox").addEventListener("click", (e) => { 
@@ -405,7 +442,18 @@ document.getElementById("lightbox").addEventListener("click", (e) => {
   }
 });
 
-// Lo mismo para el carrito
+// ==========================================
+// CARRITO Y FAVORITOS
+// ==========================================
+function toggleFavorito(idx) {
+  if (favoritos.includes(idx)) {
+    favoritos = favoritos.filter(i => i !== idx);
+  } else {
+    favoritos.push(idx);
+  }
+  localStorage.setItem('favoritos', JSON.stringify(favoritos));
+}
+
 function abrirCarrito() {
   document.getElementById("carrito-panel").classList.add("abierto");
   document.getElementById("overlay").classList.add("abierto");
@@ -427,18 +475,14 @@ document.getElementById("overlay").addEventListener("click", () => {
   history.back();
 });
 
-// Escuchamos el botón "Atrás" del celular
 window.addEventListener("popstate", (e) => {
-  // Si el lightbox está abierto, lo cerramos
   if (document.getElementById("lightbox").classList.contains("abierto")) {
     cerrarLightboxDesdeBoton();
   }
-  // Si el carrito está abierto, lo cerramos
   if (document.getElementById("carrito-panel").classList.contains("abierto")) {
     cerrarCarritoDesdeBoton();
   }
 });
-// ==========================================
 
 const btnTema = document.getElementById('btn-tema');
 btnTema.addEventListener('click', () => {
@@ -554,15 +598,32 @@ function actualizarBadgeCarrito() {
   if (total > 0) { badge.textContent = total; badge.style.display = "flex"; }
   else { badge.style.display = "none"; }
 }
-function agregarAlCarrito(idx) {
+
+function agregarAlCarrito(idx, desdeLightbox = false) {
   const prod = catalogo[idx];
   const prodLimpio = limpiarTitulo(prod.producto);
-  const existe = carrito.find(i => i.producto === prodLimpio && i.precio_venta === prod.precio_venta);
+  const codProv = obtenerCodigoProveedor(prod.producto);
+  const codigoFinal = codProv ? ` [Cod: ${codProv}-${idx}]` : ` [Cod: #${idx}]`;
+
+  const existe = carrito.find(i => i.id === idx);
   if (existe) { existe.cantidad += 1; }
-  else { carrito.push({ producto: prodLimpio, precio_venta: prod.precio_venta, imagen: prod.imagen, cantidad: 1 }); }
-  guardarCarrito(); renderCarrito(); render();
+  else { 
+    carrito.push({ 
+      id: idx,
+      producto: prodLimpio + codigoFinal, // Guardamos el nombre limpio y el código secreto
+      precio_venta: prod.precio_venta, 
+      imagen: prod.imagen, 
+      cantidad: 1 
+    }); 
+  }
+  guardarCarrito(); renderCarrito(); 
+  if(!desdeLightbox) render();
 }
-function quitarDelCarrito(idx) { carrito.splice(idx, 1); guardarCarrito(); renderCarrito(); render(); }
+
+function quitarDelCarrito(idx) { 
+  carrito.splice(idx, 1); 
+  guardarCarrito(); renderCarrito(); render(); 
+}
 
 function renderCarrito() {
   const cont = document.getElementById("carrito-items");
@@ -620,9 +681,14 @@ function render() {
   grid.innerHTML = filtrados.map(p => {
     const idx = catalogo.indexOf(p);
     const tituloLimpio = limpiarTitulo(p.producto);
-    const mensaje = encodeURIComponent(`Hola, me interesa: ${tituloLimpio} (${formatearPrecio(p.precio_venta)})`);
+    
+    // CÓDIGO SECRETO PARA EL WHATSAPP
+    const codProv = obtenerCodigoProveedor(p.producto);
+    const codigoFinal = codProv ? ` [Cod: ${codProv}-${idx}]` : ` [Cod: #${idx}]`;
+
+    const mensaje = encodeURIComponent(`Hola, me interesa: ${tituloLimpio}${codigoFinal} (${formatearPrecio(p.precio_venta)})`);
     const wsUrl = `https://wa.me/${WHATSAPP_NUMERO}?text=${mensaje}`;
-    const enCarrito = carrito.some(i => i.producto === tituloLimpio && i.precio_venta === p.precio_venta);
+    const enCarrito = carrito.some(i => i.id === idx);
     
     return `
       <div class="producto">
