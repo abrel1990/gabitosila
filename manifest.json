@@ -1,8 +1,7 @@
 {
-  "name": "Gimport - Catálogo",
+  "name": "Gimport",
   "short_name": "Gimport",
-  "description": "Catálogo de productos Gimport",
-  "start_url": "/",
+  "start_url": "/gabitosila/",
   "display": "standalone",
   "background_color": "#0a1128",
   "theme_color": "#0a1128",
