@@ -75,10 +75,10 @@ body{background-color:var(--bg);color:var(--texto);min-height:100vh;display:flex
 header{background:var(--header-bg);backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px);padding:16px 24px;position:sticky;top:0;z-index:100;border-bottom:1px solid var(--card-border);transition:all .3s}
 .header-content{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 
-/* ESTILOS DEL LOGO EN EL HEADER */
-.logo{flex-shrink:0;display:flex;align-items:center;text-decoration:none;gap:8px;}
-.logo img{height:44px;width:auto;border-radius:10px;box-shadow:0 2px 10px rgba(59,130,246,0.3);}
-.logo-texto{font-family:'Outfit',sans-serif;font-size:28px;font-weight:800;letter-spacing:-1px;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;}
+/* ESTILOS DEL LOGO EN EL HEADER - PEGADO */
+.logo{flex-shrink:0;display:flex;align-items:center;text-decoration:none;gap:0;}
+.logo img{height:44px;width:auto;border-radius:10px 0 0 10px; margin-right: 0; box-shadow:0 2px 10px rgba(59,130,246,0.3);}
+.logo-texto{font-family:'Outfit',sans-serif;font-size:28px;font-weight:800;letter-spacing:-1px;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1; margin-left: -2px; padding-right: 4px;}
 
 .buscador{flex:1;min-width:200px}
 .buscador input{width:100%;padding:14px 24px;border:1px solid var(--card-border);border-radius:14px;font-size:15px;background:var(--input-bg);color:var(--texto);outline:none;transition:all .3s;}
@@ -143,13 +143,14 @@ main{max-width:1400px;margin:0 auto;padding:0 24px 50px;flex:1;width:100%}
 
 .sin-resultados{text-align:center;padding:80px 20px;color:var(--texto-suave);font-size:18px; font-family:'Outfit',sans-serif;}
 
-/* FOOTER CON LOGO */
+/* FOOTER CON LOGO PEGADO */
 footer{background:var(--footer-bg);color:var(--texto-suave);padding:40px 24px;margin-top:auto;text-align:center;font-size:14px;line-height:1.8; border-top:1px solid var(--card-border);}
-.footer-logo-container {display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 12px;}
-.footer-logo-container img {height: 35px; width: auto; border-radius: 8px;}
-.footer-logo-container .footer-texto {font-family:'Outfit',sans-serif;font-size:22px;font-weight:800;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.footer-logo-container {display: inline-flex; align-items: center; justify-content: center; gap: 0; margin-bottom: 12px;}
+.footer-logo-container img {height: 35px; width: auto; border-radius: 8px 0 0 8px;}
+.footer-logo-container .footer-texto {font-family:'Outfit',sans-serif;font-size:22px;font-weight:800;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent; margin-left: -2px; padding-right: 4px;}
 footer .footer-copy{margin-top:16px;font-size:13px;}
 
+/* LIGHTBOX */
 .lightbox{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(10,17,40,0.95);z-index:1000;align-items:center;justify-content:center;padding:20px;cursor:zoom-out;backdrop-filter:blur(10px); opacity:0; transition:opacity .3s}
 .lightbox.abierto{display:flex; opacity:1}
 .lightbox img{max-width:95vw;max-height:80vh;object-fit:contain;border-radius:16px;box-shadow:0 20px 40px rgba(0,0,0,0.5);}
@@ -160,6 +161,7 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 .lightbox .info .precio-lb{font-size:32px;font-weight:900;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
 .lightbox .info .desc-lb{font-size:14px;color:#cbd5e0;margin-top:12px;max-width:600px;margin-left:auto;margin-right:auto;line-height:1.5}
 
+/* CARRITO PANEL LATERAL */
 .carrito-panel{display:none;position:fixed;top:0;right:0;width:100%;max-width:400px;height:100vh;background:var(--card-bg);z-index:1001;box-shadow:-10px 0 30px rgba(0,0,0,0.5);flex-direction:column;border-left:1px solid var(--card-border)}
 .carrito-panel.abierto{display:flex; animation: slideIn .3s ease-out;}
 @keyframes slideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
@@ -372,6 +374,72 @@ function shuffle(array) {
   return array;
 }
 
+// ==========================================
+// MANEJO DEL BOTÓN "ATRÁS" DEL CELULAR (HISTORY API)
+// ==========================================
+function abrirLightbox(idx) {
+  const p = catalogo[idx];
+  document.getElementById("lb-img").src = p.imagen;
+  document.getElementById("lb-nombre").textContent = limpiarTitulo(p.producto);
+  document.getElementById("lb-precio").textContent = formatearPrecio(p.precio_venta);
+  document.getElementById("lb-desc").textContent = p.descripcion || "";
+  document.getElementById("lightbox").classList.add("abierto");
+  
+  // Empujamos un estado para que el botón "Atrás" del celular lo detecte
+  history.pushState({ modal: "lightbox" }, "");
+}
+
+function cerrarLightboxDesdeBoton() {
+  document.getElementById("lightbox").classList.remove("abierto");
+}
+
+document.getElementById("lb-cerrar").addEventListener("click", () => {
+  cerrarLightboxDesdeBoton();
+  history.back(); // Le decimos al historial que retroceda para limpiar el estado
+});
+
+document.getElementById("lightbox").addEventListener("click", (e) => { 
+  if (e.target.id === "lightbox") {
+    cerrarLightboxDesdeBoton();
+    history.back();
+  }
+});
+
+// Lo mismo para el carrito
+function abrirCarrito() {
+  document.getElementById("carrito-panel").classList.add("abierto");
+  document.getElementById("overlay").classList.add("abierto");
+  history.pushState({ modal: "carrito" }, "");
+}
+
+function cerrarCarritoDesdeBoton() {
+  document.getElementById("carrito-panel").classList.remove("abierto");
+  document.getElementById("overlay").classList.remove("abierto");
+}
+
+document.getElementById("btn-carrito").addEventListener("click", abrirCarrito);
+document.getElementById("carrito-cerrar").addEventListener("click", () => {
+  cerrarCarritoDesdeBoton();
+  history.back();
+});
+document.getElementById("overlay").addEventListener("click", () => {
+  cerrarCarritoDesdeBoton();
+  history.back();
+});
+
+// Escuchamos el botón "Atrás" del celular
+window.addEventListener("popstate", (e) => {
+  // Si el lightbox está abierto, lo cerramos
+  if (document.getElementById("lightbox").classList.contains("abierto")) {
+    cerrarLightboxDesdeBoton();
+  }
+  // Si el carrito está abierto, lo cerramos
+  if (document.getElementById("carrito-panel").classList.contains("abierto")) {
+    cerrarCarritoDesdeBoton();
+  }
+});
+// ==========================================
+
 const btnTema = document.getElementById('btn-tema');
 btnTema.addEventListener('click', () => {
   const actual = document.documentElement.getAttribute('data-tema');
@@ -526,10 +594,6 @@ function renderCarrito() {
   totalEl.textContent = formatearPrecio(total);
   wsBtn.href = `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensajeWS)}`;
 }
-document.getElementById("btn-carrito").addEventListener("click", () => { document.getElementById("carrito-panel").classList.add("abierto"); document.getElementById("overlay").classList.add("abierto"); });
-document.getElementById("carrito-cerrar").addEventListener("click", cerrarCarrito);
-document.getElementById("overlay").addEventListener("click", cerrarCarrito);
-function cerrarCarrito() { document.getElementById("carrito-panel").classList.remove("abierto"); document.getElementById("overlay").classList.remove("abierto"); }
 
 function render() {
   const grid = document.getElementById("grid");
@@ -577,17 +641,6 @@ function render() {
     `;
   }).join("");
 }
-
-function abrirLightbox(idx) {
-  const p = catalogo[idx];
-  document.getElementById("lb-img").src = p.imagen;
-  document.getElementById("lb-nombre").textContent = limpiarTitulo(p.producto);
-  document.getElementById("lb-precio").textContent = formatearPrecio(p.precio_venta);
-  document.getElementById("lb-desc").textContent = p.descripcion || "";
-  document.getElementById("lightbox").classList.add("abierto");
-}
-document.getElementById("lb-cerrar").addEventListener("click", () => document.getElementById("lightbox").classList.remove("abierto"));
-document.getElementById("lightbox").addEventListener("click", (e) => { if (e.target.id === "lightbox") document.getElementById("lightbox").classList.remove("abierto"); });
 
 document.getElementById("buscar").addEventListener("input", e => { busqueda = e.target.value.toLowerCase().trim(); render(); });
 
