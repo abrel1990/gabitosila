@@ -1,6 +1,30 @@
 [
   {
     "id": 0,
+    "producto": "0922  auriculares para compu",
+    "tipo": "auricular",
+    "descripcion": "",
+    "precio_venta": 1500.0,
+    "imagen": "https://danbella.com.ar/wp-content/uploads/2020/09/IMG_692520200912-161219-scaled.jpg"
+  },
+  {
+    "id": 1,
+    "producto": "auricular infantil",
+    "tipo": "auricular",
+    "descripcion": "",
+    "precio_venta": 2500.0,
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-04-at-16.16.24.jpeg"
+  },
+  {
+    "id": 2,
+    "producto": "Auricular",
+    "tipo": "auricular",
+    "descripcion": "",
+    "precio_venta": 2500.0,
+    "imagen": "https://www.madu.com.ar/wp-content/uploads/2026/07/luken_9995.jpg"
+  },
+  {
+    "id": 3,
     "producto": "Masajeador Mini para Cuello y Espalda con Calor y 8 Modos",
     "tipo": "masajeador",
     "descripcion": "",
@@ -8,7 +32,15 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-10-22-a-las-4-30-40ap-am-2db13d5285a7d921a917927011928624-1024-1024.webp"
   },
   {
-    "id": 1,
+    "id": 4,
+    "producto": "Espejo Adhesivo Cuadrado de 20x20cm Irrompible",
+    "tipo": "espejo",
+    "descripcion": "",
+    "precio_venta": 4000.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/square_flexible_mirror_advertise_202609041513-1a9eaa7d7887b2f36217885456011470-1024-1024.webp"
+  },
+  {
+    "id": 5,
     "producto": "Depilador sin dolor USB para cara y axilas, ideal viaje",
     "tipo": "depiladora",
     "descripcion": "",
@@ -16,7 +48,15 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/47-24835fda112625b56717774739264956-1024-1024.webp"
   },
   {
-    "id": 2,
+    "id": 6,
+    "producto": "Depiladora de Cejas Recargable USB con Luz y Sin Dolor",
+    "tipo": "depiladora",
+    "descripcion": "",
+    "precio_venta": 5500.0,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-17-sept-2026-13_04_05-dbaa85d8b2e5ec72cf17896610734661-1024-1024.webp"
+  },
+  {
+    "id": 7,
     "producto": "Candado Alpine Skate",
     "tipo": "candado",
     "descripcion": "",
@@ -24,7 +64,15 @@
     "imagen": "https://www.madu.com.ar/wp-content/uploads/2026/08/850-17204-e24efea16e08a1cf9217309863750885-1024-1024.webp"
   },
   {
-    "id": 3,
+    "id": 8,
+    "producto": "Bombillo Lampara Led Plegable 4 Aspas Alta Iluminación",
+    "tipo": "lampara",
+    "descripcion": "",
+    "precio_venta": 6000.0,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/bombillo3-1d0653c56d5add0ec016612647260262-1024-1024.webp"
+  },
+  {
+    "id": 9,
     "producto": "Masajeador electro estimulador abdominales",
     "tipo": "masajeador",
     "descripcion": "",
@@ -32,7 +80,7 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/collage-publicitario-del-entrenador-ems-28618660d55eb6968117926065240101-1024-1024.webp"
   },
   {
-    "id": 4,
+    "id": 10,
     "producto": "AFEITADORA MINI C/USB X-962 9628 - MING Mayorista",
     "tipo": "afeitadora",
     "descripcion": "",
@@ -40,7 +88,31 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-01-21-at-16-58-11-c277350f2dfe35c72217690269810388-1024-1024.webp"
   },
   {
-    "id": 5,
+    "id": 11,
+    "producto": "Auriculares A9S Pro wireless",
+    "tipo": "auricular",
+    "descripcion": "",
+    "precio_venta": 7000.0,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/catalogo-de-auriculares-inalambricos-multicolor-cf57d9a3e70df573e317914006283329-1024-1024.webp"
+  },
+  {
+    "id": 12,
+    "producto": "Auricular -Inpod I-12 - Comprar en Global Once",
+    "tipo": "auricular",
+    "descripcion": "",
+    "precio_venta": 7000.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-06-01-a-las-17-31-23-5336ff70b016b9684917803460088369-1024-1024.webp"
+  },
+  {
+    "id": 13,
+    "producto": "Auricular -Tws F9 - Comprar en Global Once",
+    "tipo": "auricular",
+    "descripcion": "",
+    "precio_venta": 7000.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/img_4502-27e2bfffe018ec702717803464231506-1024-1024.webp"
+  },
+  {
+    "id": 14,
     "producto": "Balanza de cocina 10k - Importadora Electro Mayorista",
     "tipo": "balanza",
     "descripcion": "",
@@ -48,7 +120,55 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-19-may-2026-16_39_55-1911f8427c58bbd04717792196106194-1024-1024.webp"
   },
   {
-    "id": 6,
+    "id": 15,
+    "producto": "Depiladora Facial 2 en 1 Recargable para Cejas y Cuerpo",
+    "tipo": "depiladora",
+    "descripcion": "",
+    "precio_venta": 7500.0,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/d_nq_np_2x_642735-mla81228823218_122024-f-1487515184745c897417467165673485-480-0-88b11ef6d4138ba16b17582075509589-1024-1024.webp"
+  },
+  {
+    "id": 16,
+    "producto": "Depiladora Facial y de Cejas 2 en 1 Recargable USB",
+    "tipo": "depiladora",
+    "descripcion": "",
+    "precio_venta": 8000.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/white_vanity_table_with_depiladora_20261019155659-2a726ab8cc8cb1ddd017924362336727-1024-1024.webp"
+  },
+  {
+    "id": 17,
+    "producto": "Auricular - E6S - Comprar en Global Once",
+    "tipo": "auricular",
+    "descripcion": "",
+    "precio_venta": 8000.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/photo-2025-04-04-12-14-27-17-245a0cf76a55eedc3917803456893530-1024-1024.webp"
+  },
+  {
+    "id": 18,
+    "producto": "Auricular - Cat ear - Comprar en Global Once",
+    "tipo": "auricular",
+    "descripcion": "",
+    "precio_venta": 8500.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/ver-fotos-recientes-1-7f50d7d6d8bee2046217909540456146-1024-1024.webp"
+  },
+  {
+    "id": 19,
+    "producto": "Lampara para mosquitos 15w",
+    "tipo": "lampara",
+    "descripcion": "",
+    "precio_venta": 8500.0,
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2026/03/lamp.png"
+  },
+  {
+    "id": 20,
+    "producto": "Parlante Bluetooth Portátil 3&quot; con Radio FM, Luces, USB y Micro SD",
+    "tipo": "parlante",
+    "descripcion": "",
+    "precio_venta": 9000.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/speaker_on_desk_20260924125907-77d7ea9bded6d0223f17902655688102-1024-1024.webp"
+  },
+  {
+    "id": 21,
     "producto": "Termo Con Sensor De Temperatura Botella Térmica De 500 Ml Para Agua T",
     "tipo": "termo",
     "descripcion": "",
@@ -56,7 +176,15 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2023-07-19-1708291-73c1551c57851d8a6716898621716215-1024-1024.webp"
   },
   {
-    "id": 7,
+    "id": 22,
+    "producto": "Mini parlante karaoke portátil con microfono",
+    "tipo": "parlante",
+    "descripcion": "",
+    "precio_venta": 11000.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/img_4725-04c4e4f6fee03fcb3517815633258197-1024-1024.webp"
+  },
+  {
+    "id": 23,
     "producto": "Balanza bluetooth de baño digital hasta 180k",
     "tipo": "balanza",
     "descripcion": "",
@@ -64,7 +192,31 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-15-abr-2026-15_57_25-38516fbbaec515604b17828355457476-1024-1024.png"
   },
   {
-    "id": 8,
+    "id": 24,
+    "producto": "Planchita de Pelo Profesional NITSUK 45W 4 Temperaturas",
+    "tipo": "planchita",
+    "descripcion": "",
+    "precio_venta": 12000.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/flat_iron_on_marble_vanity_20260930135216-73cdb782af612513c417907871666666-1024-1024.webp"
+  },
+  {
+    "id": 25,
+    "producto": "Auricular Kitty",
+    "tipo": "auricular",
+    "descripcion": "",
+    "precio_venta": 12000.0,
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2024/12/WhatsApp-Image-2026-09-09-at-18.42.01.jpeg"
+  },
+  {
+    "id": 26,
+    "producto": "Auricular Mario",
+    "tipo": "auricular",
+    "descripcion": "",
+    "precio_venta": 12000.0,
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2024/12/WhatsApp-Image-2026-09-09-at-18.41.11.jpeg"
+  },
+  {
+    "id": 27,
     "producto": "Termo térmico 500ml con 3 tazas de acero inoxidable",
     "tipo": "termo",
     "descripcion": "",
@@ -72,7 +224,63 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-01-07-a-las-10-56-37a-m-3183f9f6609a71af9217678034038312-1024-1024.webp"
   },
   {
-    "id": 9,
+    "id": 28,
+    "producto": "Depiladora 2 en 1 facial corporal recargable",
+    "tipo": "depiladora",
+    "descripcion": "",
+    "precio_venta": 13500.0,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/depiladora-facial-lavanda-en-uso-7da881f5110412a99d17919861342862-1024-1024.webp"
+  },
+  {
+    "id": 29,
+    "producto": "Planchita de pelo HL2580",
+    "tipo": "planchita",
+    "descripcion": "",
+    "precio_venta": 14500.0,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-18-sept-2026-12_06_52-ba831e30d0b266999117897443540385-1024-1024.webp"
+  },
+  {
+    "id": 30,
+    "producto": "Afeitadora 3 en 1 ONICA OA-CP205 Recargable con Patillera",
+    "tipo": "afeitadora",
+    "descripcion": "",
+    "precio_venta": 17500.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/shaver_device_on_bathroom_counter_20261017135910-4d781e347b00c42a4817922564409832-1024-1024.webp"
+  },
+  {
+    "id": 31,
+    "producto": "Hielera con parlante - Comprar en Global Once",
+    "tipo": "parlante",
+    "descripcion": "",
+    "precio_venta": 20000.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-06-01-a-las-18-20-19-8d4e83f2e8719a57d517803488612749-1024-1024.webp"
+  },
+  {
+    "id": 32,
+    "producto": "Afeitadora 3 en 1 Inalámbrica Recargable con Recortador de Nariz",
+    "tipo": "afeitadora",
+    "descripcion": "",
+    "precio_venta": 20000.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/img_3185-420be284994827ee0317901902372966-1024-1024.webp"
+  },
+  {
+    "id": 33,
+    "producto": "Batidora de mano - Scarlett - Comprar en Global Once",
+    "tipo": "batidora",
+    "descripcion": "",
+    "precio_venta": 20000.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/whatsapp-image-2026-05-03-at-22-50-34-65191424bc1c67ea0b17803330491759-1024-1024.webp"
+  },
+  {
+    "id": 34,
+    "producto": "Afeitadora y Rasuradora electrica recargable - Double",
+    "tipo": "afeitadora",
+    "descripcion": "",
+    "precio_venta": 20000.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-08-21-a-las-11-54-03-a0a1b8759c5761648017873459268346-1024-1024.webp"
+  },
+  {
+    "id": 35,
     "producto": "Candado Huella Dactilar Oferta!",
     "tipo": "candado",
     "descripcion": "",
@@ -80,7 +288,15 @@
     "imagen": "https://www.madu.com.ar/wp-content/uploads/2026/07/luken_14900.jpg"
   },
   {
-    "id": 10,
+    "id": 36,
+    "producto": "Sandwichera electrica Oryx",
+    "tipo": "sandwichera",
+    "descripcion": "",
+    "precio_venta": 29500.0,
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2026/03/Gemini_Generated_Image_j3g5bdj3g5bdj3g5.jpeg"
+  },
+  {
+    "id": 37,
     "producto": "Depiladora IPL laser - Importadora Electro Mayorista",
     "tipo": "depiladora",
     "descripcion": "",
@@ -88,7 +304,7 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/6428cf2f-d00e-4db4-a9b6-44635b9c302e-f1709437539a2f618417603729146590-1024-1024.webp"
   },
   {
-    "id": 11,
+    "id": 38,
     "producto": "Mano masajeadora - Importadora Electro Mayorista",
     "tipo": "masajeador",
     "descripcion": "",
