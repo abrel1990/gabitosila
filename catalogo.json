@@ -161,6 +161,14 @@
   },
   {
     "id": 20,
+    "producto": "Balanza de cocina 10k - Importadora Electro Mayorista",
+    "tipo": "balanza",
+    "descripcion": "",
+    "precio_venta": 7500.0,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/bascula-de-cocina-digital-sf-400-e37aba4fdf0c30946717913137709985-1024-1024.webp"
+  },
+  {
+    "id": 21,
     "producto": "Auriculares A9S Pro wireless",
     "tipo": "auricular",
     "descripcion": "",
@@ -168,7 +176,7 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/catalogo-de-auriculares-inalambricos-multicolor-cf57d9a3e70df573e317914006283329-1024-1024.webp"
   },
   {
-    "id": 21,
+    "id": 22,
     "producto": "Depiladora 2 en 1 facial corporal recargable",
     "tipo": "depiladora",
     "descripcion": "",
@@ -176,7 +184,7 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/depiladora-facial-lavanda-en-uso-7da881f5110412a99d17919861342862-1024-1024.webp"
   },
   {
-    "id": 22,
+    "id": 23,
     "producto": "Masajeador electro estimulador abdominales",
     "tipo": "masajeador",
     "descripcion": "",
@@ -184,7 +192,7 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/collage-publicitario-del-entrenador-ems-28618660d55eb6968117926065240101-1024-1024.webp"
   },
   {
-    "id": 23,
+    "id": 24,
     "producto": "Bombillo Lampara Led Plegable 4 Aspas Alta Iluminación",
     "tipo": "lampara",
     "descripcion": "",
@@ -192,7 +200,23 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/bombillo3-1d0653c56d5add0ec016612647260262-1024-1024.webp"
   },
   {
-    "id": 24,
+    "id": 25,
+    "producto": "Balanza Corporal Inteligente Bluetooth - Medidor Preciso de Grasa",
+    "tipo": "balanza",
+    "descripcion": "",
+    "precio_venta": 14000.0,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/balanza221-0a92e4244f7aba367516612748723307-1024-1024.webp"
+  },
+  {
+    "id": 26,
+    "producto": "Batidor Electrico Manual leche",
+    "tipo": "batidora",
+    "descripcion": "",
+    "precio_venta": 3000.0,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/batidorel21-e01bd579b4a5e5580816612756316250-1024-1024.webp"
+  },
+  {
+    "id": 27,
     "producto": "Máquina Corta Pelo Gold Dragon: Recortadora Precisa y Recargable",
     "tipo": "procesadora",
     "descripcion": "",
@@ -200,7 +224,7 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/gold-11-ab453b0bb2665244b916856462108287-1024-1024.webp"
   },
   {
-    "id": 25,
+    "id": 28,
     "producto": "Termo Con Sensor De Temperatura Botella Térmica De 500 Ml Para Agua T",
     "tipo": "termo",
     "descripcion": "",
@@ -208,7 +232,15 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2023-07-19-1708291-73c1551c57851d8a6716898621716215-1024-1024.webp"
   },
   {
-    "id": 26,
+    "id": 29,
+    "producto": "Taza Térmica Batidora Automática Magnética Café",
+    "tipo": "batidora",
+    "descripcion": "",
+    "precio_venta": 19500.0,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-03-12-a-las-12-25-42p-m-f638c2bc158847174d17733328485526-1024-1024.webp"
+  },
+  {
+    "id": 30,
     "producto": "Depilador sin dolor USB para cara y axilas, ideal viaje",
     "tipo": "depiladora",
     "descripcion": "",
@@ -216,7 +248,7 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/47-24835fda112625b56717774739264956-1024-1024.webp"
   },
   {
-    "id": 27,
+    "id": 31,
     "producto": "Soporte Magnético Extensible para Celular con Rotación 360°",
     "tipo": "soporte",
     "descripcion": "",
@@ -224,7 +256,7 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2025-11-04-a-las-11-15-55a-m-959cc4105ea500a76517622862472483-1024-1024.webp"
   },
   {
-    "id": 28,
+    "id": 32,
     "producto": "Termo térmico 500ml con 3 tazas de acero inoxidable",
     "tipo": "termo",
     "descripcion": "",
@@ -232,7 +264,7 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-01-07-a-las-10-56-37a-m-3183f9f6609a71af9217678034038312-1024-1024.webp"
   },
   {
-    "id": 29,
+    "id": 33,
     "producto": "Cortador Verduras Manual Chopera Mini 500ml Compacto",
     "tipo": "procesadora",
     "descripcion": "",
@@ -240,7 +272,7 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-07-03-a-las-1-59-23p-m-1e6b8b1ce8232fc62317831025259546-1024-1024.webp"
   },
   {
-    "id": 30,
+    "id": 34,
     "producto": "Masajeador Facial Jade Antiarrugas con Guasha Doble Rodillo",
     "tipo": "pintura",
     "descripcion": "",
@@ -248,7 +280,7 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-07-15-a-las-12-47-39p-m-985244d64764c36a3d17841345491819-1024-1024.webp"
   },
   {
-    "id": 31,
+    "id": 35,
     "producto": "Masajeador Mini para Cuello y Espalda con Calor y 8 Modos",
     "tipo": "masajeador",
     "descripcion": "",
@@ -256,7 +288,15 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-10-22-a-las-4-30-40ap-am-2db13d5285a7d921a917927011928624-1024-1024.webp"
   },
   {
-    "id": 32,
+    "id": 36,
+    "producto": "Drone Plegable E88 con Cámara y Control Remoto con Estuche",
+    "tipo": "automotor",
+    "descripcion": "",
+    "precio_venta": 37500.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/grok-image-5fb5dfae-18be-43e4-bc27-86e2fa7cd19e-eefb60a1aad1d6a65f17806722528102-1024-1024.webp"
+  },
+  {
+    "id": 37,
     "producto": "Parlante Bluetooth 8&quot; Greatnice GTS-1248 con Micrófono Karaoke",
     "tipo": "parlante",
     "descripcion": "",
@@ -264,7 +304,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/speaker_on_wooden_floor_20260925162838-a0ce7dc054e09c5df517903646591977-1024-1024.webp"
   },
   {
-    "id": 33,
+    "id": 38,
     "producto": "Afeitadora 3 en 1 Inalámbrica Recargable con Recortador de Nariz",
     "tipo": "afeitadora",
     "descripcion": "",
@@ -272,7 +312,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/img_3185-420be284994827ee0317901902372966-1024-1024.webp"
   },
   {
-    "id": 34,
+    "id": 39,
     "producto": "Parlante Bluetooth Portátil 3&quot; con Radio FM, Luces, USB y Micro SD",
     "tipo": "parlante",
     "descripcion": "",
@@ -280,7 +320,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/speaker_on_desk_20260924125907-77d7ea9bded6d0223f17902655688102-1024-1024.webp"
   },
   {
-    "id": 35,
+    "id": 40,
     "producto": "Espejo Adhesivo Cuadrado de 20x20cm Irrompible",
     "tipo": "espejo",
     "descripcion": "",
@@ -288,7 +328,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/square_flexible_mirror_advertise_202609041513-1a9eaa7d7887b2f36217885456011470-1024-1024.webp"
   },
   {
-    "id": 36,
+    "id": 41,
     "producto": "Parlante Bluetooth 3&quot; Greatnice con Luces y Radio FM Surtido",
     "tipo": "parlante",
     "descripcion": "",
@@ -296,7 +336,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/img_3542-f6ab8ed8ad36a0568917906079880376-1024-1024.webp"
   },
   {
-    "id": 37,
+    "id": 42,
     "producto": "Planchita de Pelo Profesional NITSUK 45W 4 Temperaturas",
     "tipo": "planchita",
     "descripcion": "",
@@ -304,7 +344,15 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/flat_iron_on_marble_vanity_20260930135216-73cdb782af612513c417907871666666-1024-1024.webp"
   },
   {
-    "id": 38,
+    "id": 43,
+    "producto": "Bicicleta Mountain Bike Dinax Rodado 29 21 Velocidades Frenos a Disco",
+    "tipo": "bicicleta",
+    "descripcion": "",
+    "precio_venta": 290000.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/mountain_bike_in_city_park_20261005142010-67d29f2aa85ba79b7b17912208382131-1024-1024.webp"
+  },
+  {
+    "id": 44,
     "producto": "Mini Motosierra Inalámbrica 6&quot; 21V con Batería y Estuche",
     "tipo": "sierra",
     "descripcion": "",
@@ -312,7 +360,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/mini_chainsaw_on_tree_stump_20261013141614-7b44d64ccc2611f52317919117832627-1024-1024.webp"
   },
   {
-    "id": 39,
+    "id": 45,
     "producto": "Afeitadora 3 en 1 ONICA OA-CP205 Recargable con Patillera",
     "tipo": "afeitadora",
     "descripcion": "",
@@ -320,7 +368,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/shaver_device_on_bathroom_counter_20261017135910-4d781e347b00c42a4817922564409832-1024-1024.webp"
   },
   {
-    "id": 40,
+    "id": 46,
     "producto": "Depiladora Facial y de Cejas 2 en 1 Recargable USB",
     "tipo": "depiladora",
     "descripcion": "",
@@ -328,7 +376,15 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/white_vanity_table_with_depiladora_20261019155659-2a726ab8cc8cb1ddd017924362336727-1024-1024.webp"
   },
   {
-    "id": 41,
+    "id": 47,
+    "producto": "Compresímetro para Motor Naftero 300 PSI con Maletín",
+    "tipo": "automotor",
+    "descripcion": "",
+    "precio_venta": 29500.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/hand_holding_engine_compression_a_20261021111135-34a04fabe32bca045c17925920994234-1024-1024.webp"
+  },
+  {
+    "id": 48,
     "producto": "PACK X2 BOMBACHAS DE NENA - CORAMINA - ART. 1114",
     "tipo": "pack",
     "descripcion": "",
@@ -336,7 +392,7 @@
     "imagen": "https://acdn-us.mitiendanube.com/stores/001/015/908/products/art-1114_7firjtb31-84e50b82193273238816379520909793-1024-1024.webp"
   },
   {
-    "id": 42,
+    "id": 49,
     "producto": "Hielera con parlante - Comprar en Global Once",
     "tipo": "parlante",
     "descripcion": "",
@@ -344,7 +400,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-06-01-a-las-18-20-19-8d4e83f2e8719a57d517803488612749-1024-1024.webp"
   },
   {
-    "id": 43,
+    "id": 50,
     "producto": "Batidora de mano - Scarlett - Comprar en Global Once",
     "tipo": "batidora",
     "descripcion": "",
@@ -352,7 +408,15 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/whatsapp-image-2026-05-03-at-22-50-34-65191424bc1c67ea0b17803330491759-1024-1024.webp"
   },
   {
-    "id": 44,
+    "id": 51,
+    "producto": "Balanza de cocina 10kg - Comprar en Global Once",
+    "tipo": "balanza",
+    "descripcion": "",
+    "precio_venta": 7500.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-06-01-a-las-10-50-20-4abe09cc86dc9bc1d917803350848803-1024-1024.webp"
+  },
+  {
+    "id": 52,
     "producto": "Auricular -Inpod I-12 - Comprar en Global Once",
     "tipo": "auricular",
     "descripcion": "",
@@ -360,7 +424,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-06-01-a-las-17-31-23-5336ff70b016b9684917803460088369-1024-1024.webp"
   },
   {
-    "id": 45,
+    "id": 53,
     "producto": "Auricular -Tws F9 - Comprar en Global Once",
     "tipo": "auricular",
     "descripcion": "",
@@ -368,7 +432,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/img_4502-27e2bfffe018ec702717803464231506-1024-1024.webp"
   },
   {
-    "id": 46,
+    "id": 54,
     "producto": "Auricular - E6S - Comprar en Global Once",
     "tipo": "auricular",
     "descripcion": "",
@@ -376,7 +440,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/photo-2025-04-04-12-14-27-17-245a0cf76a55eedc3917803456893530-1024-1024.webp"
   },
   {
-    "id": 47,
+    "id": 55,
     "producto": "Auricular - Cat ear - Comprar en Global Once",
     "tipo": "auricular",
     "descripcion": "",
@@ -384,7 +448,15 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/ver-fotos-recientes-1-7f50d7d6d8bee2046217909540456146-1024-1024.webp"
   },
   {
-    "id": 48,
+    "id": 56,
+    "producto": "Aspiradora de auto - Comprar en Global Once",
+    "tipo": "aspiradora",
+    "descripcion": "",
+    "precio_venta": 9500.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/img_4306-98abcd3069fe964a3d17803442937005-1024-1024.webp"
+  },
+  {
+    "id": 57,
     "producto": "Mini parlante karaoke portátil con microfono",
     "tipo": "parlante",
     "descripcion": "",
@@ -392,7 +464,15 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/img_4725-04c4e4f6fee03fcb3517815633258197-1024-1024.webp"
   },
   {
-    "id": 49,
+    "id": 58,
+    "producto": "Motocierra con dos baterias - Hytoshy - Global Once",
+    "tipo": "automotor",
+    "descripcion": "",
+    "precio_venta": 70000.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-07-28-a-las-11-33-39-e4c3ab0cb25a46879517852492713849-1024-1024.webp"
+  },
+  {
+    "id": 59,
     "producto": "Afeitadora y Rasuradora electrica recargable - Double",
     "tipo": "afeitadora",
     "descripcion": "",
@@ -400,7 +480,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-08-21-a-las-11-54-03-a0a1b8759c5761648017873459268346-1024-1024.webp"
   },
   {
-    "id": 50,
+    "id": 60,
     "producto": "Rallador y Cortador de Verdura - Comprar en Global Once",
     "tipo": "rallador",
     "descripcion": "",
@@ -408,7 +488,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/whatsapp-image-2026-05-03-at-22-38-38-a03064c9f4a7f14b3017903545841575-1024-1024.webp"
   },
   {
-    "id": 51,
+    "id": 61,
     "producto": "PERFUME MUJER LAKOCITE 7591 - Comprar en MING Mayorista",
     "tipo": "perfume",
     "descripcion": "",
@@ -416,7 +496,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2025-09-26-at-11-04-10-am-3-b452d4577e042ac0d217588960518126-1024-1024.webp"
   },
   {
-    "id": 52,
+    "id": 62,
     "producto": "AFEITADORA MINI C/USB X-962 9628 - MING Mayorista",
     "tipo": "afeitadora",
     "descripcion": "",
@@ -424,7 +504,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-01-21-at-16-58-11-c277350f2dfe35c72217690269810388-1024-1024.webp"
   },
   {
-    "id": 53,
+    "id": 63,
     "producto": "PERFUME GIVE ME VANILLA 35ML B100-239 7704/2396",
     "tipo": "perfume",
     "descripcion": "",
@@ -432,7 +512,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-04-30-at-1-31-52-pm-4d2e2dfa0ee98d0e7517775739031513-1024-1024.webp"
   },
   {
-    "id": 54,
+    "id": 64,
     "producto": "PERFUME ECALIRE 35ML B100-250 7447/2501",
     "tipo": "perfume",
     "descripcion": "",
@@ -440,7 +520,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-04-30-at-1-31-53-pm-326be708aabf37c42d17775739521541-1024-1024.webp"
   },
   {
-    "id": 55,
+    "id": 65,
     "producto": "PERFUME ARABE FABBER 35ML 2627 - MING Mayorista",
     "tipo": "perfume",
     "descripcion": "",
@@ -448,7 +528,7 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-05-02-at-9-34-11-am-3e219310b93da2b02417777422757424-1024-1024.webp"
   },
   {
-    "id": 56,
+    "id": 66,
     "producto": "PERFUME GIVE ME BERRY 35ML B100-241 7742/2419",
     "tipo": "perfume",
     "descripcion": "",
@@ -456,7 +536,23 @@
     "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-05-02-at-3-33-25-pm-4-0ae938e65e1aaeedc217779855089276-1024-1024.webp"
   },
   {
-    "id": 57,
+    "id": 67,
+    "producto": "LINGA BICICLETA 80CM KIHUU X-1050 0501 - MING Mayorista",
+    "tipo": "bicicleta",
+    "descripcion": "",
+    "precio_venta": 4500.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-05-23-at-13-02-52-3-41c97d0e6aa145a18f17795541749006-1024-1024.webp"
+  },
+  {
+    "id": 68,
+    "producto": "BATIDOR CAFE PILA 0147 - Comprar en MING Mayorista",
+    "tipo": "batidora",
+    "descripcion": "",
+    "precio_venta": 3000.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-06-19-at-16-31-01-2962070d72429674a117819036464021-1024-1024.webp"
+  },
+  {
+    "id": 69,
     "producto": "CORTADOR HUEVOS 12CM 1446 - Comprar en MING Mayorista",
     "tipo": "procesadora",
     "descripcion": "",
