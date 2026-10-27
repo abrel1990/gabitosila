@@ -5,7 +5,8 @@
     "tipo": "parlante",
     "descripcion": "",
     "precio_venta": 16000.0,
-    "imagen": "https://avl112.com.ar/wp-content/uploads/2026/03/Diseno-sin-titulo-1.png"
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2026/03/Diseno-sin-titulo-1.png",
+    "slug": "vaso-t-rmico-parlante-bluetooth-2603"
   },
   {
     "id": 1,
@@ -13,7 +14,8 @@
     "tipo": "sandwichera",
     "descripcion": "",
     "precio_venta": 29500.0,
-    "imagen": "https://avl112.com.ar/wp-content/uploads/2026/03/Gemini_Generated_Image_j3g5bdj3g5bdj3g5.jpeg"
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2026/03/Gemini_Generated_Image_j3g5bdj3g5bdj3g5.jpeg",
+    "slug": "sandwichera-electrica-oryx-2609"
   },
   {
     "id": 2,
@@ -21,7 +23,8 @@
     "tipo": "lampara",
     "descripcion": "",
     "precio_venta": 8500.0,
-    "imagen": "https://avl112.com.ar/wp-content/uploads/2026/03/lamp.png"
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2026/03/lamp.png",
+    "slug": "lampara-para-mosquitos-15w-2628"
   },
   {
     "id": 3,
@@ -29,7 +32,8 @@
     "tipo": "soporte",
     "descripcion": "",
     "precio_venta": 24000.0,
-    "imagen": "https://avl112.com.ar/wp-content/uploads/2026/01/PHOTO-2026-01-07-14-43-09.jpg"
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2026/01/PHOTO-2026-01-07-14-43-09.jpg",
+    "slug": "soporte-para-celular-con-led-y-micr-fono-2744"
   },
   {
     "id": 4,
@@ -37,7 +41,8 @@
     "tipo": "parlante",
     "descripcion": "",
     "precio_venta": 15000.0,
-    "imagen": "https://avl112.com.ar/wp-content/uploads/2025/07/IMG-20250717-WA0008.jpg"
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2025/07/IMG-20250717-WA0008.jpg",
+    "slug": "vaso-parlante-2909"
   },
   {
     "id": 5,
@@ -45,7 +50,8 @@
     "tipo": "auricular",
     "descripcion": "",
     "precio_venta": 2500.0,
-    "imagen": "https://avl112.com.ar/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-04-at-16.16.24.jpeg"
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-04-at-16.16.24.jpeg",
+    "slug": "auricular-infantil-2949"
   },
   {
     "id": 6,
@@ -53,7 +59,8 @@
     "tipo": "auricular",
     "descripcion": "",
     "precio_venta": 12000.0,
-    "imagen": "https://avl112.com.ar/wp-content/uploads/2024/12/WhatsApp-Image-2026-09-09-at-18.42.01.jpeg"
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2024/12/WhatsApp-Image-2026-09-09-at-18.42.01.jpeg",
+    "slug": "auricular-kitty-2954"
   },
   {
     "id": 7,
@@ -61,7 +68,8 @@
     "tipo": "auricular",
     "descripcion": "",
     "precio_venta": 12000.0,
-    "imagen": "https://avl112.com.ar/wp-content/uploads/2024/12/WhatsApp-Image-2026-09-09-at-18.41.11.jpeg"
+    "imagen": "https://avl112.com.ar/wp-content/uploads/2024/12/WhatsApp-Image-2026-09-09-at-18.41.11.jpeg",
+    "slug": "auricular-mario-2955"
   },
   {
     "id": 8,
@@ -69,7 +77,8 @@
     "tipo": "candado",
     "descripcion": "",
     "precio_venta": 6000.0,
-    "imagen": "https://www.madu.com.ar/wp-content/uploads/2026/08/850-17204-e24efea16e08a1cf9217309863750885-1024-1024.webp"
+    "imagen": "https://www.madu.com.ar/wp-content/uploads/2026/08/850-17204-e24efea16e08a1cf9217309863750885-1024-1024.webp",
+    "slug": "candado-alpine-skate-4089"
   },
   {
     "id": 9,
@@ -77,7 +86,8 @@
     "tipo": "candado",
     "descripcion": "",
     "precio_venta": 23500.0,
-    "imagen": "https://www.madu.com.ar/wp-content/uploads/2026/07/luken_14900.jpg"
+    "imagen": "https://www.madu.com.ar/wp-content/uploads/2026/07/luken_14900.jpg",
+    "slug": "candado-huella-dactilar-oferta-4889"
   },
   {
     "id": 10,
@@ -85,7 +95,8 @@
     "tipo": "auricular",
     "descripcion": "",
     "precio_venta": 2500.0,
-    "imagen": "https://www.madu.com.ar/wp-content/uploads/2026/07/luken_9995.jpg"
+    "imagen": "https://www.madu.com.ar/wp-content/uploads/2026/07/luken_9995.jpg",
+    "slug": "auricular-5548"
   },
   {
     "id": 11,
@@ -93,7 +104,8 @@
     "tipo": "esmalte",
     "descripcion": "",
     "precio_venta": 500.0,
-    "imagen": "https://danbella.com.ar/wp-content/uploads/2021/09/IMG_125420210918-220258.jpg"
+    "imagen": "https://danbella.com.ar/wp-content/uploads/2021/09/IMG_125420210918-220258.jpg",
+    "slug": "4323-broches-para-poligel-x1u-12846"
   },
   {
     "id": 12,
@@ -101,7 +113,8 @@
     "tipo": "auricular",
     "descripcion": "",
     "precio_venta": 1500.0,
-    "imagen": "https://danbella.com.ar/wp-content/uploads/2020/09/IMG_692520200912-161219-scaled.jpg"
+    "imagen": "https://danbella.com.ar/wp-content/uploads/2020/09/IMG_692520200912-161219-scaled.jpg",
+    "slug": "0922-auriculares-para-compu-13276"
   },
   {
     "id": 13,
@@ -109,7 +122,8 @@
     "tipo": "organizador",
     "descripcion": "",
     "precio_venta": 3000.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/10091-f8faf629ba9858936317582092960582-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/10091-f8faf629ba9858936317582092960582-1024-1024.webp",
+    "slug": "mini-massage-stick-importadora-electro-mayorista-13317"
   },
   {
     "id": 14,
@@ -117,7 +131,8 @@
     "tipo": "esmalte",
     "descripcion": "",
     "precio_venta": 9500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/av24844-36639f06194f08fc3817582088529527-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/av24844-36639f06194f08fc3817582088529527-1024-1024.webp",
+    "slug": "limador-de-u-as-el-ctrico-13322"
   },
   {
     "id": 15,
@@ -125,7 +140,8 @@
     "tipo": "depiladora",
     "descripcion": "",
     "precio_venta": 7500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/d_nq_np_2x_642735-mla81228823218_122024-f-1487515184745c897417467165673485-480-0-88b11ef6d4138ba16b17582075509589-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/d_nq_np_2x_642735-mla81228823218_122024-f-1487515184745c897417467165673485-480-0-88b11ef6d4138ba16b17582075509589-1024-1024.webp",
+    "slug": "depiladora-facial-2-en-1-recargable-para-cejas-y-c-13342"
   },
   {
     "id": 16,
@@ -133,7 +149,8 @@
     "tipo": "depiladora",
     "descripcion": "",
     "precio_venta": 5500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-17-sept-2026-13_04_05-dbaa85d8b2e5ec72cf17896610734661-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-17-sept-2026-13_04_05-dbaa85d8b2e5ec72cf17896610734661-1024-1024.webp",
+    "slug": "depiladora-de-cejas-recargable-usb-con-luz-y-sin-d-13343"
   },
   {
     "id": 17,
@@ -141,7 +158,8 @@
     "tipo": "soporte",
     "descripcion": "",
     "precio_venta": 6500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-3-dic-2025-16_19_53-85618ec87436c2932817647896400139-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-3-dic-2025-16_19_53-85618ec87436c2932817647896400139-1024-1024.webp",
+    "slug": "soporte-para-celular-magnetico-13398"
   },
   {
     "id": 18,
@@ -149,7 +167,8 @@
     "tipo": "facial",
     "descripcion": "",
     "precio_venta": 11500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-12-ene-2026-12_02_00-f415e65407d09547c017682302230446-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-12-ene-2026-12_02_00-f415e65407d09547c017682302230446-1024-1024.webp",
+    "slug": "masajeador-facial-reductor-de-papada-conn-vibraci--13418"
   },
   {
     "id": 19,
@@ -157,7 +176,8 @@
     "tipo": "depiladora",
     "descripcion": "",
     "precio_venta": 8000.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-7-may-2026-16_19_01-e9f53840baa5f100a017781815812441-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-7-may-2026-16_19_01-e9f53840baa5f100a017781815812441-1024-1024.webp",
+    "slug": "depilador-mini-facial-corporal-con-luz-13457"
   },
   {
     "id": 20,
@@ -165,7 +185,8 @@
     "tipo": null,
     "descripcion": "",
     "precio_venta": 13000.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-16-jun-2026-16_22_36-f178e636fd698af71b17816388294758-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-16-jun-2026-16_22_36-f178e636fd698af71b17816388294758-1024-1024.webp",
+    "slug": "faja-micro-corriente-abdominal-13491"
   },
   {
     "id": 21,
@@ -173,7 +194,8 @@
     "tipo": "lampara",
     "descripcion": "",
     "precio_venta": 5500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-21-ago-2026-15_34_31-95c04d986adb6227d617873380069129-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-21-ago-2026-15_34_31-95c04d986adb6227d617873380069129-1024-1024.webp",
+    "slug": "aro-de-luz-redondo-para-selfie-13547"
   },
   {
     "id": 22,
@@ -181,7 +203,8 @@
     "tipo": "masajeador",
     "descripcion": "",
     "precio_venta": 46500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-2-sept-2026-15_57_30-eff7ab5d80c523f4e217883782528073-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-2-sept-2026-15_57_30-eff7ab5d80c523f4e217883782528073-1024-1024.webp",
+    "slug": "mano-masajeadora-importadora-electro-mayorista-13555"
   },
   {
     "id": 23,
@@ -189,7 +212,8 @@
     "tipo": "auricular",
     "descripcion": "",
     "precio_venta": 9000.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-18-sept-2026-11_01_30-f393b8939e076fae8417897402680585-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-18-sept-2026-11_01_30-f393b8939e076fae8417897402680585-1024-1024.webp",
+    "slug": "auricular-p9-pro-importadora-electro-mayorista-13567"
   },
   {
     "id": 24,
@@ -197,7 +221,8 @@
     "tipo": "planchita",
     "descripcion": "",
     "precio_venta": 14500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-18-sept-2026-12_06_52-ba831e30d0b266999117897443540385-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-18-sept-2026-12_06_52-ba831e30d0b266999117897443540385-1024-1024.webp",
+    "slug": "planchita-de-pelo-hl2580-13569"
   },
   {
     "id": 25,
@@ -205,7 +230,8 @@
     "tipo": "depiladora",
     "descripcion": "",
     "precio_venta": 6000.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-18-sept-2026-12_54_58-869f7f61931cc290e817897470376070-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/chatgpt-image-18-sept-2026-12_54_58-869f7f61931cc290e817897470376070-1024-1024.webp",
+    "slug": "depilador-nasal-importadora-electro-mayorista-13574"
   },
   {
     "id": 26,
@@ -213,7 +239,8 @@
     "tipo": "secador",
     "descripcion": "",
     "precio_venta": 13000.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/secador-exxtra-tech-con-embalaje-df676c248c5484746b17912965942077-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/secador-exxtra-tech-con-embalaje-df676c248c5484746b17912965942077-1024-1024.webp",
+    "slug": "secador-de-pelo-importadora-electro-mayorista-13579"
   },
   {
     "id": 27,
@@ -221,7 +248,8 @@
     "tipo": "balanza",
     "descripcion": "",
     "precio_venta": 7500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/bascula-de-cocina-digital-sf-400-e37aba4fdf0c30946717913137709985-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/bascula-de-cocina-digital-sf-400-e37aba4fdf0c30946717913137709985-1024-1024.webp",
+    "slug": "balanza-de-cocina-10k-importadora-electro-mayorist-13580"
   },
   {
     "id": 28,
@@ -229,7 +257,8 @@
     "tipo": null,
     "descripcion": "",
     "precio_venta": 7500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/kit-removedor-de-durezas-electrico-y-accesorios-1-8973d790d92798987117913972850529-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/kit-removedor-de-durezas-electrico-y-accesorios-1-8973d790d92798987117913972850529-1024-1024.webp",
+    "slug": "saca-callos-el-ctrico-recargable-13588"
   },
   {
     "id": 29,
@@ -237,7 +266,8 @@
     "tipo": "auricular",
     "descripcion": "",
     "precio_venta": 7000.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/catalogo-de-auriculares-inalambricos-multicolor-cf57d9a3e70df573e317914006283329-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/catalogo-de-auriculares-inalambricos-multicolor-cf57d9a3e70df573e317914006283329-1024-1024.webp",
+    "slug": "auriculares-a9s-pro-wireless-13589"
   },
   {
     "id": 30,
@@ -245,7 +275,8 @@
     "tipo": "depiladora",
     "descripcion": "",
     "precio_venta": 13500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/depiladora-facial-lavanda-en-uso-7da881f5110412a99d17919861342862-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/depiladora-facial-lavanda-en-uso-7da881f5110412a99d17919861342862-1024-1024.webp",
+    "slug": "depiladora-2-en-1-facial-corporal-recargable-13595"
   },
   {
     "id": 31,
@@ -253,7 +284,8 @@
     "tipo": "masajeador",
     "descripcion": "",
     "precio_venta": 6500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/collage-publicitario-del-entrenador-ems-28618660d55eb6968117926065240101-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/006/731/084/products/collage-publicitario-del-entrenador-ems-28618660d55eb6968117926065240101-1024-1024.webp",
+    "slug": "masajeador-electro-estimulador-abdominales-13604"
   },
   {
     "id": 32,
@@ -261,7 +293,8 @@
     "tipo": "lampara",
     "descripcion": "",
     "precio_venta": 6000.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/bombillo3-1d0653c56d5add0ec016612647260262-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/bombillo3-1d0653c56d5add0ec016612647260262-1024-1024.webp",
+    "slug": "bombillo-lampara-led-plegable-4-aspas-alta-ilumina-13612"
   },
   {
     "id": 33,
@@ -269,7 +302,8 @@
     "tipo": "balanza",
     "descripcion": "",
     "precio_venta": 14000.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/balanza221-0a92e4244f7aba367516612748723307-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/balanza221-0a92e4244f7aba367516612748723307-1024-1024.webp",
+    "slug": "balanza-corporal-inteligente-bluetooth-medidor-pre-13619"
   },
   {
     "id": 34,
@@ -277,7 +311,8 @@
     "tipo": "batidora",
     "descripcion": "",
     "precio_venta": 3000.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/batidorel21-e01bd579b4a5e5580816612756316250-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/batidorel21-e01bd579b4a5e5580816612756316250-1024-1024.webp",
+    "slug": "batidor-electrico-manual-leche-13622"
   },
   {
     "id": 35,
@@ -285,7 +320,8 @@
     "tipo": "procesadora",
     "descripcion": "",
     "precio_venta": 6500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/gold-11-ab453b0bb2665244b916856462108287-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/gold-11-ab453b0bb2665244b916856462108287-1024-1024.webp",
+    "slug": "m-quina-corta-pelo-gold-dragon-recortadora-precisa-13671"
   },
   {
     "id": 36,
@@ -293,7 +329,8 @@
     "tipo": "termo",
     "descripcion": "",
     "precio_venta": 10500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2023-07-19-1708291-73c1551c57851d8a6716898621716215-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2023-07-19-1708291-73c1551c57851d8a6716898621716215-1024-1024.webp",
+    "slug": "termo-con-sensor-de-temperatura-botella-t-rmica-de-13673"
   },
   {
     "id": 37,
@@ -301,7 +338,8 @@
     "tipo": "batidora",
     "descripcion": "",
     "precio_venta": 19500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-03-12-a-las-12-25-42p-m-f638c2bc158847174d17733328485526-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-03-12-a-las-12-25-42p-m-f638c2bc158847174d17733328485526-1024-1024.webp",
+    "slug": "taza-t-rmica-batidora-autom-tica-magn-tica-caf-13676"
   },
   {
     "id": 38,
@@ -309,7 +347,8 @@
     "tipo": "depiladora",
     "descripcion": "",
     "precio_venta": 5000.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/47-24835fda112625b56717774739264956-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/47-24835fda112625b56717774739264956-1024-1024.webp",
+    "slug": "depilador-sin-dolor-usb-para-cara-y-axilas-ideal-v-13682"
   },
   {
     "id": 39,
@@ -317,7 +356,8 @@
     "tipo": "soporte",
     "descripcion": "",
     "precio_venta": 6500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2025-11-04-a-las-11-15-55a-m-959cc4105ea500a76517622862472483-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2025-11-04-a-las-11-15-55a-m-959cc4105ea500a76517622862472483-1024-1024.webp",
+    "slug": "soporte-magn-tico-extensible-para-celular-con-rota-13745"
   },
   {
     "id": 40,
@@ -325,7 +365,8 @@
     "tipo": "termo",
     "descripcion": "",
     "precio_venta": 13000.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-01-07-a-las-10-56-37a-m-3183f9f6609a71af9217678034038312-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-01-07-a-las-10-56-37a-m-3183f9f6609a71af9217678034038312-1024-1024.webp",
+    "slug": "termo-t-rmico-500ml-con-3-tazas-de-acero-inoxidabl-13757"
   },
   {
     "id": 41,
@@ -333,7 +374,8 @@
     "tipo": "procesadora",
     "descripcion": "",
     "precio_venta": 6500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-07-03-a-las-1-59-23p-m-1e6b8b1ce8232fc62317831025259546-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-07-03-a-las-1-59-23p-m-1e6b8b1ce8232fc62317831025259546-1024-1024.webp",
+    "slug": "cortador-verduras-manual-chopera-mini-500ml-compac-13809"
   },
   {
     "id": 42,
@@ -341,7 +383,8 @@
     "tipo": "pintura",
     "descripcion": "",
     "precio_venta": 4500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-07-15-a-las-12-47-39p-m-985244d64764c36a3d17841345491819-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-07-15-a-las-12-47-39p-m-985244d64764c36a3d17841345491819-1024-1024.webp",
+    "slug": "masajeador-facial-jade-antiarrugas-con-guasha-dobl-13811"
   },
   {
     "id": 43,
@@ -349,7 +392,8 @@
     "tipo": "masajeador",
     "descripcion": "",
     "precio_venta": 3500.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-10-22-a-las-4-30-40ap-am-2db13d5285a7d921a917927011928624-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/002/316/104/products/captura-de-pantalla-2026-10-22-a-las-4-30-40ap-am-2db13d5285a7d921a917927011928624-1024-1024.webp",
+    "slug": "masajeador-mini-para-cuello-y-espalda-con-calor-y--13850"
   },
   {
     "id": 44,
@@ -357,7 +401,8 @@
     "tipo": "automotor",
     "descripcion": "",
     "precio_venta": 37500.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/grok-image-5fb5dfae-18be-43e4-bc27-86e2fa7cd19e-eefb60a1aad1d6a65f17806722528102-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/grok-image-5fb5dfae-18be-43e4-bc27-86e2fa7cd19e-eefb60a1aad1d6a65f17806722528102-1024-1024.webp",
+    "slug": "drone-plegable-e88-con-c-mara-y-control-remoto-con-13948"
   },
   {
     "id": 45,
@@ -365,7 +410,8 @@
     "tipo": "parlante",
     "descripcion": "",
     "precio_venta": 48000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/speaker_on_wooden_floor_20260925162838-a0ce7dc054e09c5df517903646591977-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/speaker_on_wooden_floor_20260925162838-a0ce7dc054e09c5df517903646591977-1024-1024.webp",
+    "slug": "parlante-bluetooth-8-quot-greatnice-gts-1248-con-m-13956"
   },
   {
     "id": 46,
@@ -373,7 +419,8 @@
     "tipo": "afeitadora",
     "descripcion": "",
     "precio_venta": 20000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/img_3185-420be284994827ee0317901902372966-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/img_3185-420be284994827ee0317901902372966-1024-1024.webp",
+    "slug": "afeitadora-3-en-1-inal-mbrica-recargable-con-recor-13978"
   },
   {
     "id": 47,
@@ -381,7 +428,8 @@
     "tipo": "parlante",
     "descripcion": "",
     "precio_venta": 9000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/speaker_on_desk_20260924125907-77d7ea9bded6d0223f17902655688102-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/speaker_on_desk_20260924125907-77d7ea9bded6d0223f17902655688102-1024-1024.webp",
+    "slug": "parlante-bluetooth-port-til-3-quot-con-radio-fm-lu-14219"
   },
   {
     "id": 48,
@@ -389,7 +437,8 @@
     "tipo": "espejo",
     "descripcion": "",
     "precio_venta": 4000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/square_flexible_mirror_advertise_202609041513-1a9eaa7d7887b2f36217885456011470-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/square_flexible_mirror_advertise_202609041513-1a9eaa7d7887b2f36217885456011470-1024-1024.webp",
+    "slug": "espejo-adhesivo-cuadrado-de-20x20cm-irrompible-14295"
   },
   {
     "id": 49,
@@ -397,7 +446,8 @@
     "tipo": "parlante",
     "descripcion": "",
     "precio_venta": 9000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/img_3542-f6ab8ed8ad36a0568917906079880376-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/img_3542-f6ab8ed8ad36a0568917906079880376-1024-1024.webp",
+    "slug": "parlante-bluetooth-3-quot-greatnice-con-luces-y-ra-14351"
   },
   {
     "id": 50,
@@ -405,7 +455,8 @@
     "tipo": "planchita",
     "descripcion": "",
     "precio_venta": 12000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/flat_iron_on_marble_vanity_20260930135216-73cdb782af612513c417907871666666-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/flat_iron_on_marble_vanity_20260930135216-73cdb782af612513c417907871666666-1024-1024.webp",
+    "slug": "planchita-de-pelo-profesional-nitsuk-45w-4-tempera-14357"
   },
   {
     "id": 51,
@@ -413,7 +464,8 @@
     "tipo": "bicicleta",
     "descripcion": "",
     "precio_venta": 290000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/mountain_bike_in_city_park_20261005142010-67d29f2aa85ba79b7b17912208382131-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/mountain_bike_in_city_park_20261005142010-67d29f2aa85ba79b7b17912208382131-1024-1024.webp",
+    "slug": "bicicleta-mountain-bike-dinax-rodado-29-21-velocid-14374"
   },
   {
     "id": 52,
@@ -421,7 +473,8 @@
     "tipo": "sierra",
     "descripcion": "",
     "precio_venta": 57000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/mini_chainsaw_on_tree_stump_20261013141614-7b44d64ccc2611f52317919117832627-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/mini_chainsaw_on_tree_stump_20261013141614-7b44d64ccc2611f52317919117832627-1024-1024.webp",
+    "slug": "mini-motosierra-inal-mbrica-6-quot-21v-con-bater-a-14381"
   },
   {
     "id": 53,
@@ -429,7 +482,8 @@
     "tipo": "afeitadora",
     "descripcion": "",
     "precio_venta": 17500.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/shaver_device_on_bathroom_counter_20261017135910-4d781e347b00c42a4817922564409832-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/shaver_device_on_bathroom_counter_20261017135910-4d781e347b00c42a4817922564409832-1024-1024.webp",
+    "slug": "afeitadora-3-en-1-onica-oa-cp205-recargable-con-pa-14417"
   },
   {
     "id": 54,
@@ -437,7 +491,8 @@
     "tipo": "depiladora",
     "descripcion": "",
     "precio_venta": 8000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/white_vanity_table_with_depiladora_20261019155659-2a726ab8cc8cb1ddd017924362336727-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/white_vanity_table_with_depiladora_20261019155659-2a726ab8cc8cb1ddd017924362336727-1024-1024.webp",
+    "slug": "depiladora-facial-y-de-cejas-2-en-1-recargable-usb-14424"
   },
   {
     "id": 55,
@@ -445,7 +500,8 @@
     "tipo": "automotor",
     "descripcion": "",
     "precio_venta": 29500.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/hand_holding_engine_compression_a_20261021111135-34a04fabe32bca045c17925920994234-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/015/069/products/hand_holding_engine_compression_a_20261021111135-34a04fabe32bca045c17925920994234-1024-1024.webp",
+    "slug": "compres-metro-para-motor-naftero-300-psi-con-malet-14431"
   },
   {
     "id": 56,
@@ -453,7 +509,8 @@
     "tipo": "pack",
     "descripcion": "",
     "precio_venta": 14000.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/001/015/908/products/art-1114_7firjtb31-84e50b82193273238816379520909793-1024-1024.webp"
+    "imagen": "https://acdn-us.mitiendanube.com/stores/001/015/908/products/art-1114_7firjtb31-84e50b82193273238816379520909793-1024-1024.webp",
+    "slug": "pack-x2-bombachas-de-nena-coramina-art-1114-14851"
   },
   {
     "id": 57,
@@ -461,7 +518,8 @@
     "tipo": "parlante",
     "descripcion": "",
     "precio_venta": 20000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-06-01-a-las-18-20-19-8d4e83f2e8719a57d517803488612749-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-06-01-a-las-18-20-19-8d4e83f2e8719a57d517803488612749-1024-1024.webp",
+    "slug": "hielera-con-parlante-comprar-en-global-once-15141"
   },
   {
     "id": 58,
@@ -469,7 +527,8 @@
     "tipo": "batidora",
     "descripcion": "",
     "precio_venta": 20000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/whatsapp-image-2026-05-03-at-22-50-34-65191424bc1c67ea0b17803330491759-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/whatsapp-image-2026-05-03-at-22-50-34-65191424bc1c67ea0b17803330491759-1024-1024.webp",
+    "slug": "batidora-de-mano-scarlett-comprar-en-global-once-15197"
   },
   {
     "id": 59,
@@ -477,7 +536,8 @@
     "tipo": "balanza",
     "descripcion": "",
     "precio_venta": 7500.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-06-01-a-las-10-50-20-4abe09cc86dc9bc1d917803350848803-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-06-01-a-las-10-50-20-4abe09cc86dc9bc1d917803350848803-1024-1024.webp",
+    "slug": "balanza-de-cocina-10kg-comprar-en-global-once-15207"
   },
   {
     "id": 60,
@@ -485,7 +545,8 @@
     "tipo": "auricular",
     "descripcion": "",
     "precio_venta": 7000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-06-01-a-las-17-31-23-5336ff70b016b9684917803460088369-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-06-01-a-las-17-31-23-5336ff70b016b9684917803460088369-1024-1024.webp",
+    "slug": "auricular-inpod-i-12-comprar-en-global-once-15243"
   },
   {
     "id": 61,
@@ -493,7 +554,8 @@
     "tipo": "auricular",
     "descripcion": "",
     "precio_venta": 7000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/img_4502-27e2bfffe018ec702717803464231506-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/img_4502-27e2bfffe018ec702717803464231506-1024-1024.webp",
+    "slug": "auricular-tws-f9-comprar-en-global-once-15245"
   },
   {
     "id": 62,
@@ -501,7 +563,8 @@
     "tipo": "auricular",
     "descripcion": "",
     "precio_venta": 8000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/photo-2025-04-04-12-14-27-17-245a0cf76a55eedc3917803456893530-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/photo-2025-04-04-12-14-27-17-245a0cf76a55eedc3917803456893530-1024-1024.webp",
+    "slug": "auricular-e6s-comprar-en-global-once-15246"
   },
   {
     "id": 63,
@@ -509,7 +572,8 @@
     "tipo": "auricular",
     "descripcion": "",
     "precio_venta": 8500.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/ver-fotos-recientes-1-7f50d7d6d8bee2046217909540456146-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/ver-fotos-recientes-1-7f50d7d6d8bee2046217909540456146-1024-1024.webp",
+    "slug": "auricular-cat-ear-comprar-en-global-once-15248"
   },
   {
     "id": 64,
@@ -517,7 +581,8 @@
     "tipo": "aspiradora",
     "descripcion": "",
     "precio_venta": 9500.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/img_4306-98abcd3069fe964a3d17803442937005-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/img_4306-98abcd3069fe964a3d17803442937005-1024-1024.webp",
+    "slug": "aspiradora-de-auto-comprar-en-global-once-15255"
   },
   {
     "id": 65,
@@ -525,7 +590,8 @@
     "tipo": "parlante",
     "descripcion": "",
     "precio_venta": 11000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/img_4725-04c4e4f6fee03fcb3517815633258197-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/img_4725-04c4e4f6fee03fcb3517815633258197-1024-1024.webp",
+    "slug": "mini-parlante-karaoke-port-til-con-microfono-15318"
   },
   {
     "id": 66,
@@ -533,7 +599,8 @@
     "tipo": "automotor",
     "descripcion": "",
     "precio_venta": 70000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-07-28-a-las-11-33-39-e4c3ab0cb25a46879517852492713849-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-07-28-a-las-11-33-39-e4c3ab0cb25a46879517852492713849-1024-1024.webp",
+    "slug": "motocierra-con-dos-baterias-hytoshy-global-once-15362"
   },
   {
     "id": 67,
@@ -541,7 +608,8 @@
     "tipo": "afeitadora",
     "descripcion": "",
     "precio_venta": 20000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-08-21-a-las-11-54-03-a0a1b8759c5761648017873459268346-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/captura-de-pantalla-2026-08-21-a-las-11-54-03-a0a1b8759c5761648017873459268346-1024-1024.webp",
+    "slug": "afeitadora-y-rasuradora-electrica-recargable-doubl-15432"
   },
   {
     "id": 68,
@@ -549,7 +617,8 @@
     "tipo": "rallador",
     "descripcion": "",
     "precio_venta": 15500.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/whatsapp-image-2026-05-03-at-22-38-38-a03064c9f4a7f14b3017903545841575-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/005/390/241/products/whatsapp-image-2026-05-03-at-22-38-38-a03064c9f4a7f14b3017903545841575-1024-1024.webp",
+    "slug": "rallador-y-cortador-de-verdura-comprar-en-global-o-15470"
   },
   {
     "id": 69,
@@ -557,7 +626,8 @@
     "tipo": "perfume",
     "descripcion": "",
     "precio_venta": 2500.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2025-09-26-at-11-04-10-am-3-b452d4577e042ac0d217588960518126-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2025-09-26-at-11-04-10-am-3-b452d4577e042ac0d217588960518126-1024-1024.webp",
+    "slug": "perfume-mujer-lakocite-7591-comprar-en-ming-mayori-18636"
   },
   {
     "id": 70,
@@ -565,7 +635,8 @@
     "tipo": "afeitadora",
     "descripcion": "",
     "precio_venta": 8000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-01-21-at-16-58-11-c277350f2dfe35c72217690269810388-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-01-21-at-16-58-11-c277350f2dfe35c72217690269810388-1024-1024.webp",
+    "slug": "afeitadora-mini-c-usb-x-962-9628-ming-mayorista-19459"
   },
   {
     "id": 71,
@@ -573,7 +644,8 @@
     "tipo": "perfume",
     "descripcion": "",
     "precio_venta": 2500.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-04-30-at-1-31-52-pm-4d2e2dfa0ee98d0e7517775739031513-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-04-30-at-1-31-52-pm-4d2e2dfa0ee98d0e7517775739031513-1024-1024.webp",
+    "slug": "perfume-give-me-vanilla-35ml-b100-239-7704-2396-19970"
   },
   {
     "id": 72,
@@ -581,7 +653,8 @@
     "tipo": "perfume",
     "descripcion": "",
     "precio_venta": 2500.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-04-30-at-1-31-53-pm-326be708aabf37c42d17775739521541-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-04-30-at-1-31-53-pm-326be708aabf37c42d17775739521541-1024-1024.webp",
+    "slug": "perfume-ecalire-35ml-b100-250-7447-2501-19971"
   },
   {
     "id": 73,
@@ -589,7 +662,8 @@
     "tipo": "perfume",
     "descripcion": "",
     "precio_venta": 2500.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-05-02-at-9-34-11-am-3e219310b93da2b02417777422757424-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-05-02-at-9-34-11-am-3e219310b93da2b02417777422757424-1024-1024.webp",
+    "slug": "perfume-arabe-fabber-35ml-2627-ming-mayorista-19974"
   },
   {
     "id": 74,
@@ -597,7 +671,8 @@
     "tipo": "perfume",
     "descripcion": "",
     "precio_venta": 2500.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-05-02-at-3-33-25-pm-4-0ae938e65e1aaeedc217779855089276-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-05-02-at-3-33-25-pm-4-0ae938e65e1aaeedc217779855089276-1024-1024.webp",
+    "slug": "perfume-give-me-berry-35ml-b100-241-7742-2419-19976"
   },
   {
     "id": 75,
@@ -605,7 +680,8 @@
     "tipo": "bicicleta",
     "descripcion": "",
     "precio_venta": 4500.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-05-23-at-13-02-52-3-41c97d0e6aa145a18f17795541749006-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-05-23-at-13-02-52-3-41c97d0e6aa145a18f17795541749006-1024-1024.webp",
+    "slug": "linga-bicicleta-80cm-kihuu-x-1050-0501-ming-mayori-20081"
   },
   {
     "id": 76,
@@ -613,7 +689,8 @@
     "tipo": "batidora",
     "descripcion": "",
     "precio_venta": 3000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-06-19-at-16-31-01-2962070d72429674a117819036464021-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-06-19-at-16-31-01-2962070d72429674a117819036464021-1024-1024.webp",
+    "slug": "batidor-cafe-pila-0147-comprar-en-ming-mayorista-20205"
   },
   {
     "id": 77,
@@ -621,6 +698,7 @@
     "tipo": "procesadora",
     "descripcion": "",
     "precio_venta": 6000.0,
-    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-06-23-at-16-36-42-1-7da2748f3d64ad805417822438988829-1024-1024.webp"
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-06-23-at-16-36-42-1-7da2748f3d64ad805417822438988829-1024-1024.webp",
+    "slug": "cortador-huevos-12cm-1446-comprar-en-ming-mayorist-20235"
   }
 ]
