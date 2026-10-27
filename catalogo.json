@@ -760,6 +760,17 @@
   },
   {
     "id": 69,
+    "producto": "BOWL ACERO 18CM X-619 6191 - Comprar en MING ista",
+    "tipo": "bowl",
+    "descripcion": "",
+    "precio_venta": 1500.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/photoroom-20220216_085936-677ea371782d117a1516450139885001-1024-1024.webp",
+    "slug": "bowl-acero-18cm-x-619-6191-comprar-en-ming-ista-16323",
+    "destacado": 0,
+    "etiqueta_ultimos": 0
+  },
+  {
+    "id": 70,
     "producto": "PERFUME MUJER LAKOCITE 7591 - Comprar en MING ista",
     "tipo": "perfume",
     "descripcion": "",
@@ -770,7 +781,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 70,
+    "id": 71,
     "producto": "VENTILADOR C/USB 17.5CM X-1095 0952 - MING ista",
     "tipo": "ventilador",
     "descripcion": "",
@@ -781,7 +792,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 71,
+    "id": 72,
     "producto": "AFEITADORA MINI C/USB X-962 9628 - MING ista",
     "tipo": "afeitadora",
     "descripcion": "",
@@ -792,7 +803,18 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 72,
+    "id": 73,
+    "producto": "SARTEN BIFERA REDONDA ACERO 26CM X-1255 2550",
+    "tipo": "sarten",
+    "descripcion": "",
+    "precio_venta": 19500.0,
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/001/660/006/products/whatsapp-image-2026-04-16-at-6-33-20-pm-1-50467d88be263e916217764571339630-1024-1024.webp",
+    "slug": "sarten-bifera-redonda-acero-26cm-x-1255-2550-20086",
+    "destacado": 0,
+    "etiqueta_ultimos": 0
+  },
+  {
+    "id": 74,
     "producto": "PERFUME GIVE ME VANILLA 35ML B100-239 7704/2396",
     "tipo": "perfume",
     "descripcion": "",
@@ -803,7 +825,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 73,
+    "id": 75,
     "producto": "PERFUME ECALIRE 35ML B100-250 7447/2501",
     "tipo": "perfume",
     "descripcion": "",
@@ -814,7 +836,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 74,
+    "id": 76,
     "producto": "PERFUME ARABE FABBER 35ML 2627 - MING ista",
     "tipo": "perfume",
     "descripcion": "",
@@ -825,7 +847,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 75,
+    "id": 77,
     "producto": "PERFUME GIVE ME BERRY 35ML B100-241 7742/2419",
     "tipo": "perfume",
     "descripcion": "",
@@ -836,7 +858,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 76,
+    "id": 78,
     "producto": "LINGA BICICLETA 80CM KIHUU X-1050 0501 - MING ista",
     "tipo": "bicicleta",
     "descripcion": "",
@@ -847,7 +869,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 77,
+    "id": 79,
     "producto": "BATIDOR CAFE PILA 0147 - Comprar en MING ista",
     "tipo": "batidora",
     "descripcion": "",
@@ -858,7 +880,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 78,
+    "id": 80,
     "producto": "CORTADOR HUEVOS 12CM 1446 - Comprar en MING ista",
     "tipo": "procesadora",
     "descripcion": "",
