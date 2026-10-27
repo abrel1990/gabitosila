@@ -9,11 +9,8 @@
 <meta name="theme-color" content="#0a1128">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;800&display=swap');
-
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;font-family:'Inter',sans-serif; scroll-behavior: smooth;}
-
-/* BLOQUEAR SELECCION Y DESCARGA */
 body{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;}
 img{pointer-events:none;-webkit-user-drag:none;}
 
@@ -31,6 +28,7 @@ img{pointer-events:none;-webkit-user-drag:none;}
   --btn-ws: linear-gradient(135deg, #25d366, #128c7e); --btn-cart: linear-gradient(135deg, #ef4444, #dc2626);
   --sombra-card: 0 8px 24px rgba(15,23,42,0.08); --foto-bg: #ffffff;
 }
+
 body{background-color:var(--bg);color:var(--texto);min-height:100vh;display:flex;flex-direction:column;transition:background .3s,color .3s;overflow-x:hidden;}
 
 header{background:var(--header-bg);backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px);padding:16px 24px;position:sticky;top:0;z-index:100;border-bottom:1px solid var(--card-border);transition:all .3s}
@@ -42,12 +40,10 @@ header{background:var(--header-bg);backdrop-filter:blur(15px);-webkit-backdrop-f
 .buscador input{width:100%;padding:14px 24px;border:1px solid var(--card-border);border-radius:14px;font-size:15px;background:var(--input-bg);color:var(--texto);outline:none;transition:all .3s;}
 .buscador input:focus{border-color:var(--neon-1);box-shadow:0 0 0 3px rgba(59,130,246,0.2)}
 .buscador input::placeholder{color:var(--texto-suave)}
-
 .btn-icon{background:var(--input-bg);border:1px solid var(--card-border);border-radius:14px;width:50px;height:50px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;transition:all .2s;flex-shrink:0;color:var(--texto);position:relative;}
 .btn-icon:hover{border-color:var(--neon-1);background:var(--filtro-bg)}
 .carrito-badge{position:absolute;top:-6px;right:-6px;background:var(--neon-1);color:#fff;font-size:12px;font-weight:800;border-radius:50%;min-width:22px;height:22px;display:flex;align-items:center;justify-content:center;padding:0 5px;border:2px solid var(--bg)}
 
-/* SLIDER */
 .slider-section{max-width:1400px;margin:30px auto 0;padding:0 24px;width:100%}
 .slider-container{position:relative;width:100%;overflow:hidden;border-radius:20px;box-shadow:var(--sombra-card); border:1px solid var(--card-border); background:#000;}
 .slider-track{display:flex;transition:transform .7s cubic-bezier(0.16, 1, 0.3, 1);height:400px}
@@ -88,12 +84,8 @@ main{max-width:1400px;margin:0 auto;padding:0 24px 50px;flex:1;width:100%}
 .producto .btn-agregar{flex:1 1 50%;text-align:center;padding:12px 0;background:var(--btn-cart);color:#fff;font-size:13px;font-weight:700;border-radius:10px;transition:all .2s;display:flex;align-items:center;justify-content:center;border:none;cursor:pointer; font-family:'Inter',sans-serif; box-shadow: 0 4px 10px rgba(239, 68, 68, 0.2);}
 .producto .btn-agregar:hover{opacity:0.9; transform:translateY(-1px);}
 .producto .btn-agregar.agregado{background:#10b981;}
-
-/* BOTON COMPARTIR CLASICO */
 .producto .btn-compartir {flex: 0 0 42px; background: var(--filtro-bg); color: var(--texto); border: 1px solid var(--card-border); border-radius: 10px; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; transition: all .2s;}
 .producto .btn-compartir:hover {background: var(--neon-1); color: #fff; border-color: var(--neon-1);}
-/* Icono de compartir SVG */
-.icono-compartir { width: 20px; height: 20px; fill: currentColor; }
 
 .sin-resultados{text-align:center;padding:80px 20px;color:var(--texto-suave);font-size:18px; font-family:'Outfit',sans-serif;}
 
@@ -333,6 +325,13 @@ const urlParams = new URLSearchParams(window.location.search);
 const afiliado = urlParams.get('ref');
 if(afiliado) localStorage.setItem('vengo_de', afiliado);
 
+// DETECTAR SLUG DE PRODUCTO COMPARTIDO
+const slugCompartido = urlParams.get('p');
+if(slugCompartido) {
+  // Si el cliente entra desde un link de producto compartido, buscar ese producto
+  localStorage.setItem('producto_compartido', slugCompartido);
+}
+
 function obtenerCodigoProveedor(nombre) {
   const nombreUpper = nombre.toUpperCase();
   if (nombreUpper.includes("GLOBAL ONCE")) return "GLO";
@@ -352,7 +351,8 @@ function limpiarTitulo(titulo) {
     /- Importadora Electro/gi, /Importadora Electro/gi,
     /- MZ Store/gi, /MZ Store/gi,
     /- Tecno Importaciones/gi, /Tecno Importaciones/gi,
-    /- Casa Medilen/gi, /Casa Medilen/gi
+    /- Casa Medilen/gi, /Casa Medilen/gi,
+    /mayorista/gi, /distribuidor/gi, /importador/gi, /por mayor/gi, /al por mayor/gi
   ];
   palabrasProhibidas.forEach(regex => { limpio = limpio.replace(regex, ""); });
   return limpio.trim();
@@ -380,7 +380,7 @@ function abrirLightbox(idx) {
   const codigoFinal = codProv ? `${codProv}-${idx}` : `#${idx}`;
 
   document.getElementById("lb-img").src = p.imagen;
-  document.getElementById("lb-img").classList.remove('zoom'); // Resetear zoom al abrir
+  document.getElementById("lb-img").classList.remove('zoom');
   document.getElementById("lb-nombre").textContent = tituloLimpio;
   document.getElementById("lb-precio").textContent = formatearPrecio(p.precio_venta);
   document.getElementById("lb-desc").textContent = p.descripcion || "";
@@ -452,8 +452,8 @@ function agregarAlCarrito(idx, desdeLightbox = false) {
   } else { 
     carrito.push({ 
       id: idx,
-      producto: prodLimpio,           // El cliente ve esto limpio
-      codigo_proveedor: codigoFinal,  // Vos ves esto en tu WhatsApp
+      producto: prodLimpio,
+      codigo_proveedor: codigoFinal,
       precio_venta: prod.precio_venta, 
       imagen: prod.imagen, 
       cantidad: 1 
@@ -521,12 +521,23 @@ function compartirProducto(idx) {
     localStorage.setItem('afiliado_nombre', nombreAfiliado.trim());
   }
   
-  // Generamos el link exacto hacia el HTML con la foto que creó el panel
-  const slug = p.producto.toLowerCase().replace(/[^a-z0-9]+/g, '-').substring(0, 50) + "-" + idx;
-  const linkCompartir = `https://abrel1990.github.io/gabitosila/productos/${slug}.html?ref=${encodeURIComponent(nombreAfiliado)}`;
+  // El link apunta a la página del producto (con la foto)
+  const linkCompartir = `https://abrel1990.github.io/gabitosila/productos/${p.slug}.html?ref=${encodeURIComponent(nombreAfiliado)}`;
   
   const msj = `🔥 ¡Mirá este producto en Gimport!\n\n📦 ${limpiarTitulo(p.producto)}\n💵 Precio: ${formatearPrecio(p.precio_venta)}\n\n👉 Compralo acá: ${linkCompartir}`;
   
+  window.open(`https://wa.me/?text=${encodeURIComponent(msj)}`, '_blank');
+}
+
+function compartirWeb() {
+  let nombreAfiliado = localStorage.getItem('afiliado_nombre');
+  if (!nombreAfiliado) {
+    nombreAfiliado = prompt("¿Cuál es tu nombre? (Para saber que vos recomendás)");
+    if (!nombreAfiliado) return;
+    localStorage.setItem('afiliado_nombre', nombreAfiliado.trim());
+  }
+  const linkCompartir = `https://abrel1990.github.io/gabitosila/?ref=${encodeURIComponent(nombreAfiliado)}`;
+  const msj = `🔥 ¡Mirá el catálogo de Gimport!\n\n👉 Entrá acá: ${linkCompartir}`;
   window.open(`https://wa.me/?text=${encodeURIComponent(msj)}`, '_blank');
 }
 
@@ -565,8 +576,15 @@ function render() {
     const wsUrl = `https://wa.me/${WA_NUMEROS.ventas}?text=${mensaje}`;
     const enCarrito = carrito.some(i => i.id === idx);
     
+    // Cinta de Últimos
+    let cinta = "";
+    if (p.etiqueta_ultimos) {
+      cinta = '<div style="position:absolute;top:10px;right:-30px;background:#ef4444;color:#fbbf24;padding:5px 40px;font-weight:900;font-size:12px;transform:rotate(45deg);box-shadow:0 2px 5px rgba(0,0,0,0.3);z-index:10;animation:parpadeo 1.5s infinite;">¡ÚLTIMOS!</div>';
+    }
+    
     return `
       <div class="producto">
+        ${cinta}
         <div class="img-wrap" onclick="abrirLightbox(${idx})">
           <img src="${p.imagen || ''}" alt="${tituloLimpio}" loading="lazy" onerror="this.style.opacity='0'">
         </div>
@@ -576,9 +594,7 @@ function render() {
           <div class="acciones">
             <a href="${wsUrl}" target="_blank" rel="noopener" class="btn-ws">WhatsApp</a>
             <button class="btn-agregar ${enCarrito ? 'agregado' : ''}" onclick="agregarAlCarrito(${idx})">${enCarrito ? '✓ Agregado' : '+ Carrito'}</button>
-            <button class="btn-compartir" onclick="compartirProducto(${idx})" title="Compartir">
-              <svg class="icono-compartir" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>
-            </button>
+            <button class="btn-compartir" onclick="compartirProducto(${idx})" title="Compartir">📤</button>
           </div>
         </div>
       </div>
@@ -707,3 +723,4 @@ fetch("catalogo.json?v=" + Date.now())
 </script>
 </body>
 </html>
+echo "✅ Bloque 4 completado: web/index.html reemplazado."
