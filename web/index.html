@@ -120,19 +120,15 @@ function compartirProducto(idx) {
   const p = catalogo[idx];
   let nombreAfiliado = localStorage.getItem('afiliado_nombre');
   
-  if (!nombreAfiliado) {
     nombreAfiliado = prompt("¿Cuál es tu nombre? (Para saber que vos recomendás)");
-    if (!nombreAfiliado) return;
     localStorage.setItem('afiliado_nombre', nombreAfiliado.trim());
   }
   
-  // Generamos el link exacto hacia el HTML con la foto
-  const slug = p.producto.toLowerCase().replace(/[^a-z0-9]+/g, '-').substring(0, 50) + "-" + idx;
-  const linkCompartir = `https://abrel1990.github.io/gabitosila/productos/${slug}.html?ref=${encodeURIComponent(nombreAfiliado)}`;
+  // Usamos el slug EXACTO que viene del JSON
+  const linkCompartir = ;
   
-  const msj = `🔥 ¡Mirá este producto en Gimport!\n\n📦 ${limpiarNombre(p.producto)}\n💵 Precio: ${formatPrecio(p.precio_venta)}\n\n👉 Compralo acá: ${linkCompartir}`;
   
-  window.open(`https://wa.me/?text=${encodeURIComponent(msj)}`, '_blank');
+  window.open(, '_blank');
 }
 
 function agregarAlCarrito(idx) {
