@@ -1,6 +1,28 @@
 [
   {
     "id": 0,
+    "producto": "SOPORTE TV C/BRAZO 17&#8243; A 42&#8243; DINAX X200",
+    "tipo": "soporte",
+    "descripcion": "",
+    "precio_venta": 11000.0,
+    "imagen": "https://newredmayorista.com.ar/wp-content/uploads/2026/04/SOPORTE-TV-C-BRAZO-17-A-42-DINAX-X200.webp",
+    "slug": "soporte-tv-c-brazo-17-8243-a-42-8243-dinax-x200-1459",
+    "destacado": 0,
+    "etiqueta_ultimos": 0
+  },
+  {
+    "id": 1,
+    "producto": "SOPORTE TV FIJO DE 14&#8243; A 42&#8243; DINAX HD601",
+    "tipo": "soporte",
+    "descripcion": "",
+    "precio_venta": 4000.0,
+    "imagen": "https://newredmayorista.com.ar/wp-content/uploads/2026/04/SOPORTE-TV-FIJO-DE-14-A-42-DINAX-HD601.jpg",
+    "slug": "soporte-tv-fijo-de-14-8243-a-42-8243-dinax-hd601-1555",
+    "destacado": 0,
+    "etiqueta_ultimos": 0
+  },
+  {
+    "id": 2,
     "producto": "Vaso térmico parlante Bluetooth",
     "tipo": "parlante",
     "descripcion": "",
@@ -11,7 +33,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 1,
+    "id": 3,
     "producto": "Sandwichera electrica Oryx",
     "tipo": "sandwichera",
     "descripcion": "",
@@ -22,7 +44,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 2,
+    "id": 4,
     "producto": "Lampara para mosquitos 15w",
     "tipo": "lampara",
     "descripcion": "",
@@ -33,7 +55,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 3,
+    "id": 5,
     "producto": "Soporte para celular con led y micrófono",
     "tipo": "soporte",
     "descripcion": "",
@@ -44,7 +66,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 4,
+    "id": 6,
     "producto": "Vaso parlante",
     "tipo": "parlante",
     "descripcion": "",
@@ -55,7 +77,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 5,
+    "id": 7,
     "producto": "auricular infantil",
     "tipo": "auricular",
     "descripcion": "",
@@ -66,7 +88,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 6,
+    "id": 8,
     "producto": "Auricular Kitty",
     "tipo": "auricular",
     "descripcion": "",
@@ -77,7 +99,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 7,
+    "id": 9,
     "producto": "Auricular Mario",
     "tipo": "auricular",
     "descripcion": "",
@@ -88,7 +110,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 8,
+    "id": 10,
     "producto": "Candado Alpine Skate",
     "tipo": "candado",
     "descripcion": "",
@@ -99,7 +121,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 9,
+    "id": 11,
     "producto": "Candado Huella Dactilar Oferta!",
     "tipo": "candado",
     "descripcion": "",
@@ -110,7 +132,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 10,
+    "id": 12,
     "producto": "Auricular",
     "tipo": "auricular",
     "descripcion": "",
@@ -121,7 +143,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 11,
+    "id": 13,
     "producto": "4323 broches para poligel x1u.",
     "tipo": "esmalte",
     "descripcion": "",
@@ -132,7 +154,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 12,
+    "id": 14,
     "producto": "0922 auriculares para compu",
     "tipo": "auricular",
     "descripcion": "",
@@ -143,7 +165,7 @@
     "etiqueta_ultimos": 1
   },
   {
-    "id": 13,
+    "id": 15,
     "producto": "Mini massage stick - a Electro ista",
     "tipo": "organizador",
     "descripcion": "",
@@ -154,7 +176,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 14,
+    "id": 16,
     "producto": "Limador de uñas eléctrico",
     "tipo": "esmalte",
     "descripcion": "",
@@ -165,7 +187,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 15,
+    "id": 17,
     "producto": "Depiladora Facial 2 en 1 Recargable para Cejas y Cuerpo",
     "tipo": "depiladora",
     "descripcion": "",
@@ -176,7 +198,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 16,
+    "id": 18,
     "producto": "Depiladora de Cejas Recargable USB con Luz y Sin Dolor",
     "tipo": "depiladora",
     "descripcion": "",
@@ -187,7 +209,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 17,
+    "id": 19,
     "producto": "Soporte para celular magnetico",
     "tipo": "soporte",
     "descripcion": "",
@@ -198,7 +220,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 18,
+    "id": 20,
     "producto": "Masajeador facial reductor de papada conn vibración 4d",
     "tipo": "facial",
     "descripcion": "",
@@ -209,7 +231,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 19,
+    "id": 21,
     "producto": "Depilador mini facial corporal con luz",
     "tipo": "depiladora",
     "descripcion": "",
@@ -220,7 +242,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 20,
+    "id": 22,
     "producto": "Faja micro corriente abdominal",
     "tipo": null,
     "descripcion": "",
@@ -231,7 +253,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 21,
+    "id": 23,
     "producto": "Aro de luz redondo para selfie",
     "tipo": "lampara",
     "descripcion": "",
@@ -242,7 +264,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 22,
+    "id": 24,
     "producto": "Mano masajeadora - a Electro ista",
     "tipo": "masajeador",
     "descripcion": "",
@@ -253,7 +275,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 23,
+    "id": 25,
     "producto": "Auricular p9 pro - a Electro ista",
     "tipo": "auricular",
     "descripcion": "",
@@ -264,7 +286,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 24,
+    "id": 26,
     "producto": "Planchita de pelo HL2580",
     "tipo": "planchita",
     "descripcion": "",
@@ -275,7 +297,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 25,
+    "id": 27,
     "producto": "Depilador nasal - a Electro ista",
     "tipo": "depiladora",
     "descripcion": "",
@@ -286,7 +308,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 26,
+    "id": 28,
     "producto": "Secador de pelo - a Electro ista",
     "tipo": "secador",
     "descripcion": "",
@@ -297,7 +319,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 27,
+    "id": 29,
     "producto": "Balanza de cocina 10k - a Electro ista",
     "tipo": "balanza",
     "descripcion": "",
@@ -308,7 +330,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 28,
+    "id": 30,
     "producto": "Saca callos eléctrico recargable",
     "tipo": null,
     "descripcion": "",
@@ -319,7 +341,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 29,
+    "id": 31,
     "producto": "Auriculares A9S Pro wireless",
     "tipo": "auricular",
     "descripcion": "",
@@ -330,7 +352,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 30,
+    "id": 32,
     "producto": "Depiladora 2 en 1 facial corporal recargable",
     "tipo": "depiladora",
     "descripcion": "",
@@ -341,7 +363,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 31,
+    "id": 33,
     "producto": "Masajeador electro estimulador abdominales",
     "tipo": "masajeador",
     "descripcion": "",
@@ -352,7 +374,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 32,
+    "id": 34,
     "producto": "Bombillo Lampara Led Plegable 4 Aspas Alta Iluminación",
     "tipo": "lampara",
     "descripcion": "",
@@ -363,7 +385,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 33,
+    "id": 35,
     "producto": "Balanza Corporal Inteligente Bluetooth - Medidor Preciso de Grasa",
     "tipo": "balanza",
     "descripcion": "",
@@ -374,7 +396,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 34,
+    "id": 36,
     "producto": "Batidor Electrico Manual leche",
     "tipo": "batidora",
     "descripcion": "",
@@ -385,7 +407,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 35,
+    "id": 37,
     "producto": "Máquina Corta Pelo Gold Dragon: Recortadora Precisa y Recargable",
     "tipo": "procesadora",
     "descripcion": "",
@@ -396,7 +418,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 36,
+    "id": 38,
     "producto": "Termo Con Sensor De Temperatura Botella Térmica De 500 Ml Para Agua T",
     "tipo": "termo",
     "descripcion": "",
@@ -407,7 +429,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 37,
+    "id": 39,
     "producto": "Taza Térmica Batidora Automática Magnética Café",
     "tipo": "batidora",
     "descripcion": "",
@@ -418,7 +440,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 38,
+    "id": 40,
     "producto": "Depilador sin dolor USB para cara y axilas, ideal viaje",
     "tipo": "depiladora",
     "descripcion": "",
@@ -429,7 +451,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 39,
+    "id": 41,
     "producto": "Soporte Magnético Extensible para Celular con Rotación 360°",
     "tipo": "soporte",
     "descripcion": "",
@@ -440,7 +462,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 40,
+    "id": 42,
     "producto": "Termo térmico 500ml con 3 tazas de acero inoxidable",
     "tipo": "termo",
     "descripcion": "",
@@ -451,7 +473,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 41,
+    "id": 43,
     "producto": "Cortador Verduras Manual Chopera Mini 500ml Compacto",
     "tipo": "procesadora",
     "descripcion": "",
@@ -462,7 +484,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 42,
+    "id": 44,
     "producto": "Masajeador Facial Jade Antiarrugas con Guasha Doble Rodillo",
     "tipo": "pintura",
     "descripcion": "",
@@ -473,7 +495,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 43,
+    "id": 45,
     "producto": "Masajeador Mini para Cuello y Espalda con Calor y 8 Modos",
     "tipo": "masajeador",
     "descripcion": "",
@@ -484,7 +506,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 44,
+    "id": 46,
     "producto": "Drone Plegable E88 con Cámara y Control Remoto con Estuche",
     "tipo": "automotor",
     "descripcion": "",
@@ -495,7 +517,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 45,
+    "id": 47,
     "producto": "Parlante Bluetooth 8&quot; Greatnice GTS-1248 con Micrófono Karaoke",
     "tipo": "parlante",
     "descripcion": "",
@@ -506,7 +528,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 46,
+    "id": 48,
     "producto": "Afeitadora 3 en 1 Inalámbrica Recargable con Recortador de Nariz",
     "tipo": "afeitadora",
     "descripcion": "",
@@ -517,7 +539,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 47,
+    "id": 49,
     "producto": "Parlante Bluetooth Portátil 3&quot; con Radio FM, Luces, USB y Micro SD",
     "tipo": "parlante",
     "descripcion": "",
@@ -528,7 +550,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 48,
+    "id": 50,
     "producto": "Espejo Adhesivo Cuadrado de 20x20cm Irrompible",
     "tipo": "espejo",
     "descripcion": "",
@@ -539,7 +561,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 49,
+    "id": 51,
     "producto": "Parlante Bluetooth 3&quot; Greatnice con Luces y Radio FM Surtido",
     "tipo": "parlante",
     "descripcion": "",
@@ -550,7 +572,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 50,
+    "id": 52,
     "producto": "Planchita de Pelo Profesional NITSUK 45W 4 Temperaturas",
     "tipo": "planchita",
     "descripcion": "",
@@ -561,7 +583,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 51,
+    "id": 53,
     "producto": "Bicicleta Mountain Bike Dinax Rodado 29 21 Velocidades Frenos a Disco",
     "tipo": "bicicleta",
     "descripcion": "",
@@ -572,7 +594,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 52,
+    "id": 54,
     "producto": "Mini Motosierra Inalámbrica 6&quot; 21V con Batería y Estuche",
     "tipo": "sierra",
     "descripcion": "",
@@ -583,7 +605,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 53,
+    "id": 55,
     "producto": "Afeitadora 3 en 1 ONICA OA-CP205 Recargable con Patillera",
     "tipo": "afeitadora",
     "descripcion": "",
@@ -594,7 +616,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 54,
+    "id": 56,
     "producto": "Depiladora Facial y de Cejas 2 en 1 Recargable USB",
     "tipo": "depiladora",
     "descripcion": "",
@@ -605,7 +627,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 55,
+    "id": 57,
     "producto": "Compresímetro para Motor Naftero 300 PSI con Maletín",
     "tipo": "automotor",
     "descripcion": "",
@@ -616,7 +638,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 56,
+    "id": 58,
     "producto": "PACK X2 BOMBACHAS DE NENA - CORAMINA - ART. 1114",
     "tipo": "pack",
     "descripcion": "",
@@ -627,7 +649,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 57,
+    "id": 59,
     "producto": "Hielera con parlante - Comprar en Global Once",
     "tipo": "parlante",
     "descripcion": "",
@@ -638,7 +660,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 58,
+    "id": 60,
     "producto": "Batidora de mano - Scarlett - Comprar en Global Once",
     "tipo": "batidora",
     "descripcion": "",
@@ -649,7 +671,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 59,
+    "id": 61,
     "producto": "Balanza de cocina 10kg - Comprar en Global Once",
     "tipo": "balanza",
     "descripcion": "",
@@ -660,7 +682,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 60,
+    "id": 62,
     "producto": "Auricular -Inpod I-12 - Comprar en Global Once",
     "tipo": "auricular",
     "descripcion": "",
@@ -671,7 +693,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 61,
+    "id": 63,
     "producto": "Auricular -Tws F9 - Comprar en Global Once",
     "tipo": "auricular",
     "descripcion": "",
@@ -682,7 +704,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 62,
+    "id": 64,
     "producto": "Auricular - E6S - Comprar en Global Once",
     "tipo": "auricular",
     "descripcion": "",
@@ -693,7 +715,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 63,
+    "id": 65,
     "producto": "Auricular - Cat ear - Comprar en Global Once",
     "tipo": "auricular",
     "descripcion": "",
@@ -704,7 +726,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 64,
+    "id": 66,
     "producto": "Aspiradora de auto - Comprar en Global Once",
     "tipo": "aspiradora",
     "descripcion": "",
@@ -715,7 +737,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 65,
+    "id": 67,
     "producto": "Mini parlante karaoke portátil con microfono",
     "tipo": "parlante",
     "descripcion": "",
@@ -726,7 +748,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 66,
+    "id": 68,
     "producto": "Motocierra con dos baterias - Hytoshy - Global Once",
     "tipo": "automotor",
     "descripcion": "",
@@ -737,7 +759,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 67,
+    "id": 69,
     "producto": "Afeitadora y Rasuradora electrica recargable - Double",
     "tipo": "afeitadora",
     "descripcion": "",
@@ -748,7 +770,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 68,
+    "id": 70,
     "producto": "Rallador y Cortador de Verdura - Comprar en Global Once",
     "tipo": "rallador",
     "descripcion": "",
@@ -759,7 +781,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 69,
+    "id": 71,
     "producto": "BOWL ACERO 18CM X-619 6191 - Comprar en MING ista",
     "tipo": "bowl",
     "descripcion": "",
@@ -770,7 +792,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 70,
+    "id": 72,
     "producto": "PERFUME MUJER LAKOCITE 7591 - Comprar en MING ista",
     "tipo": "perfume",
     "descripcion": "",
@@ -781,7 +803,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 71,
+    "id": 73,
     "producto": "VENTILADOR C/USB 17.5CM X-1095 0952 - MING ista",
     "tipo": "ventilador",
     "descripcion": "",
@@ -792,7 +814,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 72,
+    "id": 74,
     "producto": "AFEITADORA MINI C/USB X-962 9628 - MING ista",
     "tipo": "afeitadora",
     "descripcion": "",
@@ -803,7 +825,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 73,
+    "id": 75,
     "producto": "SARTEN BIFERA REDONDA ACERO 26CM X-1255 2550",
     "tipo": "sarten",
     "descripcion": "",
@@ -814,7 +836,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 74,
+    "id": 76,
     "producto": "PERFUME GIVE ME VANILLA 35ML B100-239 7704/2396",
     "tipo": "perfume",
     "descripcion": "",
@@ -825,7 +847,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 75,
+    "id": 77,
     "producto": "PERFUME ECALIRE 35ML B100-250 7447/2501",
     "tipo": "perfume",
     "descripcion": "",
@@ -836,7 +858,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 76,
+    "id": 78,
     "producto": "PERFUME ARABE FABBER 35ML 2627 - MING ista",
     "tipo": "perfume",
     "descripcion": "",
@@ -847,7 +869,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 77,
+    "id": 79,
     "producto": "PERFUME GIVE ME BERRY 35ML B100-241 7742/2419",
     "tipo": "perfume",
     "descripcion": "",
@@ -858,7 +880,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 78,
+    "id": 80,
     "producto": "LINGA BICICLETA 80CM KIHUU X-1050 0501 - MING ista",
     "tipo": "bicicleta",
     "descripcion": "",
@@ -869,7 +891,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 79,
+    "id": 81,
     "producto": "BATIDOR CAFE PILA 0147 - Comprar en MING ista",
     "tipo": "batidora",
     "descripcion": "",
@@ -880,7 +902,7 @@
     "etiqueta_ultimos": 0
   },
   {
-    "id": 80,
+    "id": 82,
     "producto": "CORTADOR HUEVOS 12CM 1446 - Comprar en MING ista",
     "tipo": "procesadora",
     "descripcion": "",
