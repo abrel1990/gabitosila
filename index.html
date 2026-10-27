@@ -119,7 +119,7 @@ fetch("catalogo.json?v=" + Date.now())
     actualizarCarritoUI();
   });
 
-// 4. Compartir (Sistema de Afiliados)
+// 4. Compartir (Sistema de Afiliados con Página con Foto)
 function compartirProducto(idx) {
   const p = catalogo[idx];
   let nombreAfiliado = localStorage.getItem('afiliado_nombre');
@@ -130,7 +130,10 @@ function compartirProducto(idx) {
     localStorage.setItem('afiliado_nombre', nombreAfiliado.trim());
   }
   
-  const linkCompartir = `https://abrel1990.github.io/gabitosila/?ref=${encodeURIComponent(nombreAfiliado)}`;
+  // Creamos el link hacia la página del producto (que tiene la foto)
+  const slug = p.producto.toLowerCase().replace(/[^a-z0-9]+/g, '-').substring(0, 50) + "-" + idx;
+  const linkCompartir = `https://abrel1990.github.io/gabitosila/productos/${slug}.html?ref=${encodeURIComponent(nombreAfiliado)}`;
+  
   const msj = `🔥 ¡Mirá este producto en Gimport!\n\n📦 ${limpiarNombre(p.producto)}\n💵 Precio: ${formatPrecio(p.precio_venta)}\n\n👉 Compralo acá: ${linkCompartir}`;
   
   window.open(`https://wa.me/?text=${encodeURIComponent(msj)}`, '_blank');
