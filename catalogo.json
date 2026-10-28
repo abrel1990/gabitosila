@@ -1009,6 +1009,18 @@
   },
   {
     "id": 84,
+    "producto": "CANDADO GRANDE ANTIROBO C/ALARMA 110DP",
+    "tipo": "herramienta",
+    "descripcion": "",
+    "precio_venta": 10500.0,
+    "imagen": "https://babaji.com.ar/fotos/12125.jpg",
+    "slug": "candado-grande-antirobo-c-alarma-110dp-21955",
+    "destacado": 0,
+    "etiqueta_ultimos": 0,
+    "primera_vez": "2026-10-28"
+  },
+  {
+    "id": 85,
     "producto": "SOPORTE CELULAR BRAZO EXTENDIBLE/SOPAPA",
     "tipo": "soportes & holders",
     "descripcion": "",
@@ -1020,7 +1032,7 @@
     "primera_vez": "2026-10-28"
   },
   {
-    "id": 85,
+    "id": 86,
     "producto": "SOPORTE CELULAR BRAZO EXTENDIBLE/SOPAPA",
     "tipo": "soportes & holders",
     "descripcion": "",
@@ -1032,7 +1044,7 @@
     "primera_vez": "2026-10-28"
   },
   {
-    "id": 86,
+    "id": 87,
     "producto": "SOPORTE P/CELULAR BRAZO EXTENDIBLE/SOPAPA",
     "tipo": "soportes & holders",
     "descripcion": "",
@@ -1044,7 +1056,7 @@
     "primera_vez": "2026-10-28"
   },
   {
-    "id": 87,
+    "id": 88,
     "producto": "MINI MAQUINA DE DONAS LAMBO TECH",
     "tipo": "electrodomesticos",
     "descripcion": "",
@@ -1056,7 +1068,7 @@
     "primera_vez": "2026-10-28"
   },
   {
-    "id": 88,
+    "id": 89,
     "producto": "REPETIDOR WIFI INALAMBRICO LAMBO TECH",
     "tipo": "computacion & gamer",
     "descripcion": "",
@@ -1068,7 +1080,19 @@
     "primera_vez": "2026-10-28"
   },
   {
-    "id": 89,
+    "id": 90,
+    "producto": "BATIDOR DE MANO Y PICADORA RECARGABLE",
+    "tipo": "deco & bazar",
+    "descripcion": "",
+    "precio_venta": 20500.0,
+    "imagen": "https://babaji.com.ar/fotos/13826.jpg",
+    "slug": "batidor-de-mano-y-picadora-recargable-22313",
+    "destacado": 0,
+    "etiqueta_ultimos": 0,
+    "primera_vez": "2026-10-28"
+  },
+  {
+    "id": 91,
     "producto": "BALANZA DE BAÑO 180KG BLUETOOTH",
     "tipo": "deco & bazar",
     "descripcion": "",
@@ -1080,7 +1104,43 @@
     "primera_vez": "2026-10-28"
   },
   {
-    "id": 90,
+    "id": 92,
+    "producto": "MICROFONO STREAMING USB RGB NETMAK",
+    "tipo": "microfono",
+    "descripcion": "",
+    "precio_venta": 36000.0,
+    "imagen": "https://babaji.com.ar/fotos/13488.jpg",
+    "slug": "microfono-streaming-usb-rgb-netmak-22358",
+    "destacado": 0,
+    "etiqueta_ultimos": 0,
+    "primera_vez": "2026-10-28"
+  },
+  {
+    "id": 93,
+    "producto": "TV BOX SMART TV 4K 512GB RAM 1024GB ANDR 13.0",
+    "tipo": "tv y proyectores",
+    "descripcion": "",
+    "precio_venta": 25000.0,
+    "imagen": "https://babaji.com.ar/fotos/12701.jpg",
+    "slug": "tv-box-smart-tv-4k-512gb-ram-1024gb-andr-13-0-22363",
+    "destacado": 0,
+    "etiqueta_ultimos": 0,
+    "primera_vez": "2026-10-28"
+  },
+  {
+    "id": 94,
+    "producto": "PARLANTE K12 1 MICROFONO",
+    "tipo": "parlantes & sonido",
+    "descripcion": "",
+    "precio_venta": 9500.0,
+    "imagen": "https://babaji.com.ar/fotos/13941.jpg",
+    "slug": "parlante-k12-1-microfono-22499",
+    "destacado": 0,
+    "etiqueta_ultimos": 0,
+    "primera_vez": "2026-10-28"
+  },
+  {
+    "id": 95,
     "producto": "SOPORTE MAGNETICO P/CELULAR 360°",
     "tipo": "soportes & holders",
     "descripcion": "",
