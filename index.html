@@ -158,62 +158,56 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 /* ============================================
    CINTAS: NOVEDAD (verde/azul shimmer) y ÚLTIMOS (roja parpadeante)
    ============================================ */
-@keyframes parpadeo { 0% { opacity: 1; } 50% { opacity: 0.55; } 100% { opacity: 1; } }
-@keyframes shimmer { 0% { background-position: -200% center; } 100% { background-position: 200% center; } }
-@keyframes pulsoNovedad {
-  0%, 100% { box-shadow: 0 2px 8px rgba(0,0,0,0.4), 0 0 10px rgba(0,255,136,0.7); }
-  50% { box-shadow: 0 2px 12px rgba(0,0,0,0.5), 0 0 22px rgba(0,212,255,0.95); }
+/* ============================================
+   CINTAS PREMIUM ENSANCHADAS CON RELIEVE Y ANIMACIÓN SUAVE
+   ============================================ */
+@keyframes brilloDeslumbrante {
+  0% { background-position: -200% center; filter: drop-shadow(0 0 5px rgba(255,255,255,0.5)); }
+  100% { background-position: 200% center; filter: drop-shadow(0 0 15px rgba(255,255,255,0.9)); }
 }
 
-.cinta-ultimos {
-  position: absolute; top: 14px; right: -40px;
-  background: #ef4444; color: #fbbf24;
-  padding: 6px 50px; font-weight: 900; font-size: 12px; letter-spacing: 1.5px;
-  transform: rotate(45deg); z-index: 10;
-  animation: parpadeo 1.5s infinite;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-  border-top: 1px solid #fbbf24; border-bottom: 1px solid #fbbf24;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+@keyframes respiracionSincronizada {
+  0%, 100% { transform: scale(1); opacity: 0.8; filter: drop-shadow(0 0 2px #fff); }
+  50% { transform: scale(1.25); opacity: 1; filter: drop-shadow(0 0 10px #fff); }
+}
+
+.cinta-novedad, .cinta-ultimos {
+  position: absolute; top: 25px; right: -55px; width: 240px; padding: 10px 0; text-align: center;
+  font-family: 'Outfit', sans-serif; font-weight: 900; font-size: 14px; letter-spacing: 2px; text-transform: uppercase;
+  transform: rotate(45deg); z-index: 15; 
+  border-top: 2px solid rgba(255,255,255,0.8); 
+  border-bottom: 4px solid rgba(0,0,0,0.5);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6), inset 0 4px 6px rgba(255,255,255,0.5);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 0 0 10px rgba(255,255,255,0.5);
 }
 
 .cinta-novedad {
-  position: absolute; top: 14px; right: -40px;
-  background: linear-gradient(90deg, #00ff88, #00d4ff, #00ff88);
-  background-size: 200% auto;
-  color: #0a1128;
-  padding: 6px 50px; font-weight: 900; font-size: 12px; letter-spacing: 1.5px;
-  transform: rotate(45deg); z-index: 11;
-  animation: shimmer 2.5s linear infinite, pulsoNovedad 2s ease-in-out infinite;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.4);
-  border-top: 1px solid rgba(255,255,255,0.6); border-bottom: 1px solid rgba(255,255,255,0.6);
+  background: linear-gradient(90deg, #4f46e5 0%, #ec4899 25%, #f59e0b 50%, #ec4899 75%, #4f46e5 100%);
+  background-size: 200% auto; color: #ffffff; animation: brilloDeslumbrante 2.5s linear infinite;
+}
+.cinta-ultimos {
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 50%, #ff0000 100%);
+  color: #ffff00; box-shadow: 0 10px 25px rgba(255,0,0,0.6), inset 0 4px 6px rgba(255,255,255,0.5);
 }
 
-@media(max-width:900px){
-  .slider-track{height:320px}
-  .slide-nombre{font-size:28px}
-  .slide-precio{font-size:24px}
-  .slide-overlay{padding:30px}
-  .slider-controls{display:none}
-  .slider-dots{bottom:20px;left:30px}
+/* EMOJIS SINCRONIZADOS EN LAS PUNTAS */
+.emoji-punta {
+  position: absolute;
+  font-size: 18px;
+  line-height: 1;
+  z-index: 20;
+  animation: respiracionSincronizada 2s ease-in-out infinite;
 }
+.punta-arriba { top: 6px; left: 8px; }
+.punta-abajo { bottom: 6px; right: 8px; }
+
 @media(max-width:600px){
-  header{padding:14px 16px}
-  .logo img{height: 38px;}
-  .logo-texto{font-size: 22px;}
-  .buscador{order:3;flex-basis:100%;margin-top:10px}
-  .buscador input{padding:12px 16px;font-size:14px}
-  .btn-icon{width:42px;height:42px;font-size:20px}
-  .slider-section{padding:0 16px;margin-top:20px}
-  .slider-track{height:280px}
-  .slide-nombre{font-size:20px;max-width:100%}
-  .slide-precio{font-size:22px}
-  .slide-overlay{padding:20px 20px 40px 20px}
-  .slider-dots{left:20px;bottom:15px}
-  .filtros-wrapper{padding:16px;gap:8px}
-  .btn-filtros,.btn-orden{padding:10px 16px;font-size:13px}
-  main{padding:0 16px 40px}
-  .grid{grid-template-columns:repeat(2, 1fr);gap:12px}
-  .producto{padding:10px;border-radius:16px}
+  .cinta-novedad, .cinta-ultimos { top: 18px; right: -45px; width: 190px; padding: 8px 0; font-size: 11px; letter-spacing: 1.5px; }
+  .emoji-punta { font-size: 14px; }
+}
+
+
+.producto {padding:10px;border-radius:16px}
   .producto .img-wrap{margin-bottom:8px;border-radius:10px}
   .producto .nombre{font-size:13px;min-height:34px;margin-bottom:4px}
   .producto .precio{font-size:18px;margin-bottom:10px}
@@ -613,11 +607,11 @@ function render() {
     // ==========================================
     let cinta = "";
     if (p.etiqueta_ultimos) {
-      cinta = '<div class="cinta-ultimos">¡ÚLTIMOS!</div>';
+      cinta = '<div class="cinta-ultimos"><span class="emoji-punta punta-arriba">🔥</span>¡ÚLTIMOS!<span class="emoji-punta punta-abajo">🔥</span></div>';
     } else if (p.primera_vez) {
       const dias = (Date.now() - new Date(p.primera_vez).getTime()) / (1000 * 60 * 60 * 24);
       if (dias <= 7) {
-        cinta = '<div class="cinta-novedad">✨ NOVEDAD ✨</div>';
+        cinta = '<div class="cinta-novedad"><span class="emoji-punta punta-arriba">✨</span>NOVEDAD<span class="emoji-punta punta-abajo">✨</span></div>';
       }
     }
 
