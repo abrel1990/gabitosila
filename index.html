@@ -422,10 +422,7 @@ function abrirLightbox(idx) {
   document.getElementById("lb-precio").textContent = formatearPrecio(p.precio_venta);
   document.getElementById("lb-desc").textContent = p.descripcion || "";
 
-  const mensajeWS = `Hola, quiero consultar por este producto:
-
-${tituloLimpio} [Cod: ${codigoFinal}]
-Precio: ${formatearPrecio(p.precio_venta)}`;
+  const mensajeWS = `Hola, quiero consultar por este producto:\n\n${tituloLimpio} [Cod: ${codigoFinal}]\nPrecio: ${formatearPrecio(p.precio_venta)}`;
   document.getElementById("lb-btn-ws").href = `https://wa.me/${WA_NUMEROS.ventas}?text=${encodeURIComponent(mensajeWS)}`;
 
   const btnCart = document.getElementById("lb-btn-cart");
@@ -519,9 +516,7 @@ function renderCarrito() {
   }
   
   wsBtn.style.opacity = "1"; wsBtn.style.pointerEvents = "auto";
-  let total = 0, itemsHTML = "", mensajeWS = "Hola, quiero consultar por los siguientes productos:
-
-";
+  let total = 0, itemsHTML = "", mensajeWS = "Hola, quiero consultar por los siguientes productos:\n\n";
   
   carrito.forEach((item, idx) => {
     const subtotal = item.precio_venta * item.cantidad;
@@ -538,16 +533,12 @@ function renderCarrito() {
       </div>
     `;
     
-    mensajeWS += `• ${item.producto} [Cod: ${item.codigo_proveedor}] (${item.cantidad}x ${formatearPrecio(item.precio_venta)}) = ${formatearPrecio(subtotal)}
-`;
+    mensajeWS += `• ${item.producto} [Cod: ${item.codigo_proveedor}] (${item.cantidad}x ${formatearPrecio(item.precio_venta)}) = ${formatearPrecio(subtotal)}\n`;
   });
   
-  mensajeWS += `
-*Total: ${formatearPrecio(total)}*`;
+  mensajeWS += `\n*Total: ${formatearPrecio(total)}*`;
   const vengoDe = localStorage.getItem('vengo_de');
-  if(vengoDe) mensajeWS += `
-
-[Vengo de parte de: ${vengoDe}]`;
+  if(vengoDe) mensajeWS += `\n\n[Vengo de parte de: ${vengoDe}]`;
   
   cont.innerHTML = itemsHTML;
   totalEl.textContent = formatearPrecio(total);
@@ -568,12 +559,7 @@ function compartirProducto(idx) {
   }
   
   const linkCompartir = `https://abrel1990.github.io/gabitosila/productos/${p.slug}.html?ref=${encodeURIComponent(nombreAfiliado)}`;
-  const msj = `🔥 ¡Mirá este producto en Gimport!
-
-📦 ${limpiarTitulo(p.producto)}
-💵 Precio: ${formatearPrecio(p.precio_venta)}
-
-👉 Compralo acá: ${linkCompartir}`;
+  const msj = `🔥 ¡Mirá este producto en Gimport!\n\n📦 ${limpiarTitulo(p.producto)}\n💵 Precio: ${formatearPrecio(p.precio_venta)}\n\n👉 Compralo acá: ${linkCompartir}`;
   
   window.open(`https://wa.me/?text=${encodeURIComponent(msj)}`, '_blank');
 }
@@ -586,9 +572,7 @@ function compartirWeb() {
     localStorage.setItem('afiliado_nombre', nombreAfiliado.trim());
   }
   const linkCompartir = `https://abrel1990.github.io/gabitosila/?ref=${encodeURIComponent(nombreAfiliado)}`;
-  const msj = `🔥 ¡Mirá el catálogo de Gimport!
-
-👉 Entrá acá: ${linkCompartir}`;
+  const msj = `🔥 ¡Mirá el catálogo de Gimport!\n\n👉 Entrá acá: ${linkCompartir}`;
   window.open(`https://wa.me/?text=${encodeURIComponent(msj)}`, '_blank');
 }
 
