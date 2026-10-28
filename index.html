@@ -564,9 +564,7 @@ function renderCarrito() {
   }
   
   wsBtn.style.opacity = "1"; wsBtn.style.pointerEvents = "auto";
-  let total = 0, itemsHTML = "", mensajeWS = "Hola, quiero consultar por los siguientes productos:
-
-";
+  let total = 0, itemsHTML = "", mensajeWS = "Hola, quiero consultar por los siguientes productos:\n\n";
   
   carrito.forEach((item, idx) => {
     const subtotal = item.precio_venta * item.cantidad;
