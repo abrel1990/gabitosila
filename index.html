@@ -244,75 +244,50 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 
 /* EFECTOS SOBRE LA TARJETA ENTERA */
 .producto {
-  background: var(--card-bg); border-radius: 20px; border: 1px solid var(--card-border); padding: 12px; display: flex; flex-direction: column; position: relative; transition: all .3s; box-shadow: var(--sombra-card); 
-  overflow: hidden; /* Mantenemos el overflow para que no se salga la foto, pero la cinta se dibuja adentro */
-} /* Aseguramos que el efecto no se escape */
-
-.producto.tiene-fuego::after {
-  content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 100%;
-  pointer-events: none; z-index: 5;
-  animation: llamaradaCiclica 2.5s infinite ease-in-out;
+  background: var(--card-bg);
   border-radius: 20px;
-}
-
-.producto.tiene-brillo::before {
-  content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
-  /* Degradé dorado brillante */
-  background: linear-gradient(to right, rgba(255, 215, 0, 0) 0%, rgba(255, 215, 0, 0.6) 50%, rgba(255, 215, 0, 0) 100%);
-  pointer-events: none; z-index: 5;
-  animation: destelloDorado 3s infinite linear;
-}
-
-
-
-
-/* BOTÓN COMPARTIR FLOTANTE */
-.btn-compartir-flotante {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.9);
-  color: #0a1128;
-  border: none;
-  font-size: 18px;
+  border: 1px solid var(--card-border);
+  padding: 12px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 20;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-  transition: all 0.2s;
-}
-.btn-compartir-flotante:hover {
-  transform: scale(1.1);
-  background: #ffffff;
-}
-.btn-compartir-flotante:active {
-  transform: scale(0.95);
+  flex-direction: column;
+  position: relative;
+  transition: all .3s;
+  box-shadow: var(--sombra-card);
+  overflow: hidden; /* Mantiene la imagen dentro */
 }
 
-@media(max-width:600px){
-  .cinta-novedad, .cinta-ultimos { top: 18px; right: -45px; width: 190px; padding: 10px 0; font-size: 12px; letter-spacing: 1.5px; }
+/* LA CINTA (Diagonal perfecta y centrada) */
+.cinta-novedad, .cinta-ultimos {
+  position: absolute;
+  top: 22px;
+  right: -55px;
+  width: 220px;
+  height: 40px;
+  line-height: 40px; /* Centra el texto verticalmente */
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transform: rotate(45deg);
+  z-index: 15;
+  border-bottom: 3px solid rgba(0,0,0,0.6);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
+.cinta-novedad {
+  background: linear-gradient(90deg, #4f46e5 0%, #ec4899 25%, #f59e0b 50%, #ec4899 75%, #4f46e5 100%);
+  background-size: 200% auto;
+  color: #ffffff;
+  animation: brilloDeslumbrante 2.5s linear infinite;
+}
 
-.producto {padding:10px;border-radius:16px}
-  .producto .img-wrap{margin-bottom:8px;border-radius:10px}
-  .producto .nombre{font-size:13px;min-height:34px;margin-bottom:4px}
-  .producto .precio{font-size:18px;margin-bottom:10px}
-  .producto .acciones{flex-direction:row;gap:6px; flex-wrap: wrap;}
-  .producto .btn-ws, .producto .btn-agregar{padding:10px 0;font-size:11px;border-radius:8px; flex: 1 1 40%;}
-  .producto .btn-compartir{flex: 1 1 100%; padding: 8px 0; font-size: 12px; margin-top: 2px;}
-  .modal-content{border-radius:16px;padding:20px}
-  .side-panel{max-width:100%}
-  .footer-logo-container img {height: 30px;}
-  .footer-logo-container .footer-texto {font-size: 20px;}
-  .lightbox img{max-height:50vh;}
-  #btn-top {bottom: 20px; right: 20px; width: 46px; height: 46px; font-size: 20px;}
-  .cinta-ultimos, .cinta-novedad {font-size:10px; padding:5px 42px; top:10px; right:-34px; letter-spacing:1px;}
+.cinta-ultimos {
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 50%, #ff0000 100%);
+  color: #ffff00;
+}
 }
 @media(max-width:380px){
   .grid{grid-template-columns:1fr;gap:20px}
@@ -688,42 +663,27 @@ function render() {
     const tituloLimpio = limpiarTitulo(p.producto);
     const codProv = obtenerCodigoProveedor(p.producto);
     const codigoFinal = codProv ? `${codProv}-${idx}` : `#${idx}`;
-
     const mensaje = encodeURIComponent(`Hola, me interesa: ${tituloLimpio} [Cod: ${codigoFinal}] (${formatearPrecio(p.precio_venta)})`);
     const wsUrl = `https://wa.me/${WA_NUMEROS.ventas}?text=${mensaje}`;
     const enCarrito = carrito.some(i => i.id === idx);
 
-    // ==========================================
-    // CINTAS Y EFECTOS EN LA TARJETA
+    // Etiquetas
     let cinta = "";
     let claseEfecto = "";
-
     if (p.etiqueta_ultimos) {
-      cinta = '<span class=\"cinta-ultimos\">¡ÚLTIMOS!</div>';
+      cinta = '<div class="cinta-ultimos">¡ÚLTIMOS!</div>';
       claseEfecto = "tiene-fuego";
     } else if (p.primera_vez) {
       const dias = (Date.now() - new Date(p.primera_vez).getTime()) / (1000 * 60 * 60 * 24);
       if (dias <= 7) {
-        cinta = '<span class=\"cinta-novedad\">✨ NOVEDAD ✨</div>';
+        cinta = '<div class="cinta-novedad">✨ NOVEDAD ✨</div>';
         claseEfecto = "tiene-brillo";
-      }
-    } else if (p.primera_vez) {
-      const dias = (Date.now() - new Date(p.primera_vez).getTime()) / (1000 * 60 * 60 * 24);
-      if (dias <= 7) {
-        cinta = '<span class=\"cinta-novedad\">✨ NOVEDAD ✨</div>';
-        emojisEsquina = '<span class="emoji-esquina estrella esquina-arriba">✨</div><span class="emoji-esquina estrella esquina-abajo">✨</div>';
-      }
-    } else if (p.primera_vez) {
-      const dias = (Date.now() - new Date(p.primera_vez).getTime()) / (1000 * 60 * 60 * 24);
-      if (dias <= 7) {
-        cinta = '<span class=\"cinta-novedad\"><span class="emoji-punta punta-arriba">✨</div>NOVEDAD<span class="emoji-punta punta-abajo">✨</div></div>';
       }
     }
 
     return `
       <div class="producto ${claseEfecto}">
         ${cinta}
-        
         <div class="img-wrap" onclick="abrirLightbox(${idx})">
           <img src="${p.imagen || ''}" alt="${tituloLimpio}" loading="lazy" onerror="this.style.opacity='0'">
           <button class="btn-compartir-flotante" onclick="event.stopPropagation(); compartirProducto(${idx})" title="Compartir">📤</button>
@@ -734,7 +694,6 @@ function render() {
           <div class="acciones">
             <a href="${wsUrl}" target="_blank" rel="noopener" class="btn-ws">WhatsApp</a>
             <button class="btn-agregar ${enCarrito ? 'agregado' : ''}" onclick="agregarAlCarrito(${idx})">${enCarrito ? '✓ Agregado' : '+ Carrito'}</button>
-            
           </div>
         </div>
       </div>
