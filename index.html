@@ -217,19 +217,18 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
   top: 20px; 
   right: -55px; 
   width: 220px; 
-  height: 40px;
-  line-height: 40px; /* Centra el texto verticalmente */
+  height: 42px; 
+  line-height: 42px; /* Esto centra el texto sin romper la rotación */
   text-align: center;
   font-family: 'Outfit', sans-serif; 
   font-weight: 900; 
-  font-size: 14px; 
+  font-size: 15px; 
   letter-spacing: 1.5px; 
   text-transform: uppercase;
-  transform: rotate(45deg); /* La rotación mágica */
-  transform-origin: center;
+  transform: rotate(45deg); 
   z-index: 15; 
   border-bottom: 4px solid rgba(0,0,0,0.6); 
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5), inset 0 2px 4px rgba(255,255,255,0.5);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
   text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
@@ -244,7 +243,10 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 }
 
 /* EFECTOS SOBRE LA TARJETA ENTERA */
-.producto { position: relative; overflow: hidden; } /* Aseguramos que el efecto no se escape */
+.producto {
+  background: var(--card-bg); border-radius: 20px; border: 1px solid var(--card-border); padding: 12px; display: flex; flex-direction: column; position: relative; transition: all .3s; box-shadow: var(--sombra-card); 
+  overflow: hidden; /* Mantenemos el overflow para que no se salga la foto, pero la cinta se dibuja adentro */
+} /* Aseguramos que el efecto no se escape */
 
 .producto.tiene-fuego::after {
   content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 100%;
