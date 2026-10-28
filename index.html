@@ -161,20 +161,37 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 /* ============================================
    CINTAS PREMIUM ENSANCHADAS CON RELIEVE Y ANIMACIÓN SUAVE
    ============================================ */
+/* ============================================
+   CINTAS PREMIUM CON TEXTO CENTRADO Y EMOJIS EN ESQUINAS
+   ============================================ */
 @keyframes brilloDeslumbrante {
   0% { background-position: -200% center; filter: drop-shadow(0 0 5px rgba(255,255,255,0.5)); }
   100% { background-position: 200% center; filter: drop-shadow(0 0 15px rgba(255,255,255,0.9)); }
 }
 
-@keyframes respiracionSincronizada {
-  0%, 100% { transform: scale(1); opacity: 0.8; filter: drop-shadow(0 0 2px #fff); }
-  50% { transform: scale(1.25); opacity: 1; filter: drop-shadow(0 0 10px #fff); }
+/* Animación suave, sin saltos toscos */
+@keyframes respiracionSuave {
+  0%, 100% { transform: scale(1); opacity: 0.85; }
+  50% { transform: scale(1.15); opacity: 1; }
 }
 
 .cinta-novedad, .cinta-ultimos {
-  position: absolute; top: 25px; right: -55px; width: 240px; padding: 10px 0; text-align: center;
-  font-family: 'Outfit', sans-serif; font-weight: 900; font-size: 14px; letter-spacing: 2px; text-transform: uppercase;
-  transform: rotate(45deg); z-index: 15; 
+  position: absolute; 
+  top: 22px; 
+  right: -55px; 
+  width: 240px; 
+  padding: 12px 0; 
+  text-align: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  font-family: 'Outfit', sans-serif; 
+  font-weight: 900; 
+  font-size: 14px; 
+  letter-spacing: 2px; 
+  text-transform: uppercase;
+  transform: rotate(45deg); 
+  z-index: 15; 
   border-top: 2px solid rgba(255,255,255,0.8); 
   border-bottom: 4px solid rgba(0,0,0,0.5);
   box-shadow: 0 10px 25px rgba(0,0,0,0.6), inset 0 4px 6px rgba(255,255,255,0.5);
@@ -183,27 +200,42 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 
 .cinta-novedad {
   background: linear-gradient(90deg, #4f46e5 0%, #ec4899 25%, #f59e0b 50%, #ec4899 75%, #4f46e5 100%);
-  background-size: 200% auto; color: #ffffff; animation: brilloDeslumbrante 2.5s linear infinite;
+  background-size: 200% auto; 
+  color: #ffffff; 
+  animation: brilloDeslumbrante 2.5s linear infinite;
 }
+
 .cinta-ultimos {
   background: linear-gradient(135deg, #ff0000 0%, #cc0000 50%, #ff0000 100%);
-  color: #ffff00; box-shadow: 0 10px 25px rgba(255,0,0,0.6), inset 0 4px 6px rgba(255,255,255,0.5);
+  color: #ffff00; 
+  box-shadow: 0 10px 25px rgba(255,0,0,0.6), inset 0 4px 6px rgba(255,255,255,0.5);
 }
 
-/* EMOJIS SINCRONIZADOS EN LAS PUNTAS */
-.emoji-punta {
+/* Emojis en las esquinas de la tarjeta (.producto) */
+.emoji-esquina {
   position: absolute;
-  font-size: 18px;
-  line-height: 1;
+  font-size: 28px;
   z-index: 20;
-  animation: respiracionSincronizada 2s ease-in-out infinite;
+  animation: respiracionSuave 3s ease-in-out infinite;
+  pointer-events: none; /* Para que no molesten al tocar la foto */
 }
-.punta-arriba { top: 6px; left: 8px; }
-.punta-abajo { bottom: 6px; right: 8px; }
+
+.emoji-esquina.fuego { 
+  filter: drop-shadow(0 0 8px rgba(255, 100, 0, 0.8)); 
+}
+.emoji-esquina.estrella { 
+  filter: drop-shadow(0 0 8px rgba(255, 255, 100, 0.8)); 
+}
+
+/* Posiciones: Arriba a la izquierda y abajo a la derecha */
+.esquina-arriba { top: 10px; left: 10px; }
+.esquina-abajo { bottom: 10px; right: 10px; }
 
 @media(max-width:600px){
-  .cinta-novedad, .cinta-ultimos { top: 18px; right: -45px; width: 190px; padding: 8px 0; font-size: 11px; letter-spacing: 1.5px; }
-  .emoji-punta { font-size: 14px; }
+  .cinta-novedad, .cinta-ultimos { top: 18px; right: -45px; width: 190px; padding: 10px 0; font-size: 12px; letter-spacing: 1.5px; }
+  .emoji-esquina { font-size: 22px; }
+  .esquina-arriba { top: 6px; left: 6px; }
+  .esquina-abajo { bottom: 6px; right: 6px; }
 }
 
 
@@ -602,12 +634,19 @@ function render() {
     const enCarrito = carrito.some(i => i.id === idx);
 
     // ==========================================
-    // CINTAS: NOVEDAD (auto, últimos 7 días) / ¡ÚLTIMOS! (manual)
-    // Prioridad: si está marcado manual como ÚLTIMOS, gana.
-    // ==========================================
+    // CINTAS Y EMOJIS EN ESQUINAS
     let cinta = "";
+    let emojisEsquina = "";
+
     if (p.etiqueta_ultimos) {
-      cinta = '<div class="cinta-ultimos"><span class="emoji-punta punta-arriba">🔥</span>¡ÚLTIMOS!<span class="emoji-punta punta-abajo">🔥</span></div>';
+      cinta = '<div class="cinta-ultimos">¡ÚLTIMOS!</div>';
+      emojisEsquina = '<span class="emoji-esquina fuego esquina-arriba">🔥</span><span class="emoji-esquina fuego esquina-abajo">🔥</span>';
+    } else if (p.primera_vez) {
+      const dias = (Date.now() - new Date(p.primera_vez).getTime()) / (1000 * 60 * 60 * 24);
+      if (dias <= 7) {
+        cinta = '<div class="cinta-novedad">✨ NOVEDAD ✨</div>';
+        emojisEsquina = '<span class="emoji-esquina estrella esquina-arriba">✨</span><span class="emoji-esquina estrella esquina-abajo">✨</span>';
+      }
     } else if (p.primera_vez) {
       const dias = (Date.now() - new Date(p.primera_vez).getTime()) / (1000 * 60 * 60 * 24);
       if (dias <= 7) {
@@ -618,6 +657,7 @@ function render() {
     return `
       <div class="producto">
         ${cinta}
+        ${emojisEsquina}
         <div class="img-wrap" onclick="abrirLightbox(${idx})">
           <img src="${p.imagen || ''}" alt="${tituloLimpio}" loading="lazy" onerror="this.style.opacity='0'">
         </div>
