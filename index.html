@@ -85,8 +85,6 @@ main{max-width:1400px;margin:0 auto;padding:0 24px 50px;flex:1;width:100%}
 .producto .btn-agregar:hover{opacity:0.9; transform:translateY(-1px);}
 .producto .btn-agregar.agregado{background:#10b981;}
 
-
-
 .sin-resultados{text-align:center;padding:80px 20px;color:var(--texto-suave);font-size:18px; font-family:'Outfit',sans-serif;}
 
 footer{background:var(--footer-bg);color:var(--texto-suave);padding:40px 24px;margin-top:auto;text-align:center;font-size:14px;line-height:1.8; border-top:1px solid var(--card-border);}
@@ -156,73 +154,19 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 .overlay.abierto{display:block; opacity:1}
 
 /* ============================================
-   CINTAS: NOVEDAD (verde/azul shimmer) y ÚLTIMOS (roja parpadeante)
+   CINTA DIAGONAL PERFECTA
    ============================================ */
-/* ============================================
-   CINTAS PREMIUM ENSANCHADAS CON RELIEVE Y ANIMACIÓN SUAVE
-   ============================================ */
-/* ============================================
-   CINTAS PREMIUM CON TEXTO CENTRADO Y EMOJIS EN ESQUINAS
-   ============================================ */
-/* ============================================
-   CINTAS PERFECTAS Y EFECTOS DE FUEGO/BRILLO EN LA TARJETA
-   ============================================ */
-
-/* Animación del texto de la cinta NOVEDAD */
-@keyframes brilloDeslumbrante {
-  0% { background-position: -200% center; filter: drop-shadow(0 0 5px rgba(255,255,255,0.5)); }
-  100% { background-position: 200% center; filter: drop-shadow(0 0 15px rgba(255,255,255,0.9)); }
-}
-
-/* Animación de Llamarada: Sube, quema y desaparece */
-@keyframes llamaradaCiclica {
-  0% { 
-    box-shadow: inset 0 -100px 40px -40px rgba(255, 69, 0, 0.8), inset 0 -20px 20px -10px rgba(255, 165, 0, 0.9);
-    opacity: 1;
-  }
-  50% { 
-    box-shadow: inset 0 -200px 100px -50px rgba(255, 0, 0, 1), inset 0 -50px 40px -10px rgba(255, 255, 0, 1);
-    opacity: 1;
-  }
-  100% { 
-    box-shadow: inset 0 0 0 0 rgba(0,0,0,0), inset 0 0 0 0 rgba(0,0,0,0);
-    opacity: 0;
-  }
-}
-
-/* Animación de Destello Dorado: Barrido diagonal */
-@keyframes destelloDorado {
-  0% { transform: translateX(-150%) translateY(-150%) rotate(45deg); opacity: 0; }
-  20% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { transform: translateX(150%) translateY(150%) rotate(45deg); opacity: 0; }
-}
-  50% { box-shadow: inset 0 -150px 80px -50px rgba(255, 69, 0, 0.9), inset 0 -30px 30px -10px rgba(255, 255, 0, 1); }
-  100% { box-shadow: inset 0 -100px 50px -50px rgba(255, 0, 0, 0.8), inset 0 -20px 20px -10px rgba(255, 165, 0, 0.9); }
-}
-
-/* Animación del Destello de Novedad (Barrido diagonal) */
-@keyframes destelloDorado {
-  0% { transform: translateX(-150%) translateY(-150%) rotate(45deg); opacity: 0; }
-  20% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { transform: translateX(150%) translateY(150%) rotate(45deg); opacity: 0; }
-}
-  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-}
-
-/* LA CINTA (Texto centrado a la fuerza y con relieve) */
 .cinta-novedad, .cinta-ultimos {
   position: absolute; 
   top: 20px; 
   right: -55px; 
   width: 220px; 
   height: 42px; 
-  line-height: 42px; /* Esto centra el texto sin romper la rotación */
+  line-height: 42px; 
   text-align: center;
   font-family: 'Outfit', sans-serif; 
   font-weight: 900; 
-  font-size: 15px; 
+  font-size: 14px; 
   letter-spacing: 1.5px; 
   text-transform: uppercase;
   transform: rotate(45deg); 
@@ -231,63 +175,62 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
   box-shadow: 0 10px 20px rgba(0,0,0,0.5);
   text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
-
 .cinta-novedad {
   background: linear-gradient(90deg, #4f46e5 0%, #ec4899 25%, #f59e0b 50%, #ec4899 75%, #4f46e5 100%);
   background-size: 200% auto; color: #ffffff; animation: brilloDeslumbrante 2.5s linear infinite;
 }
-
 .cinta-ultimos {
   background: linear-gradient(135deg, #ff0000 0%, #cc0000 50%, #ff0000 100%);
   color: #ffff00; 
 }
 
-/* EFECTOS SOBRE LA TARJETA ENTERA */
-.producto {
-  background: var(--card-bg);
-  border-radius: 20px;
-  border: 1px solid var(--card-border);
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  transition: all .3s;
-  box-shadow: var(--sombra-card);
-  overflow: hidden; /* Mantiene la imagen dentro */
+/* BOTÓN COMPARTIR FLOTANTE */
+.btn-compartir-flotante {
+  position: absolute; bottom: 10px; right: 10px; width: 36px; height: 36px; border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9); border: none; font-size: 18px; cursor: pointer; z-index: 20;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3); transition: all 0.2s;
 }
+.btn-compartir-flotante:hover { transform: scale(1.1); background: #ffffff; }
+.btn-compartir-flotante:active { transform: scale(0.95); }
 
-/* LA CINTA (Diagonal perfecta y centrada) */
-.cinta-novedad, .cinta-ultimos {
-  position: absolute;
-  top: 22px;
-  right: -55px;
-  width: 220px;
-  height: 40px;
-  line-height: 40px; /* Centra el texto verticalmente */
-  text-align: center;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 900;
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  transform: rotate(45deg);
-  z-index: 15;
-  border-bottom: 3px solid rgba(0,0,0,0.6);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.5);
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+@media(max-width:900px){
+  .slider-track{height:320px}
+  .slide-nombre{font-size:28px}
+  .slide-precio{font-size:24px}
+  .slide-overlay{padding:30px}
+  .slider-controls{display:none}
+  .slider-dots{bottom:20px;left:30px}
 }
-
-.cinta-novedad {
-  background: linear-gradient(90deg, #4f46e5 0%, #ec4899 25%, #f59e0b 50%, #ec4899 75%, #4f46e5 100%);
-  background-size: 200% auto;
-  color: #ffffff;
-  animation: brilloDeslumbrante 2.5s linear infinite;
-}
-
-.cinta-ultimos {
-  background: linear-gradient(135deg, #ff0000 0%, #cc0000 50%, #ff0000 100%);
-  color: #ffff00;
-}
+@media(max-width:600px){
+  header{padding:14px 16px}
+  .logo img{height: 38px;}
+  .logo-texto{font-size: 22px;}
+  .buscador{order:3;flex-basis:100%;margin-top:10px}
+  .buscador input{padding:12px 16px;font-size:14px}
+  .btn-icon{width:42px;height:42px;font-size:20px}
+  .slider-section{padding:0 16px;margin-top:20px}
+  .slider-track{height:280px}
+  .slide-nombre{font-size:20px;max-width:100%}
+  .slide-precio{font-size:22px}
+  .slide-overlay{padding:20px 20px 40px 20px}
+  .slider-dots{left:20px;bottom:15px}
+  .filtros-wrapper{padding:16px;gap:8px}
+  .btn-filtros,.btn-orden{padding:10px 16px;font-size:13px}
+  main{padding:0 16px 40px}
+  .grid{grid-template-columns:repeat(2, 1fr);gap:12px}
+  .producto{padding:10px;border-radius:16px}
+  .producto .img-wrap{margin-bottom:8px;border-radius:10px}
+  .producto .nombre{font-size:13px;min-height:34px;margin-bottom:4px}
+  .producto .precio{font-size:18px;margin-bottom:10px}
+  .producto .acciones{flex-direction:row;gap:6px; flex-wrap: wrap;} 
+  .producto .btn-ws, .producto .btn-agregar{padding:10px 0;font-size:11px;border-radius:8px; flex: 1 1 40%;}
+  .modal-content{border-radius:16px;padding:20px}
+  .side-panel{max-width:100%}
+  .footer-logo-container img {height: 30px;}
+  .footer-logo-container .footer-texto {font-size: 20px;}
+  .lightbox img{max-height:50vh;}
+  #btn-top {bottom: 20px; right: 20px; width: 46px; height: 46px; font-size: 20px;}
+  .cinta-novedad, .cinta-ultimos { top: 18px; right: -45px; width: 190px; padding: 8px 0; font-size: 11px; letter-spacing: 1.5px; }
 }
 @media(max-width:380px){
   .grid{grid-template-columns:1fr;gap:20px}
@@ -303,14 +246,14 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
   <div class="header-content">
     <a href="./" class="logo">
       <img src="icono-192.png" alt="Gimport">
-      <span class="logo-texto">Import</div>
+      <span class="logo-texto">Import</span>
     </a>
     <div class="buscador">
       <input type="text" id="buscar" placeholder="Buscar tu próximo producto..." autocomplete="off">
     </div>
     <button class="btn-icon" id="btn-tema" title="Cambiar tema">☀️</button>
     <button class="btn-icon" id="btn-carrito" title="Ver carrito">
-      🛒<span class="carrito-badge" id="carrito-badge" style="display:none">0</div>
+      🛒<span class="carrito-badge" id="carrito-badge" style="display:none">0</span>
     </button>
   </div>
 </header>
@@ -327,8 +270,8 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 </div>
 
 <div class="filtros-wrapper">
-  <button class="btn-filtros" id="btn-filtros">☰ Filtros <span id="filtro-activo-txt"></div></button>
-  <button class="btn-orden" id="btn-orden">⇅ Ordenar <span id="orden-activo-txt"></div></button>
+  <button class="btn-filtros" id="btn-filtros">☰ Filtros <span id="filtro-activo-txt"></span></button>
+  <button class="btn-orden" id="btn-orden">⇅ Ordenar <span id="orden-activo-txt"></span></button>
 </div>
 
 <main>
@@ -340,7 +283,7 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 <footer>
   <div class="footer-logo-container">
     <img src="icono-192.png" alt="Gimport Logo">
-    <span class="footer-texto">Import</div>
+    <span class="footer-texto">Import</span>
   </div>
   <p>Consultá por WhatsApp para confirmar stock y coordinar la compra.</p>
   <p class="footer-copy">© 2026 Gabitosila · Todos los derechos reservados</p>
@@ -393,8 +336,8 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
   <div class="panel-items" id="carrito-items"></div>
   <div class="panel-footer">
     <div class="panel-total">
-      <span class="label">Total:</div>
-      <span class="monto" id="carrito-total">$0</div>
+      <span class="label">Total:</span>
+      <span class="monto" id="carrito-total">$0</span>
     </div>
     <a href="#" class="btn-panel-ws" id="carrito-ws" target="_blank">Consultar por WhatsApp</a>
   </div>
@@ -479,7 +422,10 @@ function abrirLightbox(idx) {
   document.getElementById("lb-precio").textContent = formatearPrecio(p.precio_venta);
   document.getElementById("lb-desc").textContent = p.descripcion || "";
 
-  const mensajeWS = `Hola, quiero consultar por este producto:\n\n${tituloLimpio} [Cod: ${codigoFinal}]\nPrecio: ${formatearPrecio(p.precio_venta)}`;
+  const mensajeWS = `Hola, quiero consultar por este producto:
+
+${tituloLimpio} [Cod: ${codigoFinal}]
+Precio: ${formatearPrecio(p.precio_venta)}`;
   document.getElementById("lb-btn-ws").href = `https://wa.me/${WA_NUMEROS.ventas}?text=${encodeURIComponent(mensajeWS)}`;
 
   const btnCart = document.getElementById("lb-btn-cart");
@@ -498,7 +444,7 @@ function abrirLightbox(idx) {
 
 function cerrarLightbox() { document.getElementById("lightbox").classList.remove("abierto"); }
 document.getElementById("lb-cerrar").addEventListener("click", () => { cerrarLightbox(); history.back(); });
-document.getElementById("lightbox").addEventListener("click", (e) => {
+document.getElementById("lightbox").addEventListener("click", (e) => { 
   if (e.target.id === "lightbox") { cerrarLightbox(); history.back(); }
 });
 
@@ -541,44 +487,46 @@ function agregarAlCarrito(idx, desdeLightbox = false) {
   const codigoFinal = codProv ? `${codProv}-${idx}` : `#${idx}`;
 
   const existe = carrito.find(i => i.id === idx);
-  if (existe) {
-    existe.cantidad += 1;
-  } else {
-    carrito.push({
+  if (existe) { 
+    existe.cantidad += 1; 
+  } else { 
+    carrito.push({ 
       id: idx,
       producto: prodLimpio,
       codigo_proveedor: codigoFinal,
-      precio_venta: prod.precio_venta,
-      imagen: prod.imagen,
-      cantidad: 1
-    });
+      precio_venta: prod.precio_venta, 
+      imagen: prod.imagen, 
+      cantidad: 1 
+    }); 
   }
-  guardarCarrito(); renderCarrito();
+  guardarCarrito(); renderCarrito(); 
   if(!desdeLightbox) render();
 }
 
-function quitarDelCarrito(idx) {
-  carrito.splice(idx, 1);
-  guardarCarrito(); renderCarrito(); render();
+function quitarDelCarrito(idx) { 
+  carrito.splice(idx, 1); 
+  guardarCarrito(); renderCarrito(); render(); 
 }
 
 function renderCarrito() {
   const cont = document.getElementById("carrito-items");
   const totalEl = document.getElementById("carrito-total");
   const wsBtn = document.getElementById("carrito-ws");
-
+  
   if (carrito.length === 0) {
     cont.innerHTML = '<div class="panel-vacio">Tu carrito está vacío</div>';
     totalEl.textContent = "$0"; wsBtn.style.opacity = ".5"; wsBtn.style.pointerEvents = "none"; return;
   }
-
+  
   wsBtn.style.opacity = "1"; wsBtn.style.pointerEvents = "auto";
-  let total = 0, itemsHTML = "", mensajeWS = "Hola, quiero consultar por los siguientes productos:\n\n";
+  let total = 0, itemsHTML = "", mensajeWS = "Hola, quiero consultar por los siguientes productos:
 
+";
+  
   carrito.forEach((item, idx) => {
     const subtotal = item.precio_venta * item.cantidad;
     total += subtotal;
-
+    
     itemsHTML += `
       <div class="panel-item">
         <img src="${item.imagen}" alt="${item.producto}">
@@ -589,14 +537,18 @@ function renderCarrito() {
         <button class="quitar" onclick="quitarDelCarrito(${idx})">×</button>
       </div>
     `;
-
-    mensajeWS += `• ${item.producto} [Cod: ${item.codigo_proveedor}] (${item.cantidad}x ${formatearPrecio(item.precio_venta)}) = ${formatearPrecio(subtotal)}\n`;
+    
+    mensajeWS += `• ${item.producto} [Cod: ${item.codigo_proveedor}] (${item.cantidad}x ${formatearPrecio(item.precio_venta)}) = ${formatearPrecio(subtotal)}
+`;
   });
-
-  mensajeWS += `\n*Total: ${formatearPrecio(total)}*`;
+  
+  mensajeWS += `
+*Total: ${formatearPrecio(total)}*`;
   const vengoDe = localStorage.getItem('vengo_de');
-  if(vengoDe) mensajeWS += `\n\n[Vengo de parte de: ${vengoDe}]`;
+  if(vengoDe) mensajeWS += `
 
+[Vengo de parte de: ${vengoDe}]`;
+  
   cont.innerHTML = itemsHTML;
   totalEl.textContent = formatearPrecio(total);
   wsBtn.href = `https://wa.me/${WA_NUMEROS.soporte}?text=${encodeURIComponent(mensajeWS)}`;
@@ -608,16 +560,21 @@ function renderCarrito() {
 function compartirProducto(idx) {
   const p = catalogo[idx];
   let nombreAfiliado = localStorage.getItem('afiliado_nombre');
-
+  
   if (!nombreAfiliado) {
     nombreAfiliado = prompt("¿Cuál es tu nombre? (Para saber que vos recomendás)");
     if (!nombreAfiliado) return;
     localStorage.setItem('afiliado_nombre', nombreAfiliado.trim());
   }
-
+  
   const linkCompartir = `https://abrel1990.github.io/gabitosila/productos/${p.slug}.html?ref=${encodeURIComponent(nombreAfiliado)}`;
-  const msj = `🔥 ¡Mirá este producto en Gimport!\n\n📦 ${limpiarTitulo(p.producto)}\n💵 Precio: ${formatearPrecio(p.precio_venta)}\n\n👉 Compralo acá: ${linkCompartir}`;
+  const msj = `🔥 ¡Mirá este producto en Gimport!
 
+📦 ${limpiarTitulo(p.producto)}
+💵 Precio: ${formatearPrecio(p.precio_venta)}
+
+👉 Compralo acá: ${linkCompartir}`;
+  
   window.open(`https://wa.me/?text=${encodeURIComponent(msj)}`, '_blank');
 }
 
@@ -629,7 +586,9 @@ function compartirWeb() {
     localStorage.setItem('afiliado_nombre', nombreAfiliado.trim());
   }
   const linkCompartir = `https://abrel1990.github.io/gabitosila/?ref=${encodeURIComponent(nombreAfiliado)}`;
-  const msj = `🔥 ¡Mirá el catálogo de Gimport!\n\n👉 Entrá acá: ${linkCompartir}`;
+  const msj = `🔥 ¡Mirá el catálogo de Gimport!
+
+👉 Entrá acá: ${linkCompartir}`;
   window.open(`https://wa.me/?text=${encodeURIComponent(msj)}`, '_blank');
 }
 
@@ -663,10 +622,11 @@ function render() {
     const tituloLimpio = limpiarTitulo(p.producto);
     const codProv = obtenerCodigoProveedor(p.producto);
     const codigoFinal = codProv ? `${codProv}-${idx}` : `#${idx}`;
+
     const mensaje = encodeURIComponent(`Hola, me interesa: ${tituloLimpio} [Cod: ${codigoFinal}] (${formatearPrecio(p.precio_venta)})`);
     const wsUrl = `https://wa.me/${WA_NUMEROS.ventas}?text=${mensaje}`;
     const enCarrito = carrito.some(i => i.id === idx);
-
+    
     // Etiquetas
     let cinta = "";
     let claseEfecto = "";
@@ -680,7 +640,7 @@ function render() {
         claseEfecto = "tiene-brillo";
       }
     }
-
+    
     return `
       <div class="producto ${claseEfecto}">
         ${cinta}
@@ -716,7 +676,7 @@ function iniciarSlider() {
   totalSlides = destacados.length;
   const track = document.getElementById("slider-track");
   const dots = document.getElementById("slider-dots");
-
+  
   track.innerHTML = destacados.map(p => `
     <div class="slide-item" onclick="abrirLightbox(${catalogo.indexOf(p)})">
       <img src="${p.imagen}" alt="${limpiarTitulo(p.producto)}">
