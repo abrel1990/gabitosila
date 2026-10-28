@@ -214,22 +214,26 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 /* LA CINTA (Texto centrado a la fuerza y con relieve) */
 .cinta-novedad, .cinta-ultimos {
   position: absolute; 
-  top: 24px; /* Despegada del borde para que cruce justo en el vértice */
-  right: -50px; /* Se mete para adentro para que quede mitad y mitad */
-  width: 210px; 
+  top: 20px; 
+  right: -55px; 
+  width: 220px; 
   height: 40px;
-  line-height: 40px; /* Centra el texto perfectamente sin romper la rotación */
-  text-align: center;
-  font-family: 'Outfit', 'Inter', sans-serif; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  font-family: 'Outfit', sans-serif; 
   font-weight: 900; 
   font-size: 15px; 
   letter-spacing: 1.5px; 
   text-transform: uppercase;
+  
+  /* ACÁ ESTÁ LA MAGIA DE LA DIAGONAL */
   transform: rotate(45deg); 
-  transform-origin: center; /* Gira sobre su propio centro */
+  transform-origin: center;
   z-index: 15; 
+  
   border-bottom: 4px solid rgba(0,0,0,0.6); 
-  box-shadow: 0 8px 15px rgba(0,0,0,0.5), inset 0 2px 4px rgba(255,255,255,0.5);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5), inset 0 2px 4px rgba(255,255,255,0.5);
   text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
@@ -326,14 +330,14 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
   <div class="header-content">
     <a href="./" class="logo">
       <img src="icono-192.png" alt="Gimport">
-      <span class="logo-texto">Import</span>
+      <span class="logo-texto">Import</div>
     </a>
     <div class="buscador">
       <input type="text" id="buscar" placeholder="Buscar tu próximo producto..." autocomplete="off">
     </div>
     <button class="btn-icon" id="btn-tema" title="Cambiar tema">☀️</button>
     <button class="btn-icon" id="btn-carrito" title="Ver carrito">
-      🛒<span class="carrito-badge" id="carrito-badge" style="display:none">0</span>
+      🛒<span class="carrito-badge" id="carrito-badge" style="display:none">0</div>
     </button>
   </div>
 </header>
@@ -350,8 +354,8 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 </div>
 
 <div class="filtros-wrapper">
-  <button class="btn-filtros" id="btn-filtros">☰ Filtros <span id="filtro-activo-txt"></span></button>
-  <button class="btn-orden" id="btn-orden">⇅ Ordenar <span id="orden-activo-txt"></span></button>
+  <button class="btn-filtros" id="btn-filtros">☰ Filtros <span id="filtro-activo-txt"></div></button>
+  <button class="btn-orden" id="btn-orden">⇅ Ordenar <span id="orden-activo-txt"></div></button>
 </div>
 
 <main>
@@ -363,7 +367,7 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 <footer>
   <div class="footer-logo-container">
     <img src="icono-192.png" alt="Gimport Logo">
-    <span class="footer-texto">Import</span>
+    <span class="footer-texto">Import</div>
   </div>
   <p>Consultá por WhatsApp para confirmar stock y coordinar la compra.</p>
   <p class="footer-copy">© 2026 Gabitosila · Todos los derechos reservados</p>
@@ -416,8 +420,8 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
   <div class="panel-items" id="carrito-items"></div>
   <div class="panel-footer">
     <div class="panel-total">
-      <span class="label">Total:</span>
-      <span class="monto" id="carrito-total">$0</span>
+      <span class="label">Total:</div>
+      <span class="monto" id="carrito-total">$0</div>
     </div>
     <a href="#" class="btn-panel-ws" id="carrito-ws" target="_blank">Consultar por WhatsApp</a>
   </div>
@@ -697,24 +701,24 @@ function render() {
     let claseEfecto = "";
 
     if (p.etiqueta_ultimos) {
-      cinta = '<span class=\"cinta-ultimos\">¡ÚLTIMOS!</span>';
+      cinta = '<span class=\"cinta-ultimos\">¡ÚLTIMOS!</div>';
       claseEfecto = "tiene-fuego";
     } else if (p.primera_vez) {
       const dias = (Date.now() - new Date(p.primera_vez).getTime()) / (1000 * 60 * 60 * 24);
       if (dias <= 7) {
-        cinta = '<span class=\"cinta-novedad\">✨ NOVEDAD ✨</span>';
+        cinta = '<span class=\"cinta-novedad\">✨ NOVEDAD ✨</div>';
         claseEfecto = "tiene-brillo";
       }
     } else if (p.primera_vez) {
       const dias = (Date.now() - new Date(p.primera_vez).getTime()) / (1000 * 60 * 60 * 24);
       if (dias <= 7) {
-        cinta = '<span class=\"cinta-novedad\">✨ NOVEDAD ✨</span>';
-        emojisEsquina = '<span class="emoji-esquina estrella esquina-arriba">✨</span><span class="emoji-esquina estrella esquina-abajo">✨</span>';
+        cinta = '<span class=\"cinta-novedad\">✨ NOVEDAD ✨</div>';
+        emojisEsquina = '<span class="emoji-esquina estrella esquina-arriba">✨</div><span class="emoji-esquina estrella esquina-abajo">✨</div>';
       }
     } else if (p.primera_vez) {
       const dias = (Date.now() - new Date(p.primera_vez).getTime()) / (1000 * 60 * 60 * 24);
       if (dias <= 7) {
-        cinta = '<span class=\"cinta-novedad\"><span class="emoji-punta punta-arriba">✨</span>NOVEDAD<span class="emoji-punta punta-abajo">✨</span></span>';
+        cinta = '<span class=\"cinta-novedad\"><span class="emoji-punta punta-arriba">✨</div>NOVEDAD<span class="emoji-punta punta-abajo">✨</div></div>';
       }
     }
 
