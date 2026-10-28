@@ -155,6 +155,39 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 .overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(10,17,40,0.6);z-index:1000;backdrop-filter:blur(4px); opacity:0; transition:opacity .3s}
 .overlay.abierto{display:block; opacity:1}
 
+/* ============================================
+   CINTAS: NOVEDAD (verde/azul shimmer) y ÚLTIMOS (roja parpadeante)
+   ============================================ */
+@keyframes parpadeo { 0% { opacity: 1; } 50% { opacity: 0.55; } 100% { opacity: 1; } }
+@keyframes shimmer { 0% { background-position: -200% center; } 100% { background-position: 200% center; } }
+@keyframes pulsoNovedad {
+  0%, 100% { box-shadow: 0 2px 8px rgba(0,0,0,0.4), 0 0 10px rgba(0,255,136,0.7); }
+  50% { box-shadow: 0 2px 12px rgba(0,0,0,0.5), 0 0 22px rgba(0,212,255,0.95); }
+}
+
+.cinta-ultimos {
+  position: absolute; top: 14px; right: -40px;
+  background: #ef4444; color: #fbbf24;
+  padding: 6px 50px; font-weight: 900; font-size: 12px; letter-spacing: 1.5px;
+  transform: rotate(45deg); z-index: 10;
+  animation: parpadeo 1.5s infinite;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  border-top: 1px solid #fbbf24; border-bottom: 1px solid #fbbf24;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.cinta-novedad {
+  position: absolute; top: 14px; right: -40px;
+  background: linear-gradient(90deg, #00ff88, #00d4ff, #00ff88);
+  background-size: 200% auto;
+  color: #0a1128;
+  padding: 6px 50px; font-weight: 900; font-size: 12px; letter-spacing: 1.5px;
+  transform: rotate(45deg); z-index: 11;
+  animation: shimmer 2.5s linear infinite, pulsoNovedad 2s ease-in-out infinite;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+  border-top: 1px solid rgba(255,255,255,0.6); border-bottom: 1px solid rgba(255,255,255,0.6);
+}
+
 @media(max-width:900px){
   .slider-track{height:320px}
   .slide-nombre{font-size:28px}
@@ -184,7 +217,7 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
   .producto .img-wrap{margin-bottom:8px;border-radius:10px}
   .producto .nombre{font-size:13px;min-height:34px;margin-bottom:4px}
   .producto .precio{font-size:18px;margin-bottom:10px}
-  .producto .acciones{flex-direction:row;gap:6px; flex-wrap: wrap;} 
+  .producto .acciones{flex-direction:row;gap:6px; flex-wrap: wrap;}
   .producto .btn-ws, .producto .btn-agregar{padding:10px 0;font-size:11px;border-radius:8px; flex: 1 1 40%;}
   .producto .btn-compartir{flex: 1 1 100%; padding: 8px 0; font-size: 12px; margin-top: 2px;}
   .modal-content{border-radius:16px;padding:20px}
@@ -193,6 +226,7 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
   .footer-logo-container .footer-texto {font-size: 20px;}
   .lightbox img{max-height:50vh;}
   #btn-top {bottom: 20px; right: 20px; width: 46px; height: 46px; font-size: 20px;}
+  .cinta-ultimos, .cinta-novedad {font-size:10px; padding:5px 42px; top:10px; right:-34px; letter-spacing:1px;}
 }
 @media(max-width:380px){
   .grid{grid-template-columns:1fr;gap:20px}
@@ -328,7 +362,6 @@ if(afiliado) localStorage.setItem('vengo_de', afiliado);
 // DETECTAR SLUG DE PRODUCTO COMPARTIDO
 const slugCompartido = urlParams.get('p');
 if(slugCompartido) {
-  // Si el cliente entra desde un link de producto compartido, buscar ese producto
   localStorage.setItem('producto_compartido', slugCompartido);
 }
 
@@ -339,7 +372,7 @@ function obtenerCodigoProveedor(nombre) {
   if (nombreUpper.includes("MZ STORE")) return "MZ";
   if (nombreUpper.includes("TECNO")) return "TEC";
   if (nombreUpper.includes("CASA MEDILEN")) return "MED";
-  return null; 
+  return null;
 }
 
 function limpiarTitulo(titulo) {
@@ -404,7 +437,7 @@ function abrirLightbox(idx) {
 
 function cerrarLightbox() { document.getElementById("lightbox").classList.remove("abierto"); }
 document.getElementById("lb-cerrar").addEventListener("click", () => { cerrarLightbox(); history.back(); });
-document.getElementById("lightbox").addEventListener("click", (e) => { 
+document.getElementById("lightbox").addEventListener("click", (e) => {
   if (e.target.id === "lightbox") { cerrarLightbox(); history.back(); }
 });
 
@@ -447,44 +480,44 @@ function agregarAlCarrito(idx, desdeLightbox = false) {
   const codigoFinal = codProv ? `${codProv}-${idx}` : `#${idx}`;
 
   const existe = carrito.find(i => i.id === idx);
-  if (existe) { 
-    existe.cantidad += 1; 
-  } else { 
-    carrito.push({ 
+  if (existe) {
+    existe.cantidad += 1;
+  } else {
+    carrito.push({
       id: idx,
       producto: prodLimpio,
       codigo_proveedor: codigoFinal,
-      precio_venta: prod.precio_venta, 
-      imagen: prod.imagen, 
-      cantidad: 1 
-    }); 
+      precio_venta: prod.precio_venta,
+      imagen: prod.imagen,
+      cantidad: 1
+    });
   }
-  guardarCarrito(); renderCarrito(); 
+  guardarCarrito(); renderCarrito();
   if(!desdeLightbox) render();
 }
 
-function quitarDelCarrito(idx) { 
-  carrito.splice(idx, 1); 
-  guardarCarrito(); renderCarrito(); render(); 
+function quitarDelCarrito(idx) {
+  carrito.splice(idx, 1);
+  guardarCarrito(); renderCarrito(); render();
 }
 
 function renderCarrito() {
   const cont = document.getElementById("carrito-items");
   const totalEl = document.getElementById("carrito-total");
   const wsBtn = document.getElementById("carrito-ws");
-  
+
   if (carrito.length === 0) {
     cont.innerHTML = '<div class="panel-vacio">Tu carrito está vacío</div>';
     totalEl.textContent = "$0"; wsBtn.style.opacity = ".5"; wsBtn.style.pointerEvents = "none"; return;
   }
-  
+
   wsBtn.style.opacity = "1"; wsBtn.style.pointerEvents = "auto";
   let total = 0, itemsHTML = "", mensajeWS = "Hola, quiero consultar por los siguientes productos:\n\n";
-  
+
   carrito.forEach((item, idx) => {
     const subtotal = item.precio_venta * item.cantidad;
     total += subtotal;
-    
+
     itemsHTML += `
       <div class="panel-item">
         <img src="${item.imagen}" alt="${item.producto}">
@@ -495,14 +528,14 @@ function renderCarrito() {
         <button class="quitar" onclick="quitarDelCarrito(${idx})">×</button>
       </div>
     `;
-    
+
     mensajeWS += `• ${item.producto} [Cod: ${item.codigo_proveedor}] (${item.cantidad}x ${formatearPrecio(item.precio_venta)}) = ${formatearPrecio(subtotal)}\n`;
   });
-  
+
   mensajeWS += `\n*Total: ${formatearPrecio(total)}*`;
   const vengoDe = localStorage.getItem('vengo_de');
   if(vengoDe) mensajeWS += `\n\n[Vengo de parte de: ${vengoDe}]`;
-  
+
   cont.innerHTML = itemsHTML;
   totalEl.textContent = formatearPrecio(total);
   wsBtn.href = `https://wa.me/${WA_NUMEROS.soporte}?text=${encodeURIComponent(mensajeWS)}`;
@@ -514,18 +547,16 @@ function renderCarrito() {
 function compartirProducto(idx) {
   const p = catalogo[idx];
   let nombreAfiliado = localStorage.getItem('afiliado_nombre');
-  
+
   if (!nombreAfiliado) {
     nombreAfiliado = prompt("¿Cuál es tu nombre? (Para saber que vos recomendás)");
     if (!nombreAfiliado) return;
     localStorage.setItem('afiliado_nombre', nombreAfiliado.trim());
   }
-  
-  // El link apunta a la página del producto (con la foto)
+
   const linkCompartir = `https://abrel1990.github.io/gabitosila/productos/${p.slug}.html?ref=${encodeURIComponent(nombreAfiliado)}`;
-  
   const msj = `🔥 ¡Mirá este producto en Gimport!\n\n📦 ${limpiarTitulo(p.producto)}\n💵 Precio: ${formatearPrecio(p.precio_venta)}\n\n👉 Compralo acá: ${linkCompartir}`;
-  
+
   window.open(`https://wa.me/?text=${encodeURIComponent(msj)}`, '_blank');
 }
 
@@ -575,13 +606,21 @@ function render() {
     const mensaje = encodeURIComponent(`Hola, me interesa: ${tituloLimpio} [Cod: ${codigoFinal}] (${formatearPrecio(p.precio_venta)})`);
     const wsUrl = `https://wa.me/${WA_NUMEROS.ventas}?text=${mensaje}`;
     const enCarrito = carrito.some(i => i.id === idx);
-    
-    // Cinta de Últimos
+
+    // ==========================================
+    // CINTAS: NOVEDAD (auto, últimos 7 días) / ¡ÚLTIMOS! (manual)
+    // Prioridad: si está marcado manual como ÚLTIMOS, gana.
+    // ==========================================
     let cinta = "";
     if (p.etiqueta_ultimos) {
-      cinta = '<div style="position:absolute;top:10px;right:-30px;background:#ef4444;color:#fbbf24;padding:5px 40px;font-weight:900;font-size:12px;transform:rotate(45deg);box-shadow:0 2px 5px rgba(0,0,0,0.3);z-index:10;animation:parpadeo 1.5s infinite;">¡ÚLTIMOS!</div>';
+      cinta = '<div class="cinta-ultimos">¡ÚLTIMOS!</div>';
+    } else if (p.primera_vez) {
+      const dias = (Date.now() - new Date(p.primera_vez).getTime()) / (1000 * 60 * 60 * 24);
+      if (dias <= 7) {
+        cinta = '<div class="cinta-novedad">✨ NOVEDAD ✨</div>';
+      }
     }
-    
+
     return `
       <div class="producto">
         ${cinta}
@@ -617,7 +656,7 @@ function iniciarSlider() {
   totalSlides = destacados.length;
   const track = document.getElementById("slider-track");
   const dots = document.getElementById("slider-dots");
-  
+
   track.innerHTML = destacados.map(p => `
     <div class="slide-item" onclick="abrirLightbox(${catalogo.indexOf(p)})">
       <img src="${p.imagen}" alt="${limpiarTitulo(p.producto)}">
@@ -723,4 +762,3 @@ fetch("catalogo.json?v=" + Date.now())
 </script>
 </body>
 </html>
-echo "✅ Bloque 4 completado: web/index.html reemplazado."
