@@ -697,18 +697,6 @@
   },
   {
     "id": 58,
-    "producto": "PACK X2 BOMBACHAS DE NENA - CORAMINA - ART. 1114",
-    "tipo": "pack",
-    "descripcion": "",
-    "precio_venta": 14000.0,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/001/015/908/products/art-1114_7firjtb31-84e50b82193273238816379520909793-1024-1024.webp",
-    "slug": "pack-x2-bombachas-de-nena-coramina-art-1114-14939",
-    "destacado": 0,
-    "etiqueta_ultimos": 0,
-    "primera_vez": "2026-09-27"
-  },
-  {
-    "id": 59,
     "producto": "Hielera con parlante - Comprar en Global Once",
     "tipo": "parlante",
     "descripcion": "",
@@ -720,7 +708,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 60,
+    "id": 59,
     "producto": "Batidora de mano - Scarlett - Comprar en Global Once",
     "tipo": "batidora",
     "descripcion": "",
@@ -732,7 +720,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 61,
+    "id": 60,
     "producto": "Balanza de cocina 10kg - Comprar en Global Once",
     "tipo": "balanza",
     "descripcion": "",
@@ -744,7 +732,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 62,
+    "id": 61,
     "producto": "Auricular -Inpod I-12 - Comprar en Global Once",
     "tipo": "auricular",
     "descripcion": "",
@@ -756,7 +744,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 63,
+    "id": 62,
     "producto": "Auricular -Tws F9 - Comprar en Global Once",
     "tipo": "auricular",
     "descripcion": "",
@@ -768,7 +756,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 64,
+    "id": 63,
     "producto": "Auricular - E6S - Comprar en Global Once",
     "tipo": "auricular",
     "descripcion": "",
@@ -780,7 +768,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 65,
+    "id": 64,
     "producto": "Auricular - Cat ear - Comprar en Global Once",
     "tipo": "auricular",
     "descripcion": "",
@@ -792,7 +780,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 66,
+    "id": 65,
     "producto": "Soporte tv fijo 14-42 Hytoshy - Comprar en Global Once",
     "tipo": "soporte",
     "descripcion": "",
@@ -804,7 +792,7 @@
     "primera_vez": "2026-10-28"
   },
   {
-    "id": 67,
+    "id": 66,
     "producto": "Soporte tv fijo 26-63 Hytoshy - Comprar en Global Once",
     "tipo": "soporte",
     "descripcion": "",
@@ -816,7 +804,7 @@
     "primera_vez": "2026-10-28"
   },
   {
-    "id": 68,
+    "id": 67,
     "producto": "Aspiradora de auto - Comprar en Global Once",
     "tipo": "aspiradora",
     "descripcion": "",
@@ -828,7 +816,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 69,
+    "id": 68,
     "producto": "Mini parlante karaoke portátil con microfono",
     "tipo": "parlante",
     "descripcion": "",
@@ -840,7 +828,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 70,
+    "id": 69,
     "producto": "Motocierra con dos baterias - Hytoshy - Global Once",
     "tipo": "automotor",
     "descripcion": "",
@@ -852,7 +840,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 71,
+    "id": 70,
     "producto": "Afeitadora y Rasuradora electrica recargable - Double",
     "tipo": "afeitadora",
     "descripcion": "",
@@ -864,7 +852,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 72,
+    "id": 71,
     "producto": "Rallador y Cortador de Verdura - Comprar en Global Once",
     "tipo": "rallador",
     "descripcion": "",
@@ -876,7 +864,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 73,
+    "id": 72,
     "producto": "BOWL ACERO 18CM X-619 6191 - Comprar en MING ista",
     "tipo": "bowl",
     "descripcion": "",
@@ -888,7 +876,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 74,
+    "id": 73,
     "producto": "PERFUME MUJER LAKOCITE 7591 - Comprar en MING ista",
     "tipo": "perfume",
     "descripcion": "",
@@ -900,7 +888,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 75,
+    "id": 74,
     "producto": "VENTILADOR C/USB 17.5CM X-1095 0952 - MING ista",
     "tipo": "ventilador",
     "descripcion": "",
@@ -912,7 +900,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 76,
+    "id": 75,
     "producto": "AFEITADORA MINI C/USB X-962 9628 - MING ista",
     "tipo": "afeitadora",
     "descripcion": "",
@@ -924,7 +912,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 77,
+    "id": 76,
     "producto": "SARTEN BIFERA REDONDA ACERO 26CM X-1255 2550",
     "tipo": "sarten",
     "descripcion": "",
@@ -936,7 +924,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 78,
+    "id": 77,
     "producto": "PERFUME GIVE ME VANILLA 35ML B100-239 7704/2396",
     "tipo": "perfume",
     "descripcion": "",
@@ -948,7 +936,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 79,
+    "id": 78,
     "producto": "PERFUME ECALIRE 35ML B100-250 7447/2501",
     "tipo": "perfume",
     "descripcion": "",
@@ -960,7 +948,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 80,
+    "id": 79,
     "producto": "PERFUME ARABE FABBER 35ML 2627 - MING ista",
     "tipo": "perfume",
     "descripcion": "",
@@ -972,7 +960,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 81,
+    "id": 80,
     "producto": "PERFUME GIVE ME BERRY 35ML B100-241 7742/2419",
     "tipo": "perfume",
     "descripcion": "",
@@ -984,7 +972,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 82,
+    "id": 81,
     "producto": "LINGA BICICLETA 80CM KIHUU X-1050 0501 - MING ista",
     "tipo": "bicicleta",
     "descripcion": "",
@@ -996,7 +984,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 83,
+    "id": 82,
     "producto": "BATIDOR CAFE PILA 0147 - Comprar en MING ista",
     "tipo": "batidora",
     "descripcion": "",
@@ -1008,7 +996,7 @@
     "primera_vez": "2026-09-27"
   },
   {
-    "id": 84,
+    "id": 83,
     "producto": "CORTADOR HUEVOS 12CM 1446 - Comprar en MING ista",
     "tipo": "procesadora",
     "descripcion": "",
