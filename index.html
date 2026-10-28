@@ -189,12 +189,22 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 
 /* LA CINTA (Texto centrado a la fuerza y con relieve) */
 .cinta-novedad, .cinta-ultimos {
-  position: absolute; top: 22px; right: -55px; width: 240px; padding: 12px 0;
-  text-align: center !important; 
-  display: flex !important; justify-content: center !important; align-items: center !important;
-  font-family: 'Outfit', sans-serif; font-weight: 900; font-size: 14px; letter-spacing: 2px; text-transform: uppercase;
-  transform: rotate(45deg); z-index: 15; 
-  border-top: 2px solid rgba(255,255,255,0.8); border-bottom: 4px solid rgba(0,0,0,0.5);
+  position: absolute; 
+  top: 22px; 
+  right: -55px; 
+  width: 240px; 
+  height: 42px; /* Altura fija */
+  line-height: 42px; /* Clava el texto justo en el medio */
+  text-align: center;
+  font-family: 'Outfit', sans-serif; 
+  font-weight: 900; 
+  font-size: 14px; 
+  letter-spacing: 2px; 
+  text-transform: uppercase;
+  transform: rotate(45deg); 
+  z-index: 15; 
+  border-top: 2px solid rgba(255,255,255,0.8); 
+  border-bottom: 4px solid rgba(0,0,0,0.5);
   box-shadow: 0 10px 25px rgba(0,0,0,0.6), inset 0 4px 6px rgba(255,255,255,0.5);
   text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 0 0 10px rgba(255,255,255,0.5);
 }
@@ -631,24 +641,24 @@ function render() {
     let claseEfecto = "";
 
     if (p.etiqueta_ultimos) {
-      cinta = '<div class="cinta-ultimos">¡ÚLTIMOS!</div>';
+      cinta = '<span class=\"cinta-ultimos\">¡ÚLTIMOS!</span>';
       claseEfecto = "tiene-fuego";
     } else if (p.primera_vez) {
       const dias = (Date.now() - new Date(p.primera_vez).getTime()) / (1000 * 60 * 60 * 24);
       if (dias <= 7) {
-        cinta = '<div class="cinta-novedad">✨ NOVEDAD ✨</div>';
+        cinta = '<span class=\"cinta-novedad\">✨ NOVEDAD ✨</span>';
         claseEfecto = "tiene-brillo";
       }
     } else if (p.primera_vez) {
       const dias = (Date.now() - new Date(p.primera_vez).getTime()) / (1000 * 60 * 60 * 24);
       if (dias <= 7) {
-        cinta = '<div class="cinta-novedad">✨ NOVEDAD ✨</div>';
+        cinta = '<span class=\"cinta-novedad\">✨ NOVEDAD ✨</span>';
         emojisEsquina = '<span class="emoji-esquina estrella esquina-arriba">✨</span><span class="emoji-esquina estrella esquina-abajo">✨</span>';
       }
     } else if (p.primera_vez) {
       const dias = (Date.now() - new Date(p.primera_vez).getTime()) / (1000 * 60 * 60 * 24);
       if (dias <= 7) {
-        cinta = '<div class="cinta-novedad"><span class="emoji-punta punta-arriba">✨</span>NOVEDAD<span class="emoji-punta punta-abajo">✨</span></div>';
+        cinta = '<span class=\"cinta-novedad\"><span class="emoji-punta punta-arriba">✨</span>NOVEDAD<span class="emoji-punta punta-abajo">✨</span></span>';
       }
     }
 
