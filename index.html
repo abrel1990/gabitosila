@@ -214,18 +214,19 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 /* LA CINTA (Texto centrado a la fuerza y con relieve) */
 .cinta-novedad, .cinta-ultimos {
   position: absolute; 
-  top: 20px; 
-  right: -45px; 
-  width: 200px; 
+  top: 24px; /* Despegada del borde para que cruce justo en el vértice */
+  right: -50px; /* Se mete para adentro para que quede mitad y mitad */
+  width: 210px; 
   height: 40px;
-  line-height: 40px; /* Centra el texto sin romper la diagonal */
+  line-height: 40px; /* Centra el texto perfectamente sin romper la rotación */
   text-align: center;
-  font-family: 'Inter', sans-serif; /* Fuente más limpia */
-  font-weight: 800; 
+  font-family: 'Outfit', 'Inter', sans-serif; 
+  font-weight: 900; 
   font-size: 15px; 
-  letter-spacing: 1px; 
+  letter-spacing: 1.5px; 
   text-transform: uppercase;
   transform: rotate(45deg); 
+  transform-origin: center; /* Gira sobre su propio centro */
   z-index: 15; 
   border-bottom: 4px solid rgba(0,0,0,0.6); 
   box-shadow: 0 8px 15px rgba(0,0,0,0.5), inset 0 2px 4px rgba(255,255,255,0.5);
@@ -260,7 +261,10 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
   animation: destelloDorado 3s infinite linear;
 }
 
-/* BOTÓN COMPARTIR FLOTANTE (Abajo a la derecha) */
+
+
+
+/* BOTÓN COMPARTIR FLOTANTE */
 .btn-compartir-flotante {
   position: absolute;
   bottom: 10px;
@@ -268,7 +272,7 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.9);
   color: #0a1128;
   border: none;
   font-size: 18px;
@@ -287,7 +291,6 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
 .btn-compartir-flotante:active {
   transform: scale(0.95);
 }
-
 
 @media(max-width:600px){
   .cinta-novedad, .cinta-ultimos { top: 18px; right: -45px; width: 190px; padding: 10px 0; font-size: 12px; letter-spacing: 1.5px; }
