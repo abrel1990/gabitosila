@@ -238,6 +238,51 @@ footer .footer-copy{margin-top:16px;font-size:13px;}
   .producto .precio{font-size:22px}
   .producto .btn-ws, .producto .btn-agregar{font-size:14px;padding:12px 0;}
 }
+
+/* ============================================
+   EFECTOS DE TARJETA (FUEGO Y BRILLO DORADO)
+   ============================================ */
+
+/* Animación de Destello Dorado (Barrido diagonal) */
+@keyframes destelloDorado {
+  0% { transform: translateX(-150%) translateY(-150%) rotate(45deg); opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateX(150%) translateY(150%) rotate(45deg); opacity: 0; }
+}
+
+/* Animación de Llamarada (Fuego subiendo) */
+@keyframes llamaradaCiclica {
+  0% { 
+    box-shadow: inset 0 -100px 40px -40px rgba(255, 69, 0, 0.8), inset 0 -20px 20px -10px rgba(255, 165, 0, 0.9);
+    opacity: 1;
+  }
+  50% { 
+    box-shadow: inset 0 -200px 100px -50px rgba(255, 0, 0, 1), inset 0 -50px 40px -10px rgba(255, 255, 0, 1);
+    opacity: 1;
+  }
+  100% { 
+    box-shadow: inset 0 0 0 0 rgba(0,0,0,0), inset 0 0 0 0 rgba(0,0,0,0);
+    opacity: 0;
+  }
+}
+
+/* Efecto para NOVEDAD (El destello dorado que barre) */
+.producto.tiene-brillo::before {
+  content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+  background: linear-gradient(to right, rgba(255, 215, 0, 0) 0%, rgba(255, 215, 0, 0.6) 50%, rgba(255, 215, 0, 0) 100%);
+  pointer-events: none; z-index: 5;
+  animation: destelloDorado 3s infinite linear;
+}
+
+/* Efecto para ÚLTIMOS (La llamarada que sube y se apaga) */
+.producto.tiene-fuego::after {
+  content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 5;
+  animation: llamaradaCiclica 2.5s infinite ease-in-out;
+  border-radius: 20px;
+}
+
 </style>
 </head>
 <body>
@@ -422,7 +467,10 @@ function abrirLightbox(idx) {
   document.getElementById("lb-precio").textContent = formatearPrecio(p.precio_venta);
   document.getElementById("lb-desc").textContent = p.descripcion || "";
 
-  const mensajeWS = `Hola, quiero consultar por este producto:\n\n${tituloLimpio} [Cod: ${codigoFinal}]\nPrecio: ${formatearPrecio(p.precio_venta)}`;
+  const mensajeWS = `Hola, quiero consultar por este producto:
+
+${tituloLimpio} [Cod: ${codigoFinal}]
+Precio: ${formatearPrecio(p.precio_venta)}`;
   document.getElementById("lb-btn-ws").href = `https://wa.me/${WA_NUMEROS.ventas}?text=${encodeURIComponent(mensajeWS)}`;
 
   const btnCart = document.getElementById("lb-btn-cart");
@@ -516,7 +564,9 @@ function renderCarrito() {
   }
   
   wsBtn.style.opacity = "1"; wsBtn.style.pointerEvents = "auto";
-  let total = 0, itemsHTML = "", mensajeWS = "Hola, quiero consultar por los siguientes productos:\n\n";
+  let total = 0, itemsHTML = "", mensajeWS = "Hola, quiero consultar por los siguientes productos:
+
+";
   
   carrito.forEach((item, idx) => {
     const subtotal = item.precio_venta * item.cantidad;
@@ -533,12 +583,16 @@ function renderCarrito() {
       </div>
     `;
     
-    mensajeWS += `• ${item.producto} [Cod: ${item.codigo_proveedor}] (${item.cantidad}x ${formatearPrecio(item.precio_venta)}) = ${formatearPrecio(subtotal)}\n`;
+    mensajeWS += `• ${item.producto} [Cod: ${item.codigo_proveedor}] (${item.cantidad}x ${formatearPrecio(item.precio_venta)}) = ${formatearPrecio(subtotal)}
+`;
   });
   
-  mensajeWS += `\n*Total: ${formatearPrecio(total)}*`;
+  mensajeWS += `
+*Total: ${formatearPrecio(total)}*`;
   const vengoDe = localStorage.getItem('vengo_de');
-  if(vengoDe) mensajeWS += `\n\n[Vengo de parte de: ${vengoDe}]`;
+  if(vengoDe) mensajeWS += `
+
+[Vengo de parte de: ${vengoDe}]`;
   
   cont.innerHTML = itemsHTML;
   totalEl.textContent = formatearPrecio(total);
@@ -559,7 +613,12 @@ function compartirProducto(idx) {
   }
   
   const linkCompartir = `https://abrel1990.github.io/gabitosila/productos/${p.slug}.html?ref=${encodeURIComponent(nombreAfiliado)}`;
-  const msj = `🔥 ¡Mirá este producto en Gimport!\n\n📦 ${limpiarTitulo(p.producto)}\n💵 Precio: ${formatearPrecio(p.precio_venta)}\n\n👉 Compralo acá: ${linkCompartir}`;
+  const msj = `🔥 ¡Mirá este producto en Gimport!
+
+📦 ${limpiarTitulo(p.producto)}
+💵 Precio: ${formatearPrecio(p.precio_venta)}
+
+👉 Compralo acá: ${linkCompartir}`;
   
   window.open(`https://wa.me/?text=${encodeURIComponent(msj)}`, '_blank');
 }
@@ -572,7 +631,9 @@ function compartirWeb() {
     localStorage.setItem('afiliado_nombre', nombreAfiliado.trim());
   }
   const linkCompartir = `https://abrel1990.github.io/gabitosila/?ref=${encodeURIComponent(nombreAfiliado)}`;
-  const msj = `🔥 ¡Mirá el catálogo de Gimport!\n\n👉 Entrá acá: ${linkCompartir}`;
+  const msj = `🔥 ¡Mirá el catálogo de Gimport!
+
+👉 Entrá acá: ${linkCompartir}`;
   window.open(`https://wa.me/?text=${encodeURIComponent(msj)}`, '_blank');
 }
 
